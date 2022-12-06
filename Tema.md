@@ -5,11 +5,11 @@ bibliography: bibliography.bib
 csl: apa.csl
 ---
 
-# Mecanismos De Adaptación De Arquitectura Software Para Smart Campus UIS
+# Mecanismos de adaptación autonómica de arquitectura software para la plataforma Smart Campus UIS
 
 ## Objetivo General
 
--   Implementar mecanismos que permitan la adaptación de una arquitectura Software IoT respecto a un modelo objetivo.
+-   Implementar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
 
 Palabras Clave
 : Computación Autonómica, Arquitectura de Software, Self-Configuration, IoT, Open Source
