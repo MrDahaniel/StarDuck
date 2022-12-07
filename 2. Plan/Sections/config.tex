@@ -1,0 +1,40 @@
+
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{datetime}
+\usepackage[spanish]{babel}
+\usepackage{ragged2e}
+\usepackage[T1]{fontenc}
+\usepackage{uarial}
+
+\parskip=12pt 
+\parindent=0pt
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\usepackage{geometry}
+\geometry {
+    letterpaper,
+    left = 1.18in,
+    right = 0.98in,
+    bottom = 0.98in,
+    top = 0.98in,
+}
+
+% Line break
+\newcommand{\skipline}{\par\null\par}
+
+
+\newcommand*{\Universidad}[1]{\def\Uni{#1}}
+\newcommand*{\Facultad}[1]{\def\Fac{#1}}
+\newcommand*{\Escuela}[1]{\def\Esc{#1}}
+
+\newdateformat{daymonthyear}{\THEDAY \ de \monthname[\THEMONTH] de \THEYEAR}
+\newcommand*{\CiudadFecha}{Bucaramanga, \daymonthyear\today }
+
+\newcommand*{\Titulo}[1]{\def\Tit{#1}}
+\newcommand*{\Modalidad}[1]{\def\Mod{#1}}
+\newcommand*{\Autor}[2]{\def\Nam{#1}\def\Cod{#2}}
