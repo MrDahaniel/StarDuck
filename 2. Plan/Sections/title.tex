@@ -2,6 +2,8 @@
 %                                               Section: Title                                              %
 % --------------------------------------------------------------------------------------------------------- %
 
+\renewcommand{\contentsname}{\hfill\bfseries\normalsize \MakeUppercase{Tabla de Contenido}\hfill}
+\renewcommand{\cftaftertoctitle}{\hfill}
 
 \begin{titlepage}
         
@@ -27,6 +29,19 @@
     
     \textbf{MODALIDAD: } \Mod
 
-    \textbf{AUTOR: } \Nam\ - \Cod
+    \textbf{AUTOR: } \Nam, \Cod
 
+    \textbf{DIRECTOR: } \TDir\ \Dir, \EDir
+    
+    \textbf{CODIRECTOR: } \TCDir\ \CDir, \ECDir
+
+    \textbf{ENTIDAD INTERESADA: } \EntI 
+    
 \end{titlepage}
+
+\tableofcontents
+
+\pagebreak
+\begin{center}
+    \MakeUppercase{\textbf{ \Tit}}
+\end{center}

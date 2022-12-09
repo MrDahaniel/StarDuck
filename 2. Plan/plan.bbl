@@ -1,0 +1,143 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{Forrester Research}%
+}{%
+{Forrester Research}%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+forrester_research_2019}
+\APACinsertmetastar {%
+forrester_research_2019}%
+\begin{APACrefauthors}%
+{Forrester Research}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{Jun}{}.
+\newblock
+\APACrefbtitle {Mainframe In The Age Of Cloud, AI, And Blockchain.} {Mainframe
+  in the age of cloud, ai, and blockchain.}
+\newblock
+\APACaddressPublisher{}{Forrester Consulting}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.ensono.com/resources/white-papers/old-workhorse-new-tech-mainframe-age-cloud-ai-and-blockchain-commissioned-study-conducted/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jiménez%
+, Cárcamo%
+\BCBL {}\ \BBA {} Pedraza%
+}{%
+Jiménez%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+henry_2020}
+\APACinsertmetastar {%
+henry_2020}%
+\begin{APACrefauthors}%
+Jiménez, H.%
+, Cárcamo, E.%
+\BCBL {}\ \BBA {} Pedraza, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Extensible software platform for smart campus based on
+  microservices} {Extensible software platform for smart campus based on
+  microservices}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{RISTI - Revista Iberica de Sistemas e Tecnologias de
+  Informacao}{2020}{E38}{270-282}.
+\newblock
+\begin{APACrefURL} \url{www.scopus.com} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lalanda%
+, Diaconescu%
+\BCBL {}\ \BBA {} McCann%
+}{%
+Lalanda%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+lalanda_diaconescu_mccann_2014}
+\APACinsertmetastar {%
+lalanda_diaconescu_mccann_2014}%
+\begin{APACrefauthors}%
+Lalanda, P.%
+, Diaconescu, A.%
+\BCBL {}\ \BBA {} McCann, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Autonomic computing: Principles, design and implementation}
+  {Autonomic computing: Principles, design and implementation}.
+\newblock
+\APACaddressPublisher{}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Loukides%
+}{%
+Loukides%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+the_cloud_in_2021}
+\APACinsertmetastar {%
+the_cloud_in_2021}%
+\begin{APACrefauthors}%
+Loukides, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2021}.
+\newblock
+\APACrefbtitle {The Cloud in 2021: Adoption Continues} {The cloud in 2021:
+  Adoption continues}.
+\newblock
+\begin{APACrefURL}
+  \url{https://get.oreilly.com/rs/107-FMS-070/images/The-Cloud-in-2021-Adoption-Continues.pdf?mkt_tok=MTA3LUZNUy0wNzAAAAGISYNxeMWRA_a_GPKBEqQliGws2SImdqefJ4Ch11jEKmmSuN_ccGOOgoUv9enxj_0pbnchAdPjkL3QgDEdY4Xf5j_teuCKfiXTQIdg2jy7ETKmudbu}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+McCann%
+\ \BBA {} Huebscher%
+}{%
+McCann%
+\ \BBA {} Huebscher%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+evaluation_2004}
+\APACinsertmetastar {%
+evaluation_2004}%
+\begin{APACrefauthors}%
+McCann, J\BPBI A.%
+\BCBT {}\ \BBA {} Huebscher, M\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Evaluation Issues in Autonomic Computing} {Evaluation
+  issues in autonomic computing}.{\BBCQ}
+\newblock
+\BIn{} H.~Jin, Y.~Pan, N.~Xiao\BCBL {}\ \BBA {} J.~Sun\ (\BEDS), \APACrefbtitle
+  {Grid and Cooperative Computing - GCC 2004 Workshops} {Grid and cooperative
+  computing - gcc 2004 workshops}\ (\BPGS\ 597--608).
+\newblock
+\APACaddressPublisher{Berlin, Heidelberg}{Springer Berlin Heidelberg}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

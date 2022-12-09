@@ -1,0 +1,12 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{}%
+\contentsline {section}{\numberline {2}Planteamiento Y Justificación Del Problema}{2}{}%
+\contentsline {section}{\numberline {3}Objetivos}{3}{}%
+\contentsline {subsection}{\numberline {3.1}Objetivo General}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Objetivos Específicos}{3}{}%
+\contentsline {section}{\numberline {4}Marco De Referencia}{3}{}%
+\contentsline {section}{\numberline {5}Metodología}{3}{}%
+\contentsline {section}{\numberline {6}Cronograma}{4}{}%
+\contentsline {section}{\numberline {7}Presupuesto}{4}{}%
+\contentsline {section}{\numberline {8}Bibliografía}{4}{}%
+\contentsline {section}{Referencias}{4}{}%

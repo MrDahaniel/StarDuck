@@ -1,11 +1,21 @@
 
-
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{datetime}
 \usepackage[spanish]{babel}
 \usepackage{ragged2e}
 \usepackage[T1]{fontenc}
 \usepackage{uarial}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{textcase}
+\usepackage{etoolbox}
+
+
+\usepackage{apacite}
+
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
 
 \parskip=12pt 
 \parindent=0pt
@@ -14,6 +24,11 @@
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
 \hbadness=10000
+
+\makeatletter
+\patchcmd{\l@section}{#1}{\MakeTextUppercase{#1}}{}{}
+\patchcmd{\l@subsection}{#1}{\MakeTextUppercase{#1}}{}{}
+\makeatother
 
 \usepackage{geometry}
 \geometry {
@@ -38,3 +53,11 @@
 \newcommand*{\Titulo}[1]{\def\Tit{#1}}
 \newcommand*{\Modalidad}[1]{\def\Mod{#1}}
 \newcommand*{\Autor}[2]{\def\Nam{#1}\def\Cod{#2}}
+\newcommand*{\Director}[3][]{\def\TDir{#1}\def\Dir{#2}\def\EDir{#3}}
+\newcommand*{\CoDirector}[3][]{\def\TCDir{#1}\def\CDir{#2}\def\ECDir{#3}}
+\newcommand*{\EntidadInt}[1]{\def\EntI{#1}}
+
+\titleformat{\section}{\raggedright\normalfont\normalsize\bfseries\uppercase}{\thesection}{1em}{}
+\titleformat{\subsection}{\raggedright\normalfont\normalsize\bfseries\uppercase}{\thesubsection}{1em}{}
+
+

@@ -3,25 +3,86 @@
 % Importando Config
 \input{"Sections/config.tex"}
 
+\bibliographystyle{apacite}
+
 % Definiendo constantes
-\Universidad{Universidad Industrial De Santander}
+\Universidad{Universidad Industrial de Santander}
 \Facultad{Facultad De Ingenierías Fisicomecánicas}
 \Escuela{Escuela De Ingeniería De Sistemas E Informática}
 \Titulo{Mecanismos de adaptación autonómica de arquitectura software para la plataforma Smart Campus UIS}
 \Modalidad{Trabajo de investigación}
 \Autor{Daniel David Delgado Cervantes}{2182066}
-% Cambiando el tipo de letra
+\Director[PhD.]{Gabriel Rodrigo Pedraza Ferreira}{Escuela De Ingeniería De Sistemas E Informática}
+\CoDirector[MSc.]{Henry Andres Jimenez Herrera}{Escuela De Ingeniería De Sistemas E Informática} 
+\EntidadInt{Universidad Industrial de Santander}
 
-% Definiendo márgenes
+% En el caso de no tener codirector, quitar la linea `\textbf{CODIRECTOR: } \TCDir\ \CDir, \ECDir` de 'Sections/title.tex'
 
-    
 \begin{document}
-
-    % Definiendo constantes, nombres y otras cosas
-
 
     % maketitle page
     \input{"Sections/title.tex"}
     
+    \section{Introducción}
 
-\end{document}
+    La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente;  la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
+
+    Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, cambian de manera constante la arquitectura de estos sistemas de software. Partiendo de esto, una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, los sistemas software presentan auto-configuración, auto-optimización, auto-sanación y auto-protección, características que permiten la auto-gestión del sistema \cite{evaluation_2004}. De esta manera el trabajo de administrar los componentes, con el fin mantener la arquitectura, es responsabilidad del mismo.
+    
+    Siendo así, tenemos el caso de Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander. Esta ha realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse \cite{henry_2020}, sin embargo no presenta mecanismos de auto-configuración, o adaptación, con los cuales realizar cambios dentro de la arquitectura.
+    
+    Partiendo de esto, se propone trabajar en el desarrollo de mecanismos de adaptación de arquitectura para Smart Campus UIS. De esta manera, tomando en cuenta una arquitectura objetivo, o de referencia, la plataforma tendrá la posibilidad de realizar los cambios correspondientes a si misma con el fin de acercase lo más posible a esta.
+
+    \section{Planteamiento Y Justificación Del Problema}
+
+    Aquí se debe formular la pregunta que se pretende responder con la propuesta, explicando la importancia y pertinencia del trabajo de grado para la solución del problema.  En esta parte es apropiado que el estudiante indique los adelantos en el tema en el contexto internacional, nacional y regional, explicando las ventajas de la perspectiva escogida para abordar el objetivo de la investigación.
+
+
+    \section{Objetivos}
+    \subsection{Objetivo General}
+    \subsection{Objetivos Específicos}
+
+    Se debe establecer un objetivo general y los objetivos específicos que lleven al logro del objetivo general.  Los objetivos deben ser realistas, viables, concretos y específicos.  Recuerde que la formulación de objetivos claros y viables constituyen una base importante para juzgar el resto de la propuesta y, además, facilita la estructuración de la metodología.
+
+    \section{Marco De Referencia}
+
+    Es importante señalar en el proyecto la estrecha relación entre teoría, el proceso de investigación y la realidad, el entorno. 
+
+    La investigación puede iniciar una teoría nueva, reformar una existente o simplemente definir con más claridad, conceptos o variables ya existentes.
+
+    \textbf{Fundamentos teóricos.} Es lo mismo que el marco de referencia, donde se condensará todo lo pertinente a la literatura que se tiene sobre el tema a investigar
+    
+    \textbf{Antecedentes del tema.}  En este aspecto entrará en juego la capacidad investigadora del grupo de trabajo, aquí se condensará todo lo relacionado a lo que se ha escrito e investigado sobre el objeto de investigación
+
+    \section{Metodología}
+
+    Se debe explicar la forma como se alcanzarán los objetivos propuestos, el enfoque metodológico a utilizar, procedimientos de análisis e interpretación de datos y estrategias para el desarrollo de la propuesta.  Esta etapa es fundamental para la definición de los recursos requeridos para el desarrollo de la propuesta, por ello, debe ser coherente con el presupuesto y el cronograma de actividades:
+  
+    \begin{itemize}
+        \item Diseño de técnicas de recolección de información.
+        \item Población y muestra.
+        \item Técnicas de análisis
+    \end{itemize}
+
+    \section{Cronograma}
+
+    Se debe realizar un cronograma que relacione las actividades prioritarias del proyecto y el tiempo que destinará a cada una de ellas.  Tenga en cuenta que el semestre tiene 16 semanas y debe desarrollar todo el trabajo de grado en este tiempo.
+
+    \section{Presupuesto}
+
+    Relacione los principales gastos del proyecto y la persona o entidad que cubrirá esos gastos.
+
+    \begin{itemize}
+        
+        \item Recursos humanos:  asesoría profesor (tener en cuenta el valor indicado por la Vicerrectoría de Investigación y Extensión), estudiantes, etc.
+        \item Equipo:  computador, costos de uso de servidores, servicios web, etc.
+        \item Materiales:  impresiones, fotocopias, etc.
+        \item Otros:  salidas de campos, transporte, etc.
+        
+    \end{itemize}
+
+    \section{Bibliografía}
+
+    \bibliography{bibliography}
+
+\end{document} 
