@@ -25,9 +25,7 @@
     
     \section{Introducción}
 
-    La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente;  la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
 
-    Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, cambian de manera constante la arquitectura de estos sistemas de software. Partiendo de esto, una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, los sistemas software presentan auto-configuración, auto-optimización, auto-sanación y auto-protección, características que permiten la auto-gestión del sistema \cite{evaluation_2004}. De esta manera el trabajo de administrar los componentes, con el fin mantener la arquitectura, es responsabilidad del mismo.
     
     Siendo así, tenemos el caso de Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander. Esta ha realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse \cite{henry_2020}, sin embargo no presenta mecanismos de auto-configuración, o adaptación, con los cuales realizar cambios dentro de la arquitectura.
     
@@ -35,14 +33,31 @@
 
     \section{Planteamiento Y Justificación Del Problema}
 
-    Aquí se debe formular la pregunta que se pretende responder con la propuesta, explicando la importancia y pertinencia del trabajo de grado para la solución del problema.  En esta parte es apropiado que el estudiante indique los adelantos en el tema en el contexto internacional, nacional y regional, explicando las ventajas de la perspectiva escogida para abordar el objetivo de la investigación.
+    La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente;  la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
+
+    Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, afectan de manera constante la arquitectura de estos sistemas de software. Una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, se tiene como objetivo sistemas con la capacidad de auto-gestión, es decir, sistemas con la capacidad de manejarse a ellos mismos dependiendo de las necesidades y las metas establecidas por los administradores del sistema \cite{evaluation_2004}.
+    
+    
+
+    Desde este enfoque, los sistemas software presentan auto-configuración, auto-optimización, auto-sanación y auto-protección, características que permiten la auto-gestión del sistema \cite{evaluation_2004}. De esta manera el trabajo de administrar los componentes, con el fin mantener la arquitectura, es responsabilidad del mismo.
 
 
     \section{Objetivos}
     \subsection{Objetivo General}
+
+    \begin{itemize}
+
+        \item Implementar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
+
+    \end{itemize}
+
     \subsection{Objetivos Específicos}
 
-    Se debe establecer un objetivo general y los objetivos específicos que lleven al logro del objetivo general.  Los objetivos deben ser realistas, viables, concretos y específicos.  Recuerde que la formulación de objetivos claros y viables constituyen una base importante para juzgar el resto de la propuesta y, además, facilita la estructuración de la metodología.
+    \begin{itemize}
+        \item Definir la manera en la que se declarará la arquitectura objetivo del sistema de software IoT
+        \item Implementar un mecanismo que permita comparar el estado actual de la arquitectura respecto al modelo objetivo
+        \item Determinar los mecanismos de adaptación de la arquitectura los cuales permitan alcanzar el estado deseado
+    \end{itemize}
 
     \section{Marco De Referencia}
 
@@ -80,6 +95,8 @@
         \item Otros:  salidas de campos, transporte, etc.
         
     \end{itemize}
+
+    \pagebreak
 
     \section{Bibliografía}
 

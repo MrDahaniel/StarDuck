@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.23)  8 DEC 2022 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.11.23)  9 DEC 2022 00:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,163 +22,108 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (./Sections/config.tex (/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
-Package: datetime 2015/03/20 v2.60 Date Time Package
- (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count193
-) (/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-Package: fmtcount 2020/01/30 v3.07
- (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
- (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks16
-\XKV@tempa@toks=\toks17
- (/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count194
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-Package: fcprefix 2012/09/28
- (/usr/share/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count195
-)) (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks18
-\ex@=\dimen139
-)
-\c@padzeroesN=\count196
-\fc@tmpcatcode=\count197
-\@DT@modctr=\count198
-\@ordinalctr=\count199
-\@orgargctr=\count266
-\@strctr=\count267
-\@tmpstrctr=\count268
-\@DT@loopN=\count269
-\@DT@X=\count270
-) (/usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
-Package: datetime-defaults 2013/09/10
-)
-\@day=\count271
-\@month=\count272
-\@year=\count273
-\c@HOUR=\count274
-\c@HOURXII=\count275
-\c@MINUTE=\count276
-\c@TOHOUR=\count277
-\c@TOMINUTE=\count278
-\c@SECOND=\count279
-\currenthour=\count280
-\currentminute=\count281
-\currentsecond=\count282
-Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
-\@dtctr=\count283
-\dayofyear=\count284
-\dayofweek=\count285
-LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks19
-\dt@b=\toks20
-) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+) (./Sections/config.tex (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2022/02/26 3.73 The Babel package
-\babel@savecnt=\count286
-\U@D=\dimen140
+\babel@savecnt=\count193
+\U@D=\dimen139
 \l@unhyphenated=\language87
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count287
+\bbl@dirlevel=\count194
  (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks21
-\es@quotdepth=\count288
+\es@quottoks=\toks16
+\es@quotdepth=\count195
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-)) (/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
-Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip49
-\RaggedLeftLeftskip=\skip50
-\RaggedRightLeftskip=\skip51
-\CenteringRightskip=\skip52
-\RaggedLeftRightskip=\skip53
-\RaggedRightRightskip=\skip54
-\CenteringParfillskip=\skip55
-\RaggedLeftParfillskip=\skip56
-\RaggedRightParfillskip=\skip57
-\JustifyingParfillskip=\skip58
-\CenteringParindent=\skip59
-\RaggedLeftParindent=\skip60
-\RaggedRightParindent=\skip61
-\JustifyingParindent=\skip62
-) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 112.
- (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) (/usr/local/share/texmf/tex/latex/ua1/uarial.sty
-Package: uarial 2006/03/21 1.0 (WaS)
-) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box50
-\beforetitleunit=\skip63
-\aftertitleunit=\skip64
-\ttl@plus=\dimen141
-\ttl@minus=\dimen142
-\ttl@toksa=\toks22
-\titlewidth=\dimen143
-\titlewidthlast=\dimen144
-\titlewidthfirst=\dimen145
-) (/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
-Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip65
-\cftbeforetoctitleskip=\skip66
-\cftaftertoctitleskip=\skip67
-\cftbeforepartskip=\skip68
-\cftpartnumwidth=\skip69
-\cftpartindent=\skip70
-\cftbeforesecskip=\skip71
-\cftsecindent=\skip72
-\cftsecnumwidth=\skip73
-\cftbeforesubsecskip=\skip74
-\cftsubsecindent=\skip75
-\cftsubsecnumwidth=\skip76
-\cftbeforesubsubsecskip=\skip77
-\cftsubsubsecindent=\skip78
-\cftsubsubsecnumwidth=\skip79
-\cftbeforeparaskip=\skip80
-\cftparaindent=\skip81
-\cftparanumwidth=\skip82
-\cftbeforesubparaskip=\skip83
-\cftsubparaindent=\skip84
-\cftsubparanumwidth=\skip85
-\cftbeforeloftitleskip=\skip86
-\cftafterloftitleskip=\skip87
-\cftbeforefigskip=\skip88
-\cftfigindent=\skip89
-\cftfignumwidth=\skip90
-\c@lofdepth=\count289
-\c@lotdepth=\count290
-\cftbeforelottitleskip=\skip91
-\cftafterlottitleskip=\skip92
-\cftbeforetabskip=\skip93
-\cfttabindent=\skip94
-\cfttabnumwidth=\skip95
-) (/usr/share/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
-) (/usr/share/texmf-dist/tex/latex/apacite/apacite.sty
+)) (/usr/share/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count291
-\bibleftmargin=\skip96
-\bibindent=\skip97
-\bibparsep=\skip98
-\bibitemsep=\skip99
-\biblabelsep=\skip100
+\c@BibCnt=\count196
+\bibleftmargin=\skip49
+\bibindent=\skip50
+\bibparsep=\skip51
+\bibitemsep=\skip52
+\biblabelsep=\skip53
+) (/usr/local/share/texmf/tex/latex/ua1/uarial.sty
+Package: uarial 2006/03/21 1.0 (WaS)
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)) (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count197
 ) (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
+\CenteringLeftskip=\skip54
+\RaggedLeftLeftskip=\skip55
+\RaggedRightLeftskip=\skip56
+\CenteringRightskip=\skip57
+\RaggedLeftRightskip=\skip58
+\RaggedRightRightskip=\skip59
+\CenteringParfillskip=\skip60
+\RaggedLeftParfillskip=\skip61
+\RaggedRightParfillskip=\skip62
+\JustifyingParfillskip=\skip63
+\CenteringParindent=\skip64
+\RaggedLeftParindent=\skip65
+\RaggedRightParindent=\skip66
+\JustifyingParindent=\skip67
+) (/usr/share/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+) (/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip68
+\cftbeforetoctitleskip=\skip69
+\cftaftertoctitleskip=\skip70
+\cftbeforepartskip=\skip71
+\cftpartnumwidth=\skip72
+\cftpartindent=\skip73
+\cftbeforesecskip=\skip74
+\cftsecindent=\skip75
+\cftsecnumwidth=\skip76
+\cftbeforesubsecskip=\skip77
+\cftsubsecindent=\skip78
+\cftsubsecnumwidth=\skip79
+\cftbeforesubsubsecskip=\skip80
+\cftsubsubsecindent=\skip81
+\cftsubsubsecnumwidth=\skip82
+\cftbeforeparaskip=\skip83
+\cftparaindent=\skip84
+\cftparanumwidth=\skip85
+\cftbeforesubparaskip=\skip86
+\cftsubparaindent=\skip87
+\cftsubparanumwidth=\skip88
+\cftbeforeloftitleskip=\skip89
+\cftafterloftitleskip=\skip90
+\cftbeforefigskip=\skip91
+\cftfigindent=\skip92
+\cftfignumwidth=\skip93
+\c@lofdepth=\count198
+\c@lotdepth=\count199
+\cftbeforelottitleskip=\skip94
+\cftafterlottitleskip=\skip95
+\cftbeforetabskip=\skip96
+\cfttabindent=\skip97
+\cfttabnumwidth=\skip98
+) (/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2021/07/05 v2.14 Sectioning titles
+\ttl@box=\box50
+\beforetitleunit=\skip99
+\aftertitleunit=\skip100
+\ttl@plus=\dimen140
+\ttl@minus=\dimen141
+\ttl@toksa=\toks18
+\titlewidth=\dimen142
+\titlewidthlast=\dimen143
+\titlewidthfirst=\dimen144
 ) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -186,18 +131,77 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count292
-\Gm@cntv=\count293
-\c@Gm@tempcnt=\count294
-\Gm@bindingoffset=\dimen146
-\Gm@wd@mp=\dimen147
-\Gm@odd@mp=\dimen148
-\Gm@even@mp=\dimen149
-\Gm@layoutwidth=\dimen150
-\Gm@layoutheight=\dimen151
-\Gm@layouthoffset=\dimen152
-\Gm@layoutvoffset=\dimen153
-\Gm@dimlist=\toks23
+\Gm@cnth=\count266
+\Gm@cntv=\count267
+\c@Gm@tempcnt=\count268
+\Gm@bindingoffset=\dimen145
+\Gm@wd@mp=\dimen146
+\Gm@odd@mp=\dimen147
+\Gm@even@mp=\dimen148
+\Gm@layoutwidth=\dimen149
+\Gm@layoutheight=\dimen150
+\Gm@layouthoffset=\dimen151
+\Gm@layoutvoffset=\dimen152
+\Gm@dimlist=\toks19
+) (/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ (/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+)
+\XKV@depth=\count269
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+ (/usr/share/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count270
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen153
+)
+\c@padzeroesN=\count271
+\fc@tmpcatcode=\count272
+\@DT@modctr=\count273
+\@ordinalctr=\count274
+\@orgargctr=\count275
+\@strctr=\count276
+\@tmpstrctr=\count277
+\@DT@loopN=\count278
+\@DT@X=\count279
+) (/usr/share/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count280
+\@month=\count281
+\@year=\count282
+\c@HOUR=\count283
+\c@HOURXII=\count284
+\c@MINUTE=\count285
+\c@TOHOUR=\count286
+\c@TOMINUTE=\count287
+\c@SECOND=\count288
+\currenthour=\count289
+\currentminute=\count290
+\currentsecond=\count291
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count292
+\dayofyear=\count293
+\dayofweek=\count294
+LaTeX Info: Redefining \today on input line 736.
+ (/usr/share/texmf-dist/tex/latex/datetime/dt-spanish.def
+File: dt-spanish.def 2013/09/10
+LaTeX Info: Redefining \datespanish on input line 85.
+)
+\dt@a=\toks23
+\dt@b=\toks24
 ))
 LaTeX Font Info:    Trying to load font information for T1+ua1 on input line 21.
  (/usr/local/share/texmf/tex/latex/ua1/t1ua1.fd
@@ -283,24 +287,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `plan.toc'.
 
- [1]) [2] [3] (./plan.bbl
+ [1]) [2] [3] [4] (./plan.bbl
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 26.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [4]) [5] (./plan.aux
+)) [5] (./plan.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 ) ) 
 Here is how much of TeX's memory you used:
  5308 strings out of 478238
- 82950 string characters out of 5850455
- 420591 words of memory out of 5000000
- 23493 multiletter control sequences out of 15000+600000
- 499778 words of font info for 47 fonts, out of 8000000 for 9000
+ 82986 string characters out of 5850455
+ 420183 words of memory out of 5000000
+ 23492 multiletter control sequences out of 15000+600000
+ 499772 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,1082b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,5n,79p,1161b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/share/texmf/fonts/type1/urw/arial/ua1b8a.pfb></usr/local/share/texmf/fonts/type1/urw/arial/ua1r8a.pfb></usr/local/share/texmf/fonts/type1/urw/arial/ua1ri8a.pfb>
-Output written on plan.pdf (6 pages, 74220 bytes).
+Output written on plan.pdf (6 pages, 74206 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream

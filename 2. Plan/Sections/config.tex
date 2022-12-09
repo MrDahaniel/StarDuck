@@ -1,17 +1,14 @@
-
-\renewcommand{\familydefault}{\sfdefault}
-\usepackage{datetime}
 \usepackage[spanish]{babel}
-\usepackage{ragged2e}
-\usepackage[T1]{fontenc}
-\usepackage{uarial}
-\usepackage{titlesec}
-\usepackage{tocloft}
-\usepackage{textcase}
-\usepackage{etoolbox}
-
-
 \usepackage{apacite}
+
+\usepackage{uarial}
+\usepackage[T1]{fontenc}
+\renewcommand{\familydefault}{\sfdefault}
+
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
 
 \usepackage{url}
 \def\UrlBreaks{\do\/\do-}
@@ -20,15 +17,22 @@
 \parskip=12pt 
 \parindent=0pt
 
+\usepackage{ragged2e}
 \tolerance=1
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000
 \hbadness=10000
 
+\usepackage{textcase}
+\usepackage{tocloft}
 \makeatletter
 \patchcmd{\l@section}{#1}{\MakeTextUppercase{#1}}{}{}
 \patchcmd{\l@subsection}{#1}{\MakeTextUppercase{#1}}{}{}
 \makeatother
+
+\usepackage{titlesec}
+\titleformat{\section}{\raggedright\normalfont\normalsize\bfseries\uppercase}{\thesection}{1em}{}
+\titleformat{\subsection}{\raggedright\normalfont\normalsize\bfseries\uppercase}{\thesubsection}{1em}{}
 
 \usepackage{geometry}
 \geometry {
@@ -47,6 +51,7 @@
 \newcommand*{\Facultad}[1]{\def\Fac{#1}}
 \newcommand*{\Escuela}[1]{\def\Esc{#1}}
 
+\usepackage{datetime}
 \newdateformat{daymonthyear}{\THEDAY \ de \monthname[\THEMONTH] de \THEYEAR}
 \newcommand*{\CiudadFecha}{Bucaramanga, \daymonthyear\today }
 
@@ -57,7 +62,6 @@
 \newcommand*{\CoDirector}[3][]{\def\TCDir{#1}\def\CDir{#2}\def\ECDir{#3}}
 \newcommand*{\EntidadInt}[1]{\def\EntI{#1}}
 
-\titleformat{\section}{\raggedright\normalfont\normalsize\bfseries\uppercase}{\thesection}{1em}{}
-\titleformat{\subsection}{\raggedright\normalfont\normalsize\bfseries\uppercase}{\thesubsection}{1em}{}
+
 
 
