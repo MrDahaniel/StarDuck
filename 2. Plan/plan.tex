@@ -27,20 +27,15 @@
 
 
     
-    Siendo así, tenemos el caso de Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander. Esta ha realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse \cite{henry_2020}, sin embargo no presenta mecanismos de auto-configuración, o adaptación, con los cuales realizar cambios dentro de la arquitectura.
     
-    Partiendo de esto, se propone trabajar en el desarrollo de mecanismos de adaptación de arquitectura para Smart Campus UIS. De esta manera, tomando en cuenta una arquitectura objetivo, o de referencia, la plataforma tendrá la posibilidad de realizar los cambios correspondientes a si misma con el fin de acercase lo más posible a esta.
 
     \section{Planteamiento Y Justificación Del Problema}
-
+    
     La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente;  la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
-
-    Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, afectan de manera constante la arquitectura de estos sistemas de software. Una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, se tiene como objetivo sistemas con la capacidad de auto-gestión, es decir, sistemas con la capacidad de manejarse a ellos mismos dependiendo de las necesidades y las metas establecidas por los administradores del sistema \cite{evaluation_2004}.
     
+    Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, la arquitectura de estos sistemas de software se ve constantemente afectada. Una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, se tiene como objetivo sistemas con la capacidad de auto-gestión, es decir, sistemas con la capacidad de manejarse a ellos mismos dependiendo de las necesidades y las metas establecidas por los administradores del sistema \cite{evaluation_2004}.
     
-
-    Desde este enfoque, los sistemas software presentan auto-configuración, auto-optimización, auto-sanación y auto-protección, características que permiten la auto-gestión del sistema \cite{evaluation_2004}. De esta manera el trabajo de administrar los componentes, con el fin mantener la arquitectura, es responsabilidad del mismo.
-
+    Ahora, tenemos el caso de Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander. Esta ha realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse \cite{henry_2020}. Dicho esto, y en búsqueda dar continuidad con los esfuerzos de desarrollo realizados en la plataforma, el siguiente paso a dar está en la implementación de mecanismos de adaptación los cuales le concedan las propiedades de auto-configuración y auto-sanación.
 
     \section{Objetivos}
     \subsection{Objetivo General}
@@ -54,9 +49,9 @@
     \subsection{Objetivos Específicos}
 
     \begin{itemize}
-        \item Definir la manera en la que se declarará la arquitectura objetivo del sistema de software IoT
-        \item Implementar un mecanismo que permita comparar el estado actual de la arquitectura respecto al modelo objetivo
-        \item Determinar los mecanismos de adaptación de la arquitectura los cuales permitan alcanzar el estado deseado
+        \item Determinar el modelo por el cual se realizará la declaración de la arquitectura objetivo.
+        \item Implementar un mecanismo por el cual se realizará la comparación de la estructura actual respecto a la configuración dada de la arquitectura objetivo.
+        \item Identificar los mecanismos de adaptación más óptimos respecto a las necesidades y capacidades de la plataforma Smart Campus UIS.
     \end{itemize}
 
     \section{Marco De Referencia}
@@ -71,13 +66,18 @@
 
     \section{Metodología}
 
-    Se debe explicar la forma como se alcanzarán los objetivos propuestos, el enfoque metodológico a utilizar, procedimientos de análisis e interpretación de datos y estrategias para el desarrollo de la propuesta.  Esta etapa es fundamental para la definición de los recursos requeridos para el desarrollo de la propuesta, por ello, debe ser coherente con el presupuesto y el cronograma de actividades:
-  
-    \begin{itemize}
-        \item Diseño de técnicas de recolección de información.
-        \item Población y muestra.
-        \item Técnicas de análisis
-    \end{itemize}
+    El desarrollo del proyecto espera llevarse acabo en cinco fases.
+
+    \subsection{Investigación}
+
+
+    \subsection{Declaración De La Arquitectura}
+    
+
+    \subsection{Mecanismos De Comparación}
+    \subsection{Evaluación De Los Mecanismos De Adaptación}
+    \subsection{Implementación Del Mecanismo De Adaptación}
+
 
     \section{Cronograma}
 

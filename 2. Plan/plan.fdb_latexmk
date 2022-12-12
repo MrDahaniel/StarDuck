@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex plan"] 1670560325 "plan.aux" "plan.bbl" "plan" 1670562363
+["bibtex plan"] 1670819611 "plan.aux" "plan.bbl" "plan" 1670819611
   "/usr/share/texmf-dist/bibtex/bst/apacite/apacite.bst" 1650185741 141073 9d7b79dbf9d91133318126032cff8c27 ""
   "bibliography.bib" 1670551934 3507 1592fa5035e7fa8159719e94f9556e6f ""
-  "plan.aux" 1670562363 2742 557086001474406a7d9d4feb6b3ddbe2 "pdflatex"
+  "plan.aux" 1670819611 3339 28157dc58e6af0c30a319f2267f5e8f1 "pdflatex"
   (generated)
   "plan.bbl"
   "plan.blg"
-["pdflatex"] 1670562363 "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" "plan.pdf" "plan" 1670562363
-  "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" 1670562362 6432 4f9b54cce6549b627fe581eb23e576f7 ""
+["pdflatex"] 1670819611 "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" "plan.pdf" "plan" 1670819611
+  "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" 1670819610 5683 c946f3c3de409ca2787ffabdab3b95e7 ""
   "/usr/local/share/texmf/fonts/tfm/urw/arial/ua1b8r.tfm" 1142955734 8244 69e19cb84eccefe3db74ef387a2d067f ""
   "/usr/local/share/texmf/fonts/tfm/urw/arial/ua1b8t.tfm" 1142955746 16316 d13a0a32e9cf0f4437dcbd1364953f1e ""
   "/usr/local/share/texmf/fonts/tfm/urw/arial/ua1r8r.tfm" 1142955734 8360 839cb38f32b947e6b999ef1a622ca0e6 ""
@@ -73,10 +73,10 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1669215708 2927664 22e1d7e3899f84845c284574ea966f80 ""
   "Sections/config.tex" 1670560408 1597 956a996ff365d3b1f980907c4b0e4b57 ""
   "Sections/title.tex" 1670551730 1197 dd4955c3f721eec72cef48f1d314d3cb ""
-  "plan.aux" 1670562363 2742 557086001474406a7d9d4feb6b3ddbe2 "pdflatex"
-  "plan.bbl" 1670560325 3674 2c393a1ac4b6d3b4d806004a0a9b0dac "bibtex plan"
-  "plan.tex" 1670562362 6432 4f9b54cce6549b627fe581eb23e576f7 ""
-  "plan.toc" 1670562363 721 070cdecc2f6548e69d21c06ff9be2f37 "pdflatex"
+  "plan.aux" 1670819611 3339 28157dc58e6af0c30a319f2267f5e8f1 "pdflatex"
+  "plan.bbl" 1670819611 3674 2c393a1ac4b6d3b4d806004a0a9b0dac "bibtex plan"
+  "plan.tex" 1670819610 5683 c946f3c3de409ca2787ffabdab3b95e7 ""
+  "plan.toc" 1670819611 1140 e459324b00f356592c02523cd54a128f "pdflatex"
   (generated)
   "plan.aux"
   "plan.log"
