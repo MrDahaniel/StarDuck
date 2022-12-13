@@ -16,3 +16,5 @@
 *.url 
 *.svn 
 *.toc
+*.fdb_latexmk
+*.fls
