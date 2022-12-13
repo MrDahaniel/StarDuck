@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex plan"] 1670819611 "plan.aux" "plan.bbl" "plan" 1670819611
+["bibtex plan"] 1670849817 "plan.aux" "plan.bbl" "plan" 1670900705
   "/usr/share/texmf-dist/bibtex/bst/apacite/apacite.bst" 1650185741 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "bibliography.bib" 1670551934 3507 1592fa5035e7fa8159719e94f9556e6f ""
-  "plan.aux" 1670819611 3339 28157dc58e6af0c30a319f2267f5e8f1 "pdflatex"
+  "bibliography.bib" 1670605224 3507 1592fa5035e7fa8159719e94f9556e6f ""
+  "plan.aux" 1670900705 3339 28157dc58e6af0c30a319f2267f5e8f1 "pdflatex"
   (generated)
   "plan.bbl"
   "plan.blg"
-["pdflatex"] 1670819611 "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" "plan.pdf" "plan" 1670819611
-  "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" 1670819610 5683 c946f3c3de409ca2787ffabdab3b95e7 ""
+["pdflatex"] 1670900705 "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" "plan.pdf" "plan" 1670900705
+  "/home/dnl/Documents/StarDuck/2. Plan/plan.tex" 1670900704 5696 404cbac37e2842a996525b048dccbc77 ""
   "/usr/local/share/texmf/fonts/tfm/urw/arial/ua1b8r.tfm" 1142955734 8244 69e19cb84eccefe3db74ef387a2d067f ""
   "/usr/local/share/texmf/fonts/tfm/urw/arial/ua1b8t.tfm" 1142955746 16316 d13a0a32e9cf0f4437dcbd1364953f1e ""
   "/usr/local/share/texmf/fonts/tfm/urw/arial/ua1r8r.tfm" 1142955734 8360 839cb38f32b947e6b999ef1a622ca0e6 ""
@@ -69,14 +69,14 @@
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1650183167 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1650183167 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1670377081 4346116 11c1944e702bfd4e8ba3f9ba97a5e713 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1669215708 2927664 22e1d7e3899f84845c284574ea966f80 ""
-  "Sections/config.tex" 1670560408 1597 956a996ff365d3b1f980907c4b0e4b57 ""
-  "Sections/title.tex" 1670551730 1197 dd4955c3f721eec72cef48f1d314d3cb ""
-  "plan.aux" 1670819611 3339 28157dc58e6af0c30a319f2267f5e8f1 "pdflatex"
-  "plan.bbl" 1670819611 3674 2c393a1ac4b6d3b4d806004a0a9b0dac "bibtex plan"
-  "plan.tex" 1670819610 5683 c946f3c3de409ca2787ffabdab3b95e7 ""
-  "plan.toc" 1670819611 1140 e459324b00f356592c02523cd54a128f "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1670849732 4341222 228e8e87ba6a4cca87d598b060c5659b ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1670845155 2927661 dacfeeea0b43fe4b6d31692d973b2cd2 ""
+  "Sections/config.tex" 1670849782 1597 956a996ff365d3b1f980907c4b0e4b57 ""
+  "Sections/title.tex" 1670605224 1197 dd4955c3f721eec72cef48f1d314d3cb ""
+  "plan.aux" 1670900705 3339 28157dc58e6af0c30a319f2267f5e8f1 "pdflatex"
+  "plan.bbl" 1670849817 3674 2c393a1ac4b6d3b4d806004a0a9b0dac "bibtex plan"
+  "plan.tex" 1670900704 5696 404cbac37e2842a996525b048dccbc77 ""
+  "plan.toc" 1670900705 1140 e459324b00f356592c02523cd54a128f "pdflatex"
   (generated)
   "plan.aux"
   "plan.log"
