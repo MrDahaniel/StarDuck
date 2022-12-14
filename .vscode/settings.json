@@ -1,6 +1,5 @@
 {
-    "cSpell.enableFiletypes": [
-        "markdown"
-    ],
-    "cSpell.enabled": true
+    "cSpell.enableFiletypes": ["markdown"],
+    "cSpell.enabled": true,
+    "cSpell.words": ["insustentable"]
 }
