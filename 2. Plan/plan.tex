@@ -88,7 +88,7 @@
 
     Para el desarrollo del trabajo de grado, se ha definido un modelo de prototipado iterativo compuesto de 5 fases (Ver fig. \ref{fig:met}). De esta manera, se avanzará a medida que se va completando la fase anterior y permitirá a futuro el poder iterar sobre lo que se ha desarrollado anteriormente.
 
-    \begin{figure}[h]
+    \begin{figure}[H]
         \centering
         \includesvg{Images/DiagramaMetodologia.svg}
         \caption{Metodología del proyecto}
@@ -101,7 +101,7 @@
 
     \subsubsection*{Actividades}
 
-    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=0pt]
+    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
         \item Identificar las características principales de un sistema auto-adaptable.
         \item Analizar los mecanismos de adaptación de la arquitectura.
         \item Analizar los algoritmos empleados para la comparación de la comparación de las arquitecturas.
@@ -123,25 +123,29 @@
     
     La segunda fase está en la definición del como se realiza la declaración de la arquitectura. Partiendo de los criterios de selección establecidos el la fase 1, se espera determinar un lenguaje de notación el cual nos permita definir la arquitectura objetivo a alcanzar, al igual que la gramática correspondiente para poder realizar dicha declaración. 
     
-    \subsubsection{Actividades}
+    \subsubsection*{Actividades}
 
-    \begin{enumerate}[label=\thesubsubsection.\arabic*., wide, labelindent=0pt]
-        \item Seleccionar el lenguaje de notación a usar a partir de los criterios establecidos.
-        \item Definir la gramática a usar para la definición de la arquitectura según (Buscar qué estándar podemos seguir). % !!!
-        \item Traducir la notación de la arquitectura a grafos (¿Esto en qué fase debería estar?)
-        % \item 
+    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
+        \item Seleccionar el lenguaje de marcado a usar a partir de los criterios establecidos.
+        \item Definir la gramática a usar para la definición de la arquitectura.
+        \item Implementar la traducción de la notación al modelo de grafos. % (¿Esto en qué fase debería estar?)
+        \item Determinar como se realizará la representación de los componentes y partes de la arquitectura.
+        \item Imprevistos.
+        \item Análisis, retroalimentación y conclusiones del desarrollo de la fase. 
     \end{enumerate}    
 
     \subsection{Mecanismos De Comparación}
 
-    Durante la tercera fase del proyecto, se buscará poder determinar e implementar cómo se realizará la comparación entre el estado de la arquitectura obtenido durante la auto-descripción de la misma y el objetivo establecido. Con el fin de cumplir esto, será necesario realizar la traducción de la arquitectura desde su forma notada a un estado donde se pueda realizar el procesamiento necesario para establecer las diferencias tanto como el mecanismo responsable de dicho procesamiento.
+    Durante la tercera fase del proyecto, se buscará poder determinar e implementar cómo se realizará la comparación entre el estado de la arquitectura obtenido durante la auto-descripción de la misma y el objetivo establecido. Así mismo, y con el fin de reportar a los administradores de los sistemas, también será necesario definir \textit{niveles} de similitud entre las 2 arquitecturas.
 
-    \subsubsection{Actividades}
+    \subsubsection*{Actividades}
 
-    \begin{enumerate}[label=\thesubsubsection.\arabic*., wide, labelindent=0pt]
-        \item Identificar un mecanismo (¿O algoritmo?) para realizar la comparación de los modelos
-        \item Implementar el mecanismo seleccionado
-        \item 
+    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
+        \item Seleccionar el mecanismos de comparación a usar para evaluación de estado de la arquitectura.
+        \item Implementar el mecanismo de comparación seleccionado.
+        \item Definir los diferentes niveles de similitud entre arquitecturas
+        \item Imprevistos.
+        \item Análisis, retroalimentación y conclusiones del desarrollo de la fase. 
     \end{enumerate}    
 
     \subsection{Mecanismos De Adaptación}
