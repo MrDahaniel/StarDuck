@@ -31,7 +31,7 @@
 
     % 2. Relación y utilidad para las otras ramas de la computación (¿Qué ramas?, ¿Por qué les es útil?)
 
-    Este acercamiento, aunque inicialmente concebido únicamente para sistemas distribuidos, puede también ser particularmente útil en otras ramas como lo son las w
+    Este acercamiento, aunque inicialmente concebido únicamente para sistemas distribuidos, puede también ser particularmente útil en otras ramas como lo son las 
 
     % 3. Argumentar su utilidad en en el caso específico de IoT (Costo humano, posibles funcionamientos degradados)
     %    Y lo que representa para Smart Campus (Dar continuidad en ese sentido)
@@ -83,21 +83,37 @@
 
     \subsection{Algoritmia de Comparación de Grafos} % Fase 3
 
+    \pagebreak
+
     \section{Metodología}
 
-    Para el desarrollo del trabajo de grado, se han definido 5 fases durante las cuales se realizará el desarrollo del proyecto. Cada una de estas fases están orientadas al cumplimiento de los objetivos establecidos. (¿Realmente qué tengo que poner aquí?)
+    Para el desarrollo del trabajo de grado, se ha definido un modelo de prototipado iterativo compuesto de 5 fases (Ver fig. \ref{fig:met}). De esta manera, se avanzará a medida que se va completando la fase anterior y permitirá a futuro el poder iterar sobre lo que se ha desarrollado anteriormente.
+
+    \begin{figure}[h]
+        \centering
+        \includesvg{Images/DiagramaMetodologia.svg}
+        \caption{Metodología del proyecto}
+        \label{fig:met}
+    \end{figure}
 
     \subsection{Ambientación Conceptual y Tecnológica}
 
     La primera fase de la metodología esta enfocada a realizar un diagnóstico 
 
-    \subsubsection{Actividades}
+    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=0pt]
+        \item Seleccionar el lenguaje de notación a usar a partir de los criterios establecidos.
+        \item Definir la gramática a usar para la definición de la arquitectura según (Buscar qué estándar podemos seguir). % !!!
+        \item Traducir la notación de la arquitectura a grafos (¿Esto en qué fase debería estar?)
+        % \item 
+    \end{enumerate} 
 
-    \subsubsection{Productos}
+    % \subsubsection{Actividades}
 
-    \begin{itemize}
-        \item Criterios para la selección del lenguaje de notación.
-    \end{itemize}
+    % \subsubsection{Productos}
+
+    % \begin{itemize}
+    %     \item Criterios para la selección del lenguaje de notación.
+    % \end{itemize}
 
     \subsection{Definición de la notación de la arquitectura}
     
@@ -105,12 +121,12 @@
     
     \subsubsection{Actividades}
 
-    \begin{itemize}
+    \begin{enumerate}[label=\thesubsubsection.\arabic*., wide, labelindent=0pt]
         \item Seleccionar el lenguaje de notación a usar a partir de los criterios establecidos.
         \item Definir la gramática a usar para la definición de la arquitectura según (Buscar qué estándar podemos seguir). % !!!
         \item Traducir la notación de la arquitectura a grafos (¿Esto en qué fase debería estar?)
         % \item 
-    \end{itemize}    
+    \end{enumerate}    
 
     \subsection{Mecanismos De Comparación}
 
@@ -120,11 +136,13 @@
 
     \begin{itemize}
         \item Identificar un mecanismo (¿O algoritmo?) para realizar la comparación de los modelos
+        \item Implementar el mecanismo seleccionado
         \item 
     \end{itemize}    
 
     \subsection{Mecanismos De Adaptación}
     
+    La cuarta fase del proyecto está orientada a la selección, al igual que la implementación, del conjunto de mecanismos de adaptación de la arquitectura. 
 
     \subsubsection{Actividades}
 
@@ -151,16 +169,26 @@
 
     \section{Presupuesto}
 
-    Relacione los principales gastos del proyecto y la persona o entidad que cubrirá esos gastos.
 
-    \begin{itemize}
+    
+    \begin{table}[ht]
+    \small
+    % \resizebox{\textwidth}{!}{%
+        % \begin{tabular}{|l|c|c|c|c|}
+            \begin{tabularx}{\textwidth}{|X|c|X|X|X|}
+                \hline
+                \multicolumn{1}{|c}{\textbf{Descripción}} & \multicolumn{1}{|c}{\textbf{Responsable}} & \multicolumn{1}{|c}{\textbf{Valor}} & \multicolumn{1}{|c}{\textbf{Cantidad}} & \multicolumn{1}{|c|}{\textbf{Precio}} \\ \hline
+                DIRECTOR DE PROYECTO PhD. Gabriel Rodrigo Pedraza Ferreira & UIS & COP 305.000/Hora & \multicolumn{1}{X|}{\raggedright 4 horas mensuales por 4 meses} & COP 4'880.000 \\ \hline
+        &  &  &  &  \\ \hline
+        &  &  &  &  \\ \hline
+        &  &  &  &  \\ \hline
+        &  &  &  &  \\ \hline
         
-        \item Recursos humanos:  asesoría profesor (tener en cuenta el valor indicado por la Vicerrectoría de Investigación y Extensión), estudiantes, etc.
-        \item Equipo:  computador, costos de uso de servidores, servicios web, etc.
-        \item Materiales:  impresiones, fotocopias, etc.
-        \item Otros:  salidas de campos, transporte, etc.
-        
-    \end{itemize}
+        % \end{tabular}%
+        \end{tabularx}{\parfillskip=0pt\par}
+    % }
+    \end{table}
+    
 
     \pagebreak
 
