@@ -1,8 +1,5 @@
 {
     "cSpell.enableFiletypes": ["markdown", "latex"],
     "cSpell.enabled": true,
-    "cSpell.words": [
-        "Ferreira",
-        "insustentable"
-    ]
+    "cSpell.words": ["Ferreira", "insustentable", "serialización"]
 }

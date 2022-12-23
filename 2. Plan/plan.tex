@@ -13,7 +13,7 @@
 \Modalidad{Trabajo de investigación}
 \Autor{Daniel David Delgado Cervantes}{2182066}
 \Director[PhD.]{Gabriel Rodrigo Pedraza Ferreira}{Escuela De Ingeniería De Sistemas e Informática}
-\CoDirector[MSc.]{Henry Andres Jimenez Herrera}{Escuela De Ingeniería De Sistemas e Informática} 
+\CoDirector[MSc.]{Henry Andrés Jiménez Herrera}{Escuela De Ingeniería De Sistemas e Informática} 
 \EntidadInt{Universidad Industrial de Santander}
 
 % En el caso de no tener codirector, quitar la linea `\textbf{CODIRECTOR: } \TCDir\ \CDir, \ECDir` de 'Sections/title.tex'
@@ -63,30 +63,67 @@
 
     \end{itemize}
 
+    \pagebreak
+
     \section{Marco De Referencia}
 
+    Como base para el desarrollo del proyecto se encuentra en el establecer los fundamentos necesarios para realizar la implementación de los mecanismos de adaptación a seleccionar. Siendo así, es necesario conocer los principios de la computación autonómica, las aplicaciones de la misma en la industria y las partes requeridas para la integración.
+
     \subsection{Computación Autonómica}
+    
+    % Definir qué es la computación autonómica y qué es lo que propone
 
     \subsubsection{MAPE-K}
 
+    % Explicar como funciona el modelo de management y los pasos que se aplican dentro de lo que se tiene
+    % Más que todo es desarrollar que es el ciclo MAPE-K
+
+    \subsubsection{Mecanísmos de Descripción}
+
+    % Esta parte está más que todo para introducir el concepto de la base de conocimiento de la aplicación.
+    % Es decir, está orientado a dar como un ejemplo de esa base de conocimiento que tiene el "manejador" sobre la 
+    % plataforma
+    
     \subsubsection{Mecanísmos de Adaptación}
+    
+    % Ya aquí es como definir de manera general qué es eso de los mecanismos de adaptación, qué hacen y qué características
+    % tienen. 
+    % No sé si meter ejemplos, creo que eso sería más para un estado del arte en este caso.
 
     \subsection{Computación Embebida}
     
+    % Tengo que contextualizar qué es lo que es la computación embebida y cual es el principio o justificación de este
+
     \subsubsection{Internet of Things}
+
+    % Aquí es para contextualizar una de las aplicaciones de la computación embebida más que otra cosa
+
+    \subsubsection{Smart Campus}
+
+    % Y aquí es para explicar el concepto de un smart campus. Para qué se usa y de donde surge.
     
     \subsection{Lenguajes de Notación} % Fase 2
 
+    % En esta selección es más que todo el dar el concepto de qué es un lenguaje de notación
+
     \subsubsection{Serialización de Datos}
+
+    % qué es la serialización de datos y para que se usa en el caso de las arquitecturas.
     
     \subsubsection{Gramática}
 
-    \subsection{Algoritmia de Comparación de Grafos} % Fase 3
+    % Esto es más que nada para contextualizar la necesidad de una forma en la notación
 
+    \subsection{Algoritmia de Comparación de Grafos} % Fase 3 
+
+    % Qué y para que se usa. Más que todo como contexto de lo que vamos a usar en la fase 3 del proyecto
+
+
+    \pagebreak
 
     \section{Metodología}
 
-    Para el desarrollo del trabajo de grado, se ha definido un modelo de prototipado iterativo compuesto de 5 fases (Ver fig. \ref{fig:met}). De esta manera, se avanzará a medida que se va completando la fase anterior y permitirá a futuro el poder iterar sobre lo que se ha desarrollado anteriormente.
+    Para el desarrollo del trabajo de grado, se propone un modelo de prototipado iterativo compuesto de 5 fases (Ver fig. \ref{fig:met}). De esta manera, se avanzará a medida que se va completando la fase anterior y permitirá a futuro el poder iterar sobre lo que se ha desarrollado anteriormente.
 
     \begin{figure}[H]
         \centering
@@ -102,22 +139,14 @@
     \subsubsection*{Actividades}
 
     \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
-        \item Identificar las características principales de un sistema auto-adaptable.
-        \item Analizar los mecanismos de adaptación de la arquitectura.
-        \item Analizar los algoritmos empleados para la comparación de la comparación de las arquitecturas.
-        \item Establecer los criterios de selección para el lenguaje de notación.
-        \item Evaluar los posibles lenguajes de programación para la implementación a realizar.
+        \item Identificación de las características principales de un sistema auto-adaptable.
+        \item Análisis de los mecanismos de adaptación de la arquitectura.
+        \item Análisis los algoritmos empleados para la comparación de la comparación de las arquitecturas.
+        \item Determinación de los criterios de selección para el lenguaje de notación.
+        \item Evaluación de los posibles lenguajes de programación para la implementación a realizar.
         \item Imprevistos.
         \item Análisis, retroalimentación y conclusiones del desarrollo de la fase. 
     \end{enumerate} 
-
-    % \subsubsection{Actividades}
-
-    % \subsubsection{Productos}
-
-    % \begin{itemize}
-    %     \item Criterios para la selección del lenguaje de notación.
-    % \end{itemize}
 
     \subsection{Definición de la notación de la arquitectura}
     
@@ -126,10 +155,10 @@
     \subsubsection*{Actividades}
 
     \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
-        \item Seleccionar el lenguaje de marcado a usar a partir de los criterios establecidos.
-        \item Definir la gramática a usar para la definición de la arquitectura.
-        \item Implementar la traducción de la notación al modelo de grafos. % (¿Esto en qué fase debería estar?)
-        \item Determinar como se realizará la representación de los componentes y partes de la arquitectura.
+        \item Selección del lenguaje de marcado a usar a partir de los criterios establecidos.
+        \item Definición la gramática a usar para la definición de la arquitectura.
+        \item Implementación la traducción de la notación al modelo de grafos. % (¿Esto en qué fase debería estar?)
+        \item Determinación como se realizará la representación de los componentes y partes de la arquitectura.
         \item Imprevistos.
         \item Análisis, retroalimentación y conclusiones del desarrollo de la fase. 
     \end{enumerate}    
@@ -141,43 +170,44 @@
     \subsubsection*{Actividades}
 
     \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
-        \item Seleccionar el mecanismos de comparación a usar para evaluación de estado de la arquitectura.
-        \item Implementar el mecanismo de comparación seleccionado.
-        \item Definir los diferentes niveles de similitud entre arquitecturas
+        \item Selección del mecanismo de comparación a usar para evaluación de estado de la arquitectura.
+        \item Implementación del mecanismo de comparación seleccionado.
+        \item Determinación de los diferentes niveles de similitud entre arquitecturas.
         \item Imprevistos.
         \item Análisis, retroalimentación y conclusiones del desarrollo de la fase. 
     \end{enumerate}    
 
     \subsection{Mecanismos De Adaptación}
     
-    La cuarta fase del proyecto está orientada a la selección, al igual que la implementación, del conjunto de mecanismos de adaptación de la arquitectura. 
+    La cuarta fase del proyecto está orientada a la selección, al igual que la implementación en Smart Campus UIS, del conjunto de mecanismos de adaptación de la arquitectura. 
 
     \subsubsection{Actividades}
 
-    \begin{itemize}
-        \item Actividad 1
-        \item Actividad 2
-        % \item 
-    \end{itemize}  
-
+   \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
+        \item Definición el conjunto de mecanismos de adaptación.
+        \item Implementación el conjunto de mecanismos de adaptación seleccionados.
+        \item Imprevistos.
+        \item Análisis, retroalimentación y conclusiones del desarrollo de la fase. 
+    \end{enumerate}  
+    
     \subsection{Validación De Resultados}
-
-
-    \subsubsection{Actividades}
-
-    \begin{itemize}
-        \item Actividad 1
-        \item Actividad 2
-        % \item 
-    \end{itemize}  
+    
+    La fase final del proyecto se encargará principalmente de la realización de pruebas de los mecanismos implementados y los resultados obtenidos al igual que la documentación de todo lo que se desarrollo durante el proyecto.
+    
+    \subsubsection*{Actividades}
+    
+   \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
+        \item Realización de las pruebas del funcionamiento de la implementación realizada con diversas arquitecturas objetivo.
+        \item Recopilación la documentación generada durante el desarrollo de cada una de las fases del proyecto.
+        \item Compilación de las documentación para generar el documento de final.
+        \item Correcciones y adiciones para la presentación final del proyecto de grado.
+    \end{enumerate}  
 
     \section{Cronograma}
 
     Se debe realizar un cronograma que relacione las actividades prioritarias del proyecto y el tiempo que destinará a cada una de ellas. Tenga en cuenta que el semestre tiene 16 semanas y debe desarrollar todo el trabajo de grado en este tiempo. 
 
     \section{Presupuesto}
-
-
     
     \begin{table}[ht]
     \small
