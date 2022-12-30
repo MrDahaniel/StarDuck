@@ -71,6 +71,11 @@
 \newcommand*{\CoDirector}[3][]{\def\TCDir{#1}\def\CDir{#2}\def\ECDir{#3}}
 \newcommand*{\EntidadInt}[1]{\def\EntI{#1}}
 
-
-
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1%
+    \\\hspace{\linewidth}%
+    \textbf{Source:} #2%
+  }%
+}
 

@@ -1,5 +1,12 @@
 {
     "cSpell.enableFiletypes": ["markdown", "latex"],
     "cSpell.enabled": true,
-    "cSpell.words": ["Ferreira", "insustentable", "serialización"]
+    "cSpell.words": [
+        "Ferreira",
+        "insustentable",
+        "manejador",
+        "MAPE",
+        "serialización"
+    ],
+    "cSpell.ignoreWords": ["letterpaper"]
 }

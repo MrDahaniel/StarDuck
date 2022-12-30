@@ -40,7 +40,7 @@
 
     \section{Planteamiento Y Justificación Del Problema}
     
-    La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente;  la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
+    La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente\cite{deichmann_2022}; la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
     
     Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, la arquitectura de estos sistemas de software se ve constantemente afectada. Una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, se tiene como objetivo sistemas con la capacidad de auto-gestión, es decir, sistemas con la capacidad de manejarse a ellos mismos dependiendo de las necesidades y las metas establecidas por los administradores del sistema \cite{evaluation_2004}.
     
@@ -78,25 +78,50 @@
     % Explicar como funciona el modelo de management y los pasos que se aplican dentro de lo que se tiene
     % Más que todo es desarrollar que es el ciclo MAPE-K
 
+    IBM, en cuanto a la implementación de las características, propone un modelo de ciclo auto-adaptativo. Este ciclo, llamado MAPE-K, presenta las pasos que el \textit{manejador} debe seguir para así \textit{manejar} cada uno de los elementos del sistema computacional. 
+
+    \begin{figure}[H]
+        \centering
+        \includesvg[inkscapelatex=false]{Images/Mape-k.svg}
+        \caption{El ciclo auto-adaptativo MAPE-K propuesto por IBM. } \cite{alessandra_2010}
+        \label{ig:mapek}
+    \end{figure}
+
+    Cada una de estas fases son:
+
+    \begin{itemize}
+        \item Monitorear (M): 
+        \item Analizar (A):
+        \item Planear (P):
+        \item Ejecutar (E): 
+        \item Conocimiento (K):
+    \end{itemize}
+
     \subsubsection{Mecanísmos de Descripción}
 
     % Esta parte está más que todo para introducir el concepto de la base de conocimiento de la aplicación.
     % Es decir, está orientado a dar como un ejemplo de esa base de conocimiento que tiene el "manejador" sobre la 
     % plataforma
-    
+
     \subsubsection{Mecanísmos de Adaptación}
     
     % Ya aquí es como definir de manera general qué es eso de los mecanismos de adaptación, qué hacen y qué características
     % tienen. 
     % No sé si meter ejemplos, creo que eso sería más para un estado del arte en este caso.
 
-    \subsection{Computación Embebida}
+    \subsection{Sistemas Embebidos}
     
     % Tengo que contextualizar qué es lo que es la computación embebida y cual es el principio o justificación de este
+
+    Los sistemas de computo embebidos, o simplemente sistemas embebidos, hacen referencia a un sistema compuesto de microcontroladores los cuales están orientados a llevar a cabo una función o un rango de funciones específicas \cite{heath2002embedded}. Este tipo de sistemas, debido a la posibilidad de combinar hardware y software en una manera compacta, se ha visto en multiples campos de la industria como lo son el sector automotriz, de maquinaria industrial o electrónica de consumo \cite{deichmann_2022}.
+
+    Durante los últimos años,
 
     \subsubsection{Internet of Things}
 
     % Aquí es para contextualizar una de las aplicaciones de la computación embebida más que otra cosa
+
+
 
     \subsubsection{Smart Campus}
 
@@ -105,6 +130,9 @@
     \subsection{Lenguajes de Notación} % Fase 2
 
     % En esta selección es más que todo el dar el concepto de qué es un lenguaje de notación
+
+    % Explicar que es la notación en general, en términos lingüísticos y de ahí expandir a notación en software
+    % UML y eso.
 
     \subsubsection{Serialización de Datos}
 
