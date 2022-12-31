@@ -40,7 +40,7 @@
 
     \section{Planteamiento Y Justificación Del Problema}
     
-    La complejidad de los sistemas software ha ido en aumento. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente\cite{deichmann_2022}; la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
+    La complejidad de los sistemas software ha ido en aumento \cite[pp.~4-5]{horn_2001}. A medida que se hace la transición a arquitecturas orientadas a microservicios \cite{forrester_research_2019}; la computación distribuida es más común gracias a las soluciones \textit{cloud} \cite{the_cloud_in_2021} y la computación embebida se hace más presente\cite{deichmann_2022}; la administración y gestión de estos requiere de una mayor cantidad de recursos en términos técnicos y humanos con el fin de mantenerlos en los estados más óptimos respecto a los requerimientos del negocio. La búsqueda de reducir o abstraer la complejidad de la gerencia de estos sistemas se ha convertido en una necesidad \cite{lalanda_diaconescu_mccann_2014}.
     
     Esta necesidad, así mismo, se presenta en los campos del Internet de las Cosas (IoT). Es en esta área de la computación embebida donde, debido a las cambiantes condiciones del mundo real, la arquitectura de estos sistemas de software se ve constantemente afectada. Una de las posibles soluciones se encuentra en la computación autonómica. Desde este enfoque, se tiene como objetivo sistemas con la capacidad de auto-gestión, es decir, sistemas con la capacidad de manejarse a ellos mismos dependiendo de las necesidades y las metas establecidas por los administradores del sistema \cite{evaluation_2004}.
     
@@ -60,6 +60,7 @@
         \item Proponer una notación (lenguaje) para describir una arquitectura objetivo de un sistema software IoT.
         \item Diseñar un mecanismo para determinar las diferencias existentes entre una arquitectura actual en ejecución y una arquitectura objetivo especificada.
         \item Diseñar un conjunto de mecanismos de adaptación que permitan disminuir las diferencias entre la arquitectura actual y la arquitectura objetivo.
+        \item Evaluar la implementación realizada a partir de un conjunto de pruebas con el fin de establecer la efectividad de los mecanismos usados.
 
     \end{itemize}
 
@@ -73,6 +74,25 @@
     
     % Definir qué es la computación autonómica y qué es lo que propone
 
+    El concepto de computación autonómica, definido inicialmente por IBM \citeyear{horn_2001}, se refiere a un conjunto de características que presenta un sistema computacional el cual le permite actuar de manera autónoma, o auto-gobernarse, con el fin de alcanzar algún objetivo establecido por los administradores del sistema.
+
+
+    Los 8 elementos clave, definidos por IBM, que deberían presentar este tipo de sistemas son:
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item Auto-conocimiento: habilidad de conocer su estado actual, las interacciones del sistema .
+        \item Auto-configuración: capacidad de re-configurarse frente a los constantes cambios en el entorno.
+        \item Auto-optimización: búsqueda constante de optimizar el funcionamiento de si mismo.
+        \item Auto-sanación: aptitud de restaurar el sistema en el caso de que se presenten fallas.
+        \item Auto-protección: facultad de protegerse a si mismo de ataques externos.
+        \item Auto-conciencia: posibilidad de conocer el ambiente en el que el sistema se encuentra.
+        \item Heterogeneidad: capacidad de interactuar con otros sistemas de manera cooperativa.
+        \item Abstracción: ocultar la complejidad a los administradores del sistema con objetivos de alto nivel de abstracción.
+    \end{enumerate}
+    \end{multicols}
+
+    Partiendo de esto, se busca reducir la complejidad de la administración de los sistemas computacionales generada por el crecimiento de estos. De esta manera se espera, entonces, reducir la cantidad de recursos tanto técnicos como humanos requeridos para mantener los sistemas en funcionamiento.
+    
     \subsubsection{MAPE-K}
 
     % Explicar como funciona el modelo de management y los pasos que se aplican dentro de lo que se tiene
@@ -220,7 +240,7 @@
     
     \subsection{Validación De Resultados}
     
-    La fase final del proyecto se encargará principalmente de la realización de pruebas de los mecanismos implementados y los resultados obtenidos al igual que la documentación de todo lo que se desarrollo durante el proyecto.
+    La fase final del proyecto se encargará principalmente de la realización de pruebas de los mecanismos implementados, los resultados obtenidos al igual que la documentación de todo lo que se desarrollo durante el proyecto.
     
     \subsubsection*{Actividades}
     
