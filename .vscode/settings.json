@@ -2,10 +2,13 @@
     "cSpell.enableFiletypes": ["markdown", "latex"],
     "cSpell.enabled": true,
     "cSpell.words": [
+        "autoconfiguración",
+        "autogobernarse",
         "Ferreira",
         "insustentable",
         "manejador",
         "MAPE",
+        "reconfigurarse",
         "serialización"
     ],
     "cSpell.ignoreWords": ["letterpaper"]

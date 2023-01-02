@@ -1,0 +1,6 @@
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QDiseñar un conjunto de mecanismos de adaptación que permitan disminuir las diferencias entre la arquitectura actual y la arquitectura objetivo.\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\Q[inkscapelatex=false]Images/Mape-k.svg El ciclo auto-adaptativo MAPE-K propuesto por IBM.\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QPartiendo de los criterios de selección establecidos en la fase 1, se espera determinar un lenguaje de notación el cual nos permita definir la arquitectura objetivo a alcanzar, al igual que la gramática correspondiente para poder realizar dicha declaración.\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEs a partir de las gramáticas por las cuales podemos construir una manera por la cual definir las arquitecturas objetivo\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEs a partir de las gramáticas por las cuales podemos construir una manera por la cual definir las arquitecturas objetivo\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEn el contexto del proyecto, esta serialización nos permitirá describir las arquitecturas objetivo a partir de la notación y gramáticas establecidas.\\E$"}

@@ -27,7 +27,7 @@
 
     % 1. Origen de la computación autonómica (Citation needed for industry tendencies)
 
-    Dentro de la computación distribuida, una de las tendencias recientes dentro de la industria , es la búsqueda de maneras de reducir la complejidad de administrar los sistemas computacionales. A medida que estos crecen, en términos de tamaño y extensión, el costo humano de la administración de los sistemas se vuelve insustentable. En respuesta a esto, diferentes enfoques han surgido. Uno de estos es el \textit{autonomic computing} (computación autonómica). Planteada originalmente por IBM en el año 2001, se presentaba como una posible solución a la problemática a partir de el diseño y la implementación de componentes auto-gestionados \cite{jeff_2011}. 
+    Dentro de la computación distribuida, una de las tendencias recientes dentro de la industria, es la búsqueda de maneras de reducir la complejidad de administrar los sistemas computacionales. A medida que estos crecen, en términos de tamaño y extensión, el costo humano de la administración de los sistemas se vuelve insostenible. En respuesta a esto, diferentes enfoques han surgido. Uno de estos es el \textit{autonomic computing} (computación autonómica). Planteada originalmente por IBM en el año 2001, se presentaba como una posible solución a la problemática a partir del diseño y la implementación de componentes auto-gestionados \cite{jeff_2011}. 
 
     % 2. Relación y utilidad para las otras ramas de la computación (¿Qué ramas?, ¿Por qué les es útil?)
 
@@ -80,11 +80,11 @@
     Los 8 elementos clave, definidos por IBM, que deberían presentar este tipo de sistemas son:
     \begin{multicols}{2}
     \begin{enumerate}
-        \item Auto-conocimiento: habilidad de conocer su estado actual, las interacciones del sistema .
-        \item Auto-configuración: capacidad de re-configurarse frente a los constantes cambios en el entorno.
-        \item Auto-optimización: búsqueda constante de optimizar el funcionamiento de si mismo.
+        \item Auto-conocimiento: habilidad de conocer su estado actual, las interacciones del sistema.
+        \item Auto-configuración: capacidad de reconfigurarse frente a los constantes cambios en el entorno.
+        \item Auto-optimización: búsqueda constante de optimizar el funcionamiento de sí mismo.
         \item Auto-sanación: aptitud de restaurar el sistema en el caso de que se presenten fallas.
-        \item Auto-protección: facultad de protegerse a si mismo de ataques externos.
+        \item Auto-protección: facultad de protegerse a sí mismo de ataques externos.
         \item Auto-conciencia: posibilidad de conocer el ambiente en el que el sistema se encuentra.
         \item Heterogeneidad: capacidad de interactuar con otros sistemas de manera cooperativa.
         \item Abstracción: ocultar la complejidad a los administradores del sistema con objetivos de alto nivel de abstracción.
@@ -98,23 +98,22 @@
     % Explicar como funciona el modelo de management y los pasos que se aplican dentro de lo que se tiene
     % Más que todo es desarrollar que es el ciclo MAPE-K
 
-    IBM, en cuanto a la implementación de las características, propone un modelo de ciclo auto-adaptativo. Este ciclo, llamado MAPE-K, presenta las pasos que el \textit{manejador} debe seguir para así \textit{manejar} cada uno de los elementos del sistema computacional. 
+    IBM, en cuanto a la implementación de las características, propone un modelo de ciclo auto-adaptativo. Este ciclo, llamado MAPE-K (Ver fig. \ref{fig:mapek}), presenta los pasos que el \textit{manejador} debe seguir para así \textit{manejar} cada uno de los elementos del sistema computacional basado en una base de conocimiento común \cite{Krikava2013}. 
 
     \begin{figure}[H]
         \centering
         \includesvg[inkscapelatex=false]{Images/Mape-k.svg}
         \caption{El ciclo auto-adaptativo MAPE-K propuesto por IBM. } \cite{alessandra_2010}
-        \label{ig:mapek}
+        \label{fig:mapek}
     \end{figure}
 
     Cada una de estas fases son:
 
     \begin{itemize}
-        \item Monitorear (M): 
-        \item Analizar (A):
-        \item Planear (P):
-        \item Ejecutar (E): 
-        \item Conocimiento (K):
+        \item Monitorear (M): Esta fase se compone de la recolección, filtración y reportar la información adquirida sobre el estado del elemento a manejar.
+        \item Analizar (A): La fase de análisis se encarga del interpretar el entorno en el cual se encuentra, el predecir posibles situaciones comunes y diagnosticar el estado del sistema.
+        \item Planear (P): Durante la planificación se determina las acciones a tomar con el fin de llegar a un objetivo establecido a partir de una serie de reglas o estrategias.
+        \item Ejecutar (E): Finalmente, se ejecuta lo planeado usando los mecanismos disponibles para el manejo del sistema. 
     \end{itemize}
 
     \subsubsection{Mecanísmos de Descripción}
@@ -133,34 +132,41 @@
     
     % Tengo que contextualizar qué es lo que es la computación embebida y cual es el principio o justificación de este
 
-    Los sistemas de computo embebidos, o simplemente sistemas embebidos, hacen referencia a un sistema compuesto de microcontroladores los cuales están orientados a llevar a cabo una función o un rango de funciones específicas \cite{heath2002embedded}. Este tipo de sistemas, debido a la posibilidad de combinar hardware y software en una manera compacta, se ha visto en multiples campos de la industria como lo son el sector automotriz, de maquinaria industrial o electrónica de consumo \cite{deichmann_2022}.
-
-    Durante los últimos años,
+    Los sistemas de cómputo embebidos, o simplemente sistemas embebidos, hacen referencia a un sistema compuesto de microcontroladores los cuales están orientados a llevar a cabo una función o un rango de funciones específicas \cite{heath2002embedded}. Este tipo de sistemas, debido a la posibilidad de combinar hardware y software en una manera compacta, se ha visto en multiples campos de la industria como lo son el sector automotor, de maquinaria industrial o electrónica de consumo \cite{deichmann_2022}.
 
     \subsubsection{Internet of Things}
 
     % Aquí es para contextualizar una de las aplicaciones de la computación embebida más que otra cosa
 
-
-
     \subsubsection{Smart Campus}
 
     % Y aquí es para explicar el concepto de un smart campus. Para qué se usa y de donde surge.
     
-    \subsection{Lenguajes de Notación} % Fase 2
+    \subsection{Notación} % Fase 2
 
     % En esta selección es más que todo el dar el concepto de qué es un lenguaje de notación
 
     % Explicar que es la notación en general, en términos lingüísticos y de ahí expandir a notación en software
     % UML y eso.
 
-    \subsubsection{Serialización de Datos}
+    % En lingüística y fonética, el concepto de \textit{notación} se define como una serie de símbolos los cuales, en conjunto, funcionan como una representación del habla \cite{crystal2011dictionary}. 
+    % De los ejemplos más claros de esto tenemos los alfabetos, ideogramas y silabarios usados en los sistemas de escritura de una gran cantidad de lenguajes al rededor del mundo.
+    % Interpolando hacia el contexto de las ciencias de la computación, la notación es una herramienta útil para la representación de diferentes conceptos que van desde arquitecturas de software, estructuras de base de datos, análisis de algoritmos entre otros \cite{missing}.
 
-    % qué es la serialización de datos y para que se usa en el caso de las arquitecturas.
+    El concepto de \textit{notación} está definido como la representación gráfica del habla \cite{crystal2011dictionary}. En el contexto de las ciencias de la computación, esta idea se ha extrapolado con el fin de representar diferentes conceptos específicos del software y algoritmia de manera visual \cite{RutanenKalle2018McoO}. Esto puede verse con la existencia de lenguajes de notación como lo es UML con el cual se realizan representaciones que van desde arquitecturas de software, estructuras de base de datos, entre otros \cite{Booch2005-xu}.
     
     \subsubsection{Gramática}
 
     % Esto es más que nada para contextualizar la necesidad de una forma en la notación
+
+    La gramática, más específicamente gramáticas libres de contexto, son un conjunto de reglas descriptivas. Este conjunto de reglas, en conjunto de una notación, cumplen la función de dictar si una frase es válida para un lenguaje dado \cite[p. 101]{Sipser2012-wl}. 
+
+    \subsubsection{Serialización de Datos}
+
+    % qué es la serialización de datos y para que se usa en el caso de las arquitecturas.
+
+    La serialización de datos se refiere a la traducción de una estructura de datos hacia una manera en la que pueda ser almacenada. En el contexto del proyecto, esta serialización nos permitirá describir las arquitecturas objetivo a partir de la notación y gramáticas establecidas. Así mismo, debería darnos la flexibilidad de describir cualquier tipo de meta para el sistema de software.
+    
 
     \subsection{Algoritmia de Comparación de Grafos} % Fase 3 
 
@@ -198,7 +204,7 @@
 
     \subsection{Definición de la notación de la arquitectura}
     
-    La segunda fase está en la definición del como se realiza la declaración de la arquitectura. Partiendo de los criterios de selección establecidos el la fase 1, se espera determinar un lenguaje de notación el cual nos permita definir la arquitectura objetivo a alcanzar, al igual que la gramática correspondiente para poder realizar dicha declaración. 
+    La segunda fase está en la definición del cómo se realiza la declaración de la arquitectura. Partiendo de los criterios de selección establecidos en la fase 1, se espera determinar un lenguaje de notación el cual nos permita definir la arquitectura objetivo a alcanzar, al igual que la gramática correspondiente para poder realizar dicha declaración. 
     
     \subsubsection*{Actividades}
 
@@ -240,14 +246,14 @@
     
     \subsection{Validación De Resultados}
     
-    La fase final del proyecto se encargará principalmente de la realización de pruebas de los mecanismos implementados, los resultados obtenidos al igual que la documentación de todo lo que se desarrollo durante el proyecto.
+    La fase final del proyecto se encargará principalmente de la realización de pruebas de los mecanismos implementados, los resultados obtenidos al igual que la documentación de todo lo que se desarrolló durante el proyecto.
     
     \subsubsection*{Actividades}
     
    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
         \item Realización de las pruebas del funcionamiento de la implementación realizada con diversas arquitecturas objetivo.
         \item Recopilación la documentación generada durante el desarrollo de cada una de las fases del proyecto.
-        \item Compilación de las documentación para generar el documento de final.
+        \item Compilación de la documentación para generar el documento de final.
         \item Correcciones y adiciones para la presentación final del proyecto de grado.
     \end{enumerate}  
 
