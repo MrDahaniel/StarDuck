@@ -4,3 +4,5 @@
 {"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEs a partir de las gramáticas por las cuales podemos construir una manera por la cual definir las arquitecturas objetivo\\E$"}
 {"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEs a partir de las gramáticas por las cuales podemos construir una manera por la cual definir las arquitecturas objetivo\\E$"}
 {"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEn el contexto del proyecto, esta serialización nos permitirá describir las arquitecturas objetivo a partir de la notación y gramáticas establecidas.\\E$"}
+{"rule":"SIGLAS","sentence":"^\\QIBM’s Perspective on the State of Information Technology\\E$"}
+{"rule":"SIGLAS","sentence":"^\\QIBM's Perspective on the State of Information Technology\\E$"}
