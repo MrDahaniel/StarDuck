@@ -112,12 +112,12 @@
     % Explicar como funciona el modelo de management y los pasos que se aplican dentro de lo que se tiene
     % Más que todo es desarrollar que es el ciclo MAPE-K
 
-    IBM, en cuanto a la implementación de las características, propone un modelo de ciclo auto-adaptativo, denominado MAPE-K. En la figura \ref{fig:mapek}, presenta los pasos que el \textit{manejador} debe seguir para así \textit{manejar} cada uno de los elementos del sistema computacional basado en una base de conocimiento común \cite{Krikava2013}. 
+    IBM, en cuanto a la implementación de las características, propone un modelo de ciclo auto-adaptativo, denominado MAPE-K. En la figura \ref{fig:mapek}, se presentan las fases que \textit{manejador} debe desarrollar para así \textit{manejar} cada uno de los elementos del sistema computacional basado en una base de conocimiento común \cite{Krikava2013}. 
 
     \begin{figure}[H]
         \centering
         \includesvg[inkscapelatex=false]{Images/Mape-k.svg}
-        \caption{El ciclo auto-adaptativo MAPE-K propuesto por IBM. } \cite{alessandra_2010}
+        \caption{El ciclo auto-adaptativo MAPE-K propuesto por IBM.} \cite{alessandra_2010}
         \label{fig:mapek}
     \end{figure}
 
@@ -135,6 +135,8 @@
     % Esta parte está más que todo para introducir el concepto de la base de conocimiento de la aplicación.
     % Es decir, está orientado a dar como un ejemplo de esa base de conocimiento que tiene el "manejador" sobre la 
     % plataforma
+
+    La fase de monitoreo dentro del ciclo MAPE-K es vital para el funcionamiento del manejador autonómico pues es a partir de la información que este recolecte que conocerá el estado del sistema al igual que la construcción de la base de conocimiento requerida para las demás partes del ciclo.
 
     \subsubsection{Mecanísmos de Adaptación}
     
@@ -176,6 +178,8 @@
     % Esto es más que nada para contextualizar la necesidad de una forma en la notación
 
     La gramática, más específicamente gramáticas libres de contexto, son un conjunto de reglas descriptivas. Este conjunto de reglas, en conjunto de una notación, cumplen la función de dictar si una frase es válida para un lenguaje dado \cite[p. 101]{Sipser2012-wl}. 
+
+    
 
     \subsubsection{Serialización de Datos}
 
