@@ -136,7 +136,15 @@
     % Es decir, está orientado a dar como un ejemplo de esa base de conocimiento que tiene el "manejador" sobre la 
     % plataforma
 
-    La fase de monitoreo dentro del ciclo MAPE-K es vital para el funcionamiento del manejador autonómico pues es a partir de la información que este recolecte que conocerá el estado del sistema al igual que la construcción de la base de conocimiento requerida para las demás partes del ciclo.
+    La fase de monitoreo dentro del ciclo MAPE-K es vital para el funcionamiento del manejador autonómico pues es a partir de la información que se construirá la base de conocimiento requerida por las demás partes del ciclo. Parte de esta, está compuesta por el \textit{estado del sistema} el cual incluye la descripción del sistema en un momento dado \cite{Weiss2011}.
+
+    Existen varias maneras de realizar implementaciones de mecanismos de auto-descripción y la utilidad de cada uno de estos varía dependiendo en el tipo de sistema de software que se esté usando. Para el marco del proyecto, nos interesan aquellos que estén orientados a los sistemas embebidos e IoT, algunos de estos son:
+    
+    \begin{itemize}
+        \item \textbf{JSON Messaging}: Iancu y Gatea \citeyear{Iancu2022} plantean un protocolo que emplea mensajería entre \textit{gateways} con el fin de recibir información sobre estas. En términos simples, estas funcionan como un \textit{ping} hacia el nodo que luego retorna sus datos, al igual que los dispositivos conectados a ella, al encargado de recolectar toda esta información con el fin de construir una descripción del sistema.
+        \item Henry
+    \end{itemize}
+    
 
     \subsubsection{Mecanísmos de Adaptación}
     

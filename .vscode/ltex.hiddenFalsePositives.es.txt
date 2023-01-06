@@ -6,3 +6,7 @@
 {"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QEn el contexto del proyecto, esta serialización nos permitirá describir las arquitecturas objetivo a partir de la notación y gramáticas establecidas.\\E$"}
 {"rule":"SIGLAS","sentence":"^\\QIBM’s Perspective on the State of Information Technology\\E$"}
 {"rule":"SIGLAS","sentence":"^\\QIBM's Perspective on the State of Information Technology\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q.\\E$"}
+{"rule":"WHITESPACE_RULE","sentence":"^\\Q#1 #1   #1 #1   #1 #1\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QTowards automotive embedded systems with self-X properties\\E$"}
+{"rule":"Y_E_O_U","sentence":"^\\QPara el marco del proyecto, nos interesan aquellos que estén orientados a los sistemas embebidos e IoT.\\E$"}
