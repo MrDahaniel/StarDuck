@@ -2,6 +2,7 @@
     "cSpell.enableFiletypes": ["markdown", "latex"],
     "cSpell.enabled": true,
     "cSpell.words": [
+        "Aiello",
         "autoconfiguración",
         "autogobernarse",
         "Ferreira",
@@ -10,7 +11,8 @@
         "manejador",
         "MAPE",
         "reconfigurarse",
-        "serialización"
+        "serialización",
+        "Zhen"
     ],
     "cSpell.ignoreWords": ["letterpaper"]
 }

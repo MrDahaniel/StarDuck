@@ -10,3 +10,9 @@
 {"rule":"WHITESPACE_RULE","sentence":"^\\Q#1 #1   #1 #1   #1 #1\\E$"}
 {"rule":"SUBJUNTIVO_PASADO","sentence":"^\\QTowards automotive embedded systems with self-X properties\\E$"}
 {"rule":"Y_E_O_U","sentence":"^\\QPara el marco del proyecto, nos interesan aquellos que estén orientados a los sistemas embebidos e IoT.\\E$"}
+{"rule":"Y_E_O_U","sentence":"^\\QPara el marco del proyecto, nos interesan aquellos que estén orientados a los sistemas embebidos e IoT, algunos de estos son:\\E$"}
+{"rule":"AGREEMENT_POSTPONED_ADJ","sentence":"^\\QDentro del alcance del proyecto son las características de auto-configuración y auto-sanación la cuales se relacionan directamente con la adaptación hacia una arquitectura objetivo dada.\\E$"}
+{"rule":"SUBJUNTIVO_PASADO","sentence":"^\\Q[inkscapelatex=false]Images/Mape-k.svg El ciclo auto-adaptativo MAPE-K. \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"A_NIVEL_DE","sentence":"^\\QSiendo así, nos centraremos en los mecanismos de adaptación a nivel de componente, o de re-configuración de la arquitectura\\E$"}
+{"rule":"ES_SIMPLE_REPLACE","sentence":"^\\QBinding Modification Component Replacement Component Addition Interface Modification\\E$"}
+{"rule":"ES_SIMPLE_REPLACE","sentence":"^\\QInterface Modification:\\E$"}
