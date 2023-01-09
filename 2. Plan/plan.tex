@@ -27,15 +27,22 @@
 
     % 1. Origen de la computación autonómica (Citation needed for industry tendencies)
 
-    Dentro de la computación distribuida, una de las tendencias recientes dentro de la industria, es la búsqueda de maneras de reducir la complejidad de administrar los sistemas computacionales. A medida que estos crecen, en términos de tamaño y extensión, el costo humano de la administración de los sistemas se vuelve insostenible. En respuesta a esto, diferentes enfoques han surgido. Uno de estos es el \textit{autonomic computing} (computación autonómica). Planteada originalmente por IBM en el año 2001, se presentaba como una posible solución a la problemática a partir del diseño y la implementación de componentes auto-gestionados \cite{jeff_2011}. 
+    La computación autonómica, concebida inicialmente por IBM en el año 2001, se refiere al uso de sistemas auto-gestionados con la capacidad de operar y adaptarse sin la intervención directa de ninguna un ser humano. En este sentido, este acercamiento tiene como objetivo la creación de sistemas computacionales con la capacidad de reconfigurarse en respuesta a cambios en las condiciones del entorno al igual que los objetivos del negocio \cite{horn_2001}.
+
+    % Esta autonomía es adquirida con el uso de ciclos de control, en el caso de la computación autonómica, de los ciclos más populares es el ciclo MAPE-K \cite{Arcaini_2015}. Estos le dan la capacidad al sistema de monitorear tanto su estado actual como el entorno en el que este se encuentra, analizar la información recolectada para luego planear y ejecutar los cambios requeridos sobre el sistema \cite{RutanenKalle2018McoO}. 
 
     % 2. Relación y utilidad para las otras ramas de la computación (¿Qué ramas?, ¿Por qué les es útil?)
 
-    Este acercamiento, aunque inicialmente concebido únicamente para sistemas distribuidos, puede también ser particularmente útil en otras ramas como lo son las 
+    Una de las áreas que pueden verse especialmente beneficiadas de la computación autonómica es la del internet de las cosas (IoT). Esto se debe a tanto la gran cantidad de dispositivos a manejar al igual que la complejidad que es darles un mantenimiento debido a la distribución geográfica de estos \cite{Tahir_2019}. 
+    
+    Esto puede verse el Smart Campus UIS, una plataforma IoT de la Universidad Industrial de Santander con la intención de usar dispositivos con el fin de monitorear y recolectar datos con el fin de recolectar de información en tiempo real con el fin de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{henry_2020}.
 
-    % 3. Argumentar su utilidad en en el caso específico de IoT (Costo humano, posibles funcionamientos degradados)
-    %    Y lo que representa para Smart Campus (Dar continuidad en ese sentido)
+    Ahora, esta plataforma ha tenido esfuerzos en el desarrollo de características propias de un sistema autonómico. Uno de estos ha sido la integración de mecanismos para la auto-descripción de la estructura de los sistemas IoT conectados a la plataforma al igual la capacidad de adaptar la arquitectura \cite{henry_2020}. %!!! Arreglar esto, no tengo la referencia correcta porque eso es de la tesis de maestría de Henry !!!%
+    
     % 4. Presentar el objetivo final del proyecto (¿Qué se espera obtener?)
+
+    
+
     % 5. Presentar de manera general la metodología a seguir
 
     \pagebreak
@@ -54,7 +61,7 @@
     
     Considerando lo anterior, una de las aplicaciones de los sistemas está en la IoT y los Smart Campus, una variación de las Smart Cities en las cuales se busca la recolección de información y monitoreo en tiempo real con el fin de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{MinAllah2020}. Es en este tipo de aplicaciones, debido incertidumbre generada por la cantidad de componentes distribuidos en puntos geográficamente apartados, que la computación autonómica se presenta un gran potencial. 
 
-    Dentro del marco del presente proyecto, se tiene Smart Campus SC3, una plataforma de IoT de la Universidad Industrial de Santander, en la cual se han realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse al igual que un avance a la auto-sanación \cite{henry_2020}, características principales de un sistema autonómico \cite{horn_2001}. 
+    Dentro del marco del presente proyecto, se tiene Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander, en la cual se han realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse al igual que un avance a la auto-sanación \cite{henry_2020}, características principales de un sistema autonómico \cite{horn_2001}. 
     
     Dicho esto, y en búsqueda dar continuidad con los esfuerzos de desarrollo realizados en la plataforma, se plantea como caso de estudio la implementación de mecanismos de adaptación con los cuales se pueda alterar el estado de la plataforma a partir de un objetivo establecido.  
 
@@ -152,8 +159,6 @@
 
     De esto podemos ver no solo las diferentes maneras en las que las implementaciones realizan las descripciones de los sistemas asociados, sino que también el alcance de estos en cuanto a lo que pueden describir.
     
-    \pagebreak
-
     \subsubsection*{Mecanismos de Adaptación}
     
     % Ya aquí es como definir de manera general qué es eso de los mecanismos de adaptación, qué hacen y qué características
@@ -169,11 +174,12 @@
     \begin{itemize}
         \item \textbf{Binding Modification}: Este mecanismo hace referencia a la alteración de los vínculos entre los diferentes componentes de la arquitectura. Estos tienen el objetivo de modificar la interacción entre componentes, lo que es especialmente común en implementaciones con \textit{proxies}. Este tipo de mecanismo de adaptación fue usado por Kabashkin \citeyear{Kabashkin_2017} para añadir fiabilidad a la red de comunicación aérea.
 
+        \item \textbf{Interface Modification}: Las interfases funcionan como los puntos de comunicación entre los diferentes componentes de la arquitectura. Siendo así, es posible que la modificación de estos sea de interés con el fin de alterar el comportamiento de un sistema al igual que soportar la heterogeneidad del sistema. Esto puede verse en el trabajo desarrollado por Liu, Parashar y Hariri \citeyear{Liu_2004} en donde definen la utilidad de dichas adaptaciones al igual que la implementación de las mismas.
+
         \item \textbf{Component Replacement, Addition and Subtraction}: En términos simples, este mecanismo se encarga de alterar los componentes que componen la arquitectura; de esta manera, modificando su comportamiento. Ejemplos de esto puede verse en el trabajo de Huynh \citeyear{Huynh_2019} en el cual se evalúan varios acercamientos a la reconfiguración de arquitecturas a partir del remplazo de componentes a nivel individual al igual que grupal. 
         
         Este acercamiento a la mutación de la arquitectura también puede verse en el despliegue de componentes como respuesta a cambios en los objetivos de negocio de las aplicaciones al igual que como respuesta a cambios inesperados dentro de la aplicación. Esto puede verse en trabajos como el de Patouni \citeyear{Patouni_2006} donde se realizan este tipo de implementaciones. %% !!! Henry puede servirme aquí por la implementación que se hizo en Smart Campus
 
-        \item \textbf{Interface Modification}:
     \end{itemize}
 
     \subsection{Sistemas Embebidos}
@@ -188,11 +194,20 @@
 
     % Aquí es para contextualizar una de las aplicaciones de la computación embebida más que otra cosa
 
+    El Internet de las cosas, o IoT; es una de las sub-ramas de los sistemas embebidos. En esta, se embeben diferentes dispositivos en objetos del día a día. Esto les da la capacidad de enviar y recibir información con el fin de realizar monitoreo o facilitar el control de ciertas acciones \cite{Berte_2018}.
+
+    Esta tecnología, debido a su flexibilidad al igual que el alcance que puede tener, presenta una gran cantidad de aplicaciones que va desde electrónica de consumo hasta la industria. Encuestas realizadas en el 2020 reportan su uso en smart homes, smart cities, transporte, agricultura, medicina, etc. \cite{Dawood_2020}. Su impacto no ha sido poco.
+
     % !!!
 
     \subsubsection*{Smart Campus}
 
     % Y aquí es para explicar el concepto de un smart campus. Para qué se usa y de donde surge.
+
+    Un Smart Campus, equiparable con el concepto de Smart City, es una plataforma en la que se emplean tecnologías, sumado a una infraestructura física, con la cual se busca la recolección de información y monitoreo en tiempo real \cite{MinAllah2020}. Los datos recolectados tienen el objetivo de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{Anagnostopoulos_2023}.
+
+    Estas plataformas, debido a su escala y alcance en cuanto a la cantidad de servicios que pueden ofrecer, requieren de 
+    infraestructuras tecnológicas las cuales den soporte a los objetivos del sistema. Es posible ver implementaciones orientadas a microservicios en trabajos como los de Jiménez, Cárcamo y Pedraza \citeyear{henry_2020} donde se desarrolla una plataforma de software escalable con la cual se pueda lograr interoperatividad y alta usabilidad para todos.
 
     % !!!
 
