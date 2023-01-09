@@ -27,25 +27,39 @@
 
     % 1. Origen de la computación autonómica (Citation needed for industry tendencies)
 
-    La computación autonómica, concebida inicialmente por IBM en el año 2001, se refiere al uso de sistemas auto-gestionados con la capacidad de operar y adaptarse sin la intervención directa de ninguna un ser humano. En este sentido, este acercamiento tiene como objetivo la creación de sistemas computacionales con la capacidad de reconfigurarse en respuesta a cambios en las condiciones del entorno al igual que los objetivos del negocio \cite{horn_2001}.
+    La computación autonómica, concebida inicialmente por IBM en el año 2001, se refiere al uso de sistemas auto-gestionados con la capacidad de operar y adaptarse sin la intervención de un ser humano. En este sentido, este acercamiento tiene como objetivo la creación de sistemas computacionales capaces de reconfigurarse en respuesta a cambios en las condiciones del entorno al igual que los objetivos del negocio \cite{horn_2001}.
 
-    % Esta autonomía es adquirida con el uso de ciclos de control, en el caso de la computación autonómica, de los ciclos más populares es el ciclo MAPE-K \cite{Arcaini_2015}. Estos le dan la capacidad al sistema de monitorear tanto su estado actual como el entorno en el que este se encuentra, analizar la información recolectada para luego planear y ejecutar los cambios requeridos sobre el sistema \cite{RutanenKalle2018McoO}. 
+    % Esta autonomía es adquirida con el uso de ciclos de control, en el caso de la computación autonómica, de los ciclos más populares es el ciclo MAPE-K \cite{Arcaini_2015}. Estos le dan la capacidad al sistema de monitorear tanto su estado actual como el entorno en el que este se encuentra, analizar la información recolectada para luego planear y ejecutar los cambios requeridos sobre el sistema \cite{RutanenKalle2018McoO}.
+    
+    En la última década, el interés de la computación autonómica ha ido en 2 direcciones. Aunque la investigación y la cantidad de artículos ha ido bajando (Ver figura \ref{fig:scopus}), es posible ver el cómo las patentes se han ido manteniendo relativamente estables (Ver figura \ref{fig:lens}). Aunque esto puede representar un interés más hacia el desarrollo de productos derivados de los estudios de la computación autonómica, sugiere que aún existe un atractivo dentro de la investigación en pro del desarrollo de productos. 
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[scale=0.5]{Images/Scopus.png}
+        \caption{Documentos publicados sobre computación autonómica desde 2011 hasta 2023} \cite{scopus} 
+        \label{fig:scopus}
+    \end{figure}
+
+    \begin{figure}[h]
+        \centering
+        \includesvg[inkscapelatex=false, scale=0.5]{Images/lens.svg}
+        \caption{Patentes sobre computación autonómica desde 2011 hasta 2023} \cite{lens} 
+        \label{fig:lens}
+    \end{figure}
 
     % 2. Relación y utilidad para las otras ramas de la computación (¿Qué ramas?, ¿Por qué les es útil?)
 
     Una de las áreas que pueden verse especialmente beneficiadas de la computación autonómica es la del internet de las cosas (IoT). Esto se debe a tanto la gran cantidad de dispositivos a manejar al igual que la complejidad que es darles un mantenimiento debido a la distribución geográfica de estos \cite{Tahir_2019}. 
     
-    Esto puede verse el Smart Campus UIS, una plataforma IoT de la Universidad Industrial de Santander con la intención de usar dispositivos con el fin de monitorear y recolectar datos con el fin de recolectar de información en tiempo real con el fin de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{henry_2020}.
+    Esto puede verse el Smart Campus UIS, una plataforma IoT de la Universidad Industrial de Santander, que permite usar dispositivos con el fin de monitorear y recolectar de información en tiempo real con el objetivo de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{henry_2020}.
 
     Ahora, esta plataforma ha tenido esfuerzos en el desarrollo de características propias de un sistema autonómico. Uno de estos ha sido la integración de mecanismos para la auto-descripción de la estructura de los sistemas IoT conectados a la plataforma al igual la capacidad de adaptar la arquitectura \cite{henry_2020}. %!!! Arreglar esto, no tengo la referencia correcta porque eso es de la tesis de maestría de Henry !!!%
     
     % 4. Presentar el objetivo final del proyecto (¿Qué se espera obtener?)
 
-    
+    Partiendo de lo anterior, y con la intención de dar continuidad con los esfuerzos de desarrollo realizados en la plataforma Smart Campus UIS, se plantea como caso de estudio iterar sobre la implementación de mecanismos de adaptación realizada, mejorando la manera en la que estos puedan alterar el estado de la plataforma a partir de un objetivo establecido.  
 
     % 5. Presentar de manera general la metodología a seguir
-
-    \pagebreak
 
     \section{Planteamiento Y Justificación Del Problema}
     
@@ -63,9 +77,8 @@
 
     Dentro del marco del presente proyecto, se tiene Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander, en la cual se han realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse al igual que un avance a la auto-sanación \cite{henry_2020}, características principales de un sistema autonómico \cite{horn_2001}. 
     
-    Dicho esto, y en búsqueda dar continuidad con los esfuerzos de desarrollo realizados en la plataforma, se plantea como caso de estudio la implementación de mecanismos de adaptación con los cuales se pueda alterar el estado de la plataforma a partir de un objetivo establecido.  
+    Dicho esto, y con la intención de dar continuidad con los esfuerzos de desarrollo realizados en la plataforma, se plantea como caso de estudio la implementación de mecanismos de adaptación con los cuales se pueda alterar el estado de la plataforma a partir de un objetivo establecido.  
 
-    \pagebreak
 
     \section{Objetivos}
     \subsection{Objetivo General}
@@ -85,7 +98,6 @@
 
     \end{itemize}
 
-    \pagebreak
 
     \section{Marco De Referencia}
 
