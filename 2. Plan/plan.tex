@@ -27,9 +27,9 @@
 
     % 1. Origen de la computación autonómica (Citation needed for industry tendencies)
 
-    La computación autonómica, concebida inicialmente por IBM en el año 2001, se refiere al uso de sistemas auto-gestionados con la capacidad de operar y adaptarse sin la intervención de un ser humano. En este sentido, este acercamiento tiene como objetivo la creación de sistemas computacionales capaces de reconfigurarse en respuesta a cambios en las condiciones del entorno al igual que los objetivos del negocio \cite{horn_2001}.
+    La computación autonómica, concebida inicialmente por IBM en el año 2001, se refiere al uso de sistemas auto-gestionados con la capacidad de operar y adaptarse, o en lo posible, sin la intervención de un ser humano. En este sentido, este acercamiento tiene como objetivo la creación de sistemas computacionales capaces de reconfigurarse en respuesta a cambios en las condiciones del entorno de ejecución al igual que los objetivos del negocio \cite{horn_2001}.
 
-    Esta autonomía es adquirida con el uso de ciclos de control, en el caso de la computación autonómica, de los ciclos más populares es el ciclo MAPE-K \cite{Arcaini_2015}. Estos le dan la capacidad al sistema de monitorear tanto su estado actual como el entorno en el que este se encuentra, analizar la información recolectada para luego planear y ejecutar los cambios requeridos sobre el sistema \cite{RutanenKalle2018McoO}.
+    Esta autonomía es adquirida con el uso de ciclos de control, en el caso de la computación autonómica, de los ciclos más populares es el ciclo MAPE-K, sigla de \textit{Monitor Analyze Plan Execute - Knowledge} \cite{Arcaini_2015}. Estos le dan la capacidad al sistema de monitorear tanto su estado actual como el entorno en el que este se encuentra, analizar la información recolectada para luego planear y ejecutar los cambios requeridos sobre el sistema a partir de una base de conocimiento \cite{RutanenKalle2018McoO}.
     
     % En la última década, el interés de la computación autonómica ha ido en 2 direcciones. Aunque la investigación y la cantidad de artículos ha ido bajando (Ver figura \ref{fig:scopus}), es posible ver el cómo las patentes se han ido manteniendo relativamente estables (Ver figura \ref{fig:lens}). Aunque esto puede representar un interés más hacia el desarrollo de productos derivados de los estudios de la computación autonómica, sugiere que aún existe un atractivo dentro de la investigación en pro del desarrollo de productos. 
 
@@ -52,15 +52,15 @@
 
     % 2. Relación y utilidad para las otras ramas de la computación (¿Qué ramas?, ¿Por qué les es útil?)
 
-    Una de las áreas que pueden verse especialmente beneficiadas de la computación autonómica es la del internet de las cosas (IoT). Esto se debe a tanto la gran cantidad de dispositivos a manejar al igual que la complejidad que es darles un mantenimiento debido a la distribución geográfica de estos \cite{Tahir_2019}. 
+    Una de las áreas que pueden verse especialmente beneficiadas de la computación autonómica es la del internet de las cosas (IoT). Algunos de estos aspectos están relacionados con la heterogeneidad de estos dispositivos, en cuanto a marcas, protocolos y características; la dinamicidad, en cuanto al movimiento que estos presentan entre entornos de ejecución o incluso una desconexión; al igual que la distribución geográfica de estos lo cual dificulta la intervención directa sobre ellos \cite{Tahir_2019}. 
     
     Esto puede verse el Smart Campus UIS, una plataforma IoT de la Universidad Industrial de Santander, que permite usar dispositivos con el fin de monitorear y recolectar de información en tiempo real con el objetivo de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{henry_2020}.
 
-    Ahora, esta plataforma ha tenido esfuerzos en el desarrollo de características propias de un sistema autonómico. Uno de estos ha sido la integración de mecanismos para la auto-descripción de la estructura de los sistemas IoT conectados a la plataforma al igual la capacidad de adaptar la arquitectura \cite{henry_2020}. %!!! Arreglar esto, no tengo la referencia correcta porque eso es de la tesis de maestría de Henry !!!%
+    Ahora, esta plataforma ha tenido esfuerzos en el desarrollo de características propias de un sistema autonómico. Uno de estos ha sido la integración de mecanismos para la auto-descripción de la arquitectura desplegada en un momento dado \cite{msc_henry_2022}. En el contexto de la computación autonómica, esta capacidad hace parte del monitoreo dentro del ciclo de control. 
     
     % 4. Presentar el objetivo final del proyecto (¿Qué se espera obtener?)
 
-    Partiendo de lo anterior, y con la intención de dar continuidad con los esfuerzos de desarrollo realizados en la plataforma Smart Campus UIS, se plantea como caso de estudio iterar sobre la implementación de mecanismos de adaptación realizada, mejorando la manera en la que estos puedan alterar el estado de la plataforma a partir de un objetivo establecido.  
+    Partiendo de lo anterior, y con la intención de dar continuidad con los esfuerzos de desarrollo realizados en Smart Campus UIS, se plantea como caso de estudio, a partir de las capacidades de auto-descripción que la plataforma, se pretende el proveer a esta la capacidad de auto-configuración a partir de un conjunto de mecanismos de adaptación que permitan, desde la definición de un objetivo a lograr, la alteración de la arquitectura desplegada. 
 
     % 5. Presentar de manera general la metodología a seguir
 
@@ -87,7 +87,7 @@
     \subsection{Objetivo General}
     \begin{itemize}
 
-        \item Implementar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
+        \item Diseñar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
 
     \end{itemize}
 
@@ -201,7 +201,7 @@
     
     % Tengo que contextualizar qué es lo que es la computación embebida y cual es el principio o justificación de este
 
-    Los sistemas de cómputo embebidos, o simplemente sistemas embebidos, hacen referencia a un sistema compuesto de microcontroladores los cuales están orientados a llevar a cabo una función o un rango de funciones específicas \cite{heath2002embedded}. Este tipo de sistemas, debido a la posibilidad de combinar hardware y software en una manera compacta, se ha visto en multiples campos de la industria como lo son el sector automotor, de maquinaria industrial o electrónica de consumo \cite{deichmann_2022}.
+    Los sistemas de cómputo embebidos hacen referencia a un sistema compuesto de microcontroladores los cuales están orientados a llevar a cabo una función o un rango de funciones específicas \cite{heath2002embedded}. Este tipo de sistemas, debido a la posibilidad de combinar hardware y software en una manera compacta, se ha visto en multiples campos de la industria como lo son el sector automotor, de maquinaria industrial o electrónica de consumo \cite{deichmann_2022}.
 
     % Extender la aplicación de la computación autonómica en los sistemas embebidos.
 
@@ -310,7 +310,7 @@
     
     La cuarta fase del proyecto está orientada a la selección, al igual que la implementación en Smart Campus UIS, del conjunto de mecanismos de adaptación de la arquitectura. 
 
-    \subsubsection{Actividades}
+    \subsubsection*{Actividades}
 
    \begin{enumerate}[label=\thesubsection.\arabic*., wide, labelindent=2em, leftmargin=5em]
         \item Definición el conjunto de mecanismos de adaptación.
@@ -333,11 +333,12 @@
     \end{enumerate}  
 
 
+    \pagebreak
+
     \section{Cronograma}
 
     En la tabla \ref{tab:cron} se presenta el cronograma propuesto para el desarrollo del el proyecto. En este se establece un tiempo total de 16 semanas en las cuales se desarrollarán las actividades definidas en la metodología.
 
-    % \include{Sections/cronograma.tex}
     \begin{table}[H]
         \resizebox{\textwidth}{!}{%
         \begin{tabular}{|rllllllllllllllll|}
@@ -389,6 +390,8 @@
         \caption[Tabla]{Cronograma del proyecto}
         \label{tab:cron}
         \end{table}
+        
+    \pagebreak
 
     \section{Presupuesto}
     
