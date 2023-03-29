@@ -26,4 +26,6 @@ Partiendo de esto, se propone trabajar en el desarrollo de mecanismos de adaptac
 
 <div style="page-break-after: always;"></div>
 
-## References
+
+## Referencias
+<!-- ## References -->

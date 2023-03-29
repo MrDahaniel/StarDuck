@@ -1,9 +1,17 @@
+---
+title: Notes
+bibliography: bibliography.bib
+csl: apa.csl
+---
+
 
 # StarDuck: The Project
 
 ## Lenguaje de Descripción de Arquitectura (LDA)
 
-La primera parte del proyecto consiste en definir la manera en la que se realizará la declaración de la arquitectura objetivo. Para esto, se explorarán varios aspectos a tener en cuenta al momento de definir qué se empleará para esto. 
+Los lenguajes de descripción de arquitectura (LDA), como su nombre lo indica, son lenguajes especializados para la descripción de la arquitectura de un sistema de software. Siendo así, existen diferentes tipos de LDAs los cuales cumplen diferentes propósitos dependiendo de los requerimientos del proyecto o sistema en cuestión.
+
+En términos generales, los LDA pueden clasificarse dependiendo de su uso y algunas de las caracteríticas. Dentro de las clasificaciones principales, se tiene: estructurales, dedicados principalmente a la estructura en términos de sus componentes y conexiones; comportamentales, orientados al proceso de la arquitectura; y mixtos, donde se contempla tanto las estructura como el comportamentamiento de esta [@mishra_2004].
 
 ## Casos de Estudio
 
@@ -11,6 +19,10 @@ Para identificar los mecanismos de adaptación de arquitectura que se van a desa
 
 ### Control de Acceso
 
+
+
 ### Monitoreo Ambiental
 
 ### Energía inteligente
+
+## Referencias
