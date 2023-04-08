@@ -1,38 +1,11 @@
-@misc{hussain_2013,
-  author       = {Sajjad Hussain},
-  howpublished = {Online},
-  title        = {Investigating Architecture Description Languages (ADLs) A Systematic Literature Review},
-  year         = {2013}
-}
-
-@article{mishra_2004,
-author = {Mishra, Prabhat and Shrivastava, Aviral and Dutt, Nikil},
-title = {Architecture Description Language (ADL)-Driven Software Toolkit Generation for Architectural Exploration of Programmable SOCs},
-year = {2004},
-issue_date = {July 2006},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {11},
-number = {3},
-issn = {1084-4309},
-url = {https://doi.org/10.1145/1142980.1142985},
-doi = {10.1145/1142980.1142985},
-abstract = {Advances in semiconductor technology permit increasingly complex applications to be realized using programmable systems-on-chips (SOCs). Furthermore, shrinking time-to-market demands, coupled with the need for product versioning through software modification of SOC platforms, have led to a significant increase in the software content of these SOCs. However, designer productivity is greatly hampered by the lack of automated software generation tools for the exploration and evaluation of different architectural configurations. Traditional hardware-software codesign flows do not support effective exploration and customization of the embedded processors used in programmable SOCs. The inherently application-specific nature of embedded processors and the stringent area, power, and performance constraints in embedded systems design critically require a fast and automated architecture exploration methodology. Architecture description language (ADL)-Driven design space exploration and software toolkit generation strategies present a viable solution to this problem, providing a systematic mechanism for a top-down design and validation of complex systems. The heart of this approach lies in the ability to automatically generate a software toolkit that includes an architecture-sensitive compiler, a cycle-accurate simulator, assembler, debugger, and verification/validation tools. This article illustrates a software toolkit generation methodology using the EXPRESSION ADL. Our exploration studies demonstrate the need for and usefulness of this approach, using as an example the problem of compiler-in-the-loop design space exploration of reduced instruction-set embedded processor architectures.},
-journal = {ACM Trans. Des. Autom. Electron. Syst.},
-month = {jun},
-pages = {626–658},
-numpages = {33},
-keywords = {retargetable compilation, embedded processor, Architecture description language, programmable architecture, design space exploration}
-}
-
 @misc{forrester_research_2019,
-  title     = {Mainframe In The Age Of Cloud, AI, And Blockchain},
-  url       = {https://www.ensono.com/resources/white-papers/old-workhorse-new-tech-mainframe-age-cloud-ai-and-blockchain-commissioned-study-conducted/},
-  journal   = {Old Workhorse for New Tech - Mainframe In The Age Of Cloud, AI, And Blockchain: A commissioned study conducted by Forrester Consulting},
-  publisher = {Forrester Consulting},
-  author    = {{Forrester Research}},
-  year      = {2019},
-  month     = {Jun}
+      title     = {Mainframe In The Age Of Cloud, AI, And Blockchain},
+      url       = {https://www.ensono.com/resources/white-papers/old-workhorse-new-tech-mainframe-age-cloud-ai-and-blockchain-commissioned-study-conducted/},
+      journal   = {Old Workhorse for New Tech - Mainframe In The Age Of Cloud, AI, And Blockchain: A commissioned study conducted by Forrester Consulting},
+      publisher = {Forrester Consulting},
+      author    = {{Forrester Research}},
+      year      = {2019},
+      month     = {Jun}
 } 
 
 @book{the_cloud_in_2021,
@@ -444,8 +417,54 @@ keywords = {retargetable compilation, embedded processor, Architecture descripti
 }
 
 @inproceedings{Celikovic2014ADF,
-  title     = {A DSL for EER Data Model Specification},
-  author    = {Milan Celikovic and Vladimir Dimitrieski and Slavica Aleksic and Sonja Risti{\'c} and Ivan Lukovi{\'c}},
-  booktitle = {Integrated Spatial Databases},
-  year      = {2014}
+    title     = {A DSL for EER Data Model Specification},
+    author    = {Milan Celikovic and Vladimir Dimitrieski and Slavica Aleksic and Sonja Risti{\'c} and Ivan Lukovi{\'c}},
+    booktitle = {Integrated Spatial Databases},
+    year      = {2014}
+}
+
+@article{Kirchhof_2022,
+    author = {Kirchhof, J\"{o}rg Christian and Kleiss, Anno and Rumpe, Bernhard and Schmalzing, David and Schneider, Philipp and Wortmann, Andreas},
+    title = {Model-Driven Self-Adaptive Deployment of Internet of Things Applications with Automated Modification Proposals},
+    year = {2022},
+    issue_date = {November 2022},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {3},
+    number = {4},
+    issn = {2691-1914},
+    url = {https://doi-org.bibliotecavirtual.uis.edu.co/10.1145/3549553},
+    doi = {10.1145/3549553},
+    abstract = {Today’s Internet of Things (IoT) applications are mostly developed as a bundle of hardware and associated software. Future cross-manufacturer app stores for IoT applications will require that the strong coupling of hardware and software is loosened. In the resulting IoT applications, a quintessential challenge is the effective and efficient deployment of IoT software components across variable networks of heterogeneous devices. Current research focuses on computing whether deployment requirements fit the intended target devices instead of assisting users in successfully deploying IoT applications by suggesting deployment requirement relaxations or hardware alternatives. This can make successfully deploying large-scale IoT applications a costly trial-and-error endeavor. To mitigate this, we have devised a method for providing such deployment suggestions based on search and backtracking. This can make deploying IoT applications more effective and more efficient, which, ultimately, eases reducing the complexity of deploying the software surrounding us.},
+    journal = {ACM Trans. Internet Things},
+    month = {sep},
+    articleno = {30},
+    numpages = {30},
+    keywords = {deployment, architecture description languages, model-driven engineering, Internet of Things}
+}
+
+
+@article{MontiThings,
+title = {MontiThings: Model-Driven Development and Deployment of Reliable IoT Applications},
+journal = {Journal of Systems and Software},
+volume = {183},
+pages = {111087},
+year = {2022},
+issn = {0164-1212},
+doi = {https://doi.org/10.1016/j.jss.2021.111087},
+url = {https://www.sciencedirect.com/science/article/pii/S0164121221001849},
+author = {Jörg Christian Kirchhof and Bernhard Rumpe and David Schmalzing and Andreas Wortmann},
+keywords = {Internet of Things, Model-driven engineering, Architecture modeling, Code generation, Deployment},
+abstract = {Internet of Things (IoT) applications are exposed to harsh conditions due to factors such as device failure, network problems, or implausible sensor values. We investigate how the inherent encapsulation of component and connector (C&C) architectures can be used to develop and deploy reliable IoT applications. Existing C&C languages for the development of IoT applications mainly focus on the description of architectures and the distribution of components to IoT devices. Furthermore, related approaches often pollute the models with low-level implementation details, tying the models to a particular platform and making them harder to understand. In this paper, we introduce MontiThings, a C&C language offering automatic error handling capabilities and a clear separation between business logic and implementation details. The error-handling methods presented in this paper can make C&C-based IoT applications more reliable without cluttering the business logic with error-handling code that is time-consuming to develop and makes the models hard to understand, especially for non-experts.}
+}
+
+@ARTICLE{Antero_2017,
+  author={Taivalsaari, Antero and Mikkonen, Tommi},
+  journal={IEEE Software}, 
+  title={A Roadmap to the Programmable World: Software Challenges in the IoT Era}, 
+  year={2017},
+  volume={34},
+  number={1},
+  pages={72-80},
+  doi={10.1109/MS.2017.26}
 }
