@@ -4,7 +4,6 @@ bibliography: bibliography.bib
 csl: apa.csl
 ---
 
-
 # StarDuck: The Project
 
 ## Lenguaje de Descripción de Arquitectura (LDA)
@@ -20,9 +19,6 @@ En el marco del proyecto, específicamente el interés sobre las aplicaciones qu
 Para identificar los mecanismos de adaptación de arquitectura que se van a desarrollar, se propuso comenzar con varias aplicaciones posibles del IoT. Al identificar las necesidades de cada uno de estos casos, se determinará el conjunto de mecanismos a implementar.
 
 ### Control de Acceso
-
-El primero de los casos que se 
-
 
 ### Monitoreo Ambiental
 
