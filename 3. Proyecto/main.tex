@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 
-\input{sections/config}
+\input{sections/00. config}
 
 \bibliographystyle{apacite}
 
@@ -18,13 +18,16 @@
 \begin{document}
 
     %% Portada
-    \input{sections/frontpage}
+    \input{sections/01. portada}
+    
+    %% Numeración romana 
+    \pagenumbering{roman} 
 
     %% Dedicatoria
-    % \input{sections/dedicatoria}
+    \input{sections/02. dedicatoria}
 
     %% Agradecimientos
-    % \input{sections/agradecimientos}
+    \input{sections/03. agradecimientos}
 
     %% Tablas de contenidos
     \renewcommand{\contentsname}{\normalsize Contenido}
@@ -39,216 +42,25 @@
     \listoftables
     \newpage
 
-    \section*{Introducción}
-    \addcontentsline{toc}{section}{Introducción}
+    \pagenumbering{arabic} 
 
-    % 1. Origen de la computación autonómica (Citation needed for industry tendencies)
-
-    La computación autonómica, concebida inicialmente por IBM en el año 2001, se refiere al uso de sistemas auto-gestionados con la capacidad de operar y adaptarse, o en lo posible, sin la intervención de un ser humano. En este sentido, este acercamiento tiene como objetivo la creación de sistemas computacionales capaces de reconfigurarse en respuesta a cambios en las condiciones del entorno de ejecución al igual que los objetivos del negocio \cite{horn_2001}.
-
-    Esta autonomía es adquirida con el uso de ciclos de control, en el caso de la computación autonómica, de los ciclos más populares es el ciclo MAPE-K, sigla de \textit{Monitor Analyze Plan Execute - Knowledge} \cite{Arcaini_2015}. Estos le dan la capacidad al sistema de monitorear tanto su estado actual como el entorno en el que este se encuentra, analizar la información recolectada para luego planear y ejecutar los cambios requeridos sobre el sistema a partir de una base de conocimiento \cite{RutanenKalle2018McoO}.
-    
-    Una de las áreas que pueden verse especialmente beneficiadas de la computación autonómica es la del internet de las cosas (IoT). Algunos de estos aspectos están relacionados con la heterogeneidad de estos dispositivos, en cuanto a marcas, protocolos y características; la dinamicidad, en cuanto al movimiento que estos presentan entre entornos de ejecución o incluso una desconexión; al igual que la distribución geográfica de estos lo cual dificulta la intervención directa sobre ellos \cite{Tahir_2019}. 
-    
-    Esto puede verse el Smart Campus UIS, una plataforma IoT de la Universidad Industrial de Santander, que permite usar dispositivos con el fin de monitorear y recolectar de información en tiempo real con el objetivo de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{henry_2020}.
-
-    Ahora, esta plataforma ha tenido esfuerzos en el desarrollo de características propias de un sistema autonómico. Uno de estos ha sido la integración de mecanismos para la auto-descripción de la arquitectura desplegada en un momento dado \cite{msc_henry_2022}. En el contexto de la computación autonómica, esta capacidad hace parte del monitoreo dentro del ciclo de control. 
-
-    Partiendo de lo anterior, y con la intención de dar continuidad con los esfuerzos de desarrollo realizados en Smart Campus UIS, se plantea como caso de estudio, a partir de las capacidades de auto-descripción que la plataforma, se pretende el proveer a esta la capacidad de auto-configuración a partir de un conjunto de mecanismos de adaptación que permitan, desde la definición de un objetivo a lograr, la alteración de la arquitectura desplegada. 
+    \input{sections/04. introduccion}
 
     \section{\tit}
     
-    \subsection{Planteamiento del problema}
+    \input{sections/05. planteaminto justificacion}
 
-    La complejidad de los sistemas computacionales tiene origen en diversos factores. El aumento de la cantidad de dispositivos que los componen; la heterogeneidad debido a diferentes marcas, protocolos y características; e incluso las cambiantes condiciones de sus entornos de ejecución; dificulta la administración de los sistemas computacionales \cite{emerging_2005}.
- 
-    Una de las posibles maneras de dar solución a esta problemática, en cuanto al manejo de sistemas, está en el área de la computación autonómica. Este acercamiento basado en conceptos biológicos busca solventar los problemas de complejidad, heterogeneidad e incertidumbre \cite{emerging_2005} a partir de la abstracción de las metas de los administradores y delegación del manejo del sistema a sí mismo \cite{lalanda_diaconescu_mccann_2014}.
+    \input{sections/06. objetivos}
 
-    Considerando lo anterior, una de las aplicaciones de la computación autonómica, dentro del IoT, son los Smart Campus; una variación de las Smart Cities en las cuales se busca la recolección de información y monitoreo en tiempo real con el fin de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{MinAllah2020}. Es en este tipo de aplicaciones donde los problemas, en especial la heterogeneidad, dinamicidad, al igual que la distribución geográfica; donde la reducción de la dependencia de intervención humana, facilitaría el manejo de estos. 
-
-    \subsection{Justificación del problema} 
-
-    De lo anterior, surge la pregunta del cómo realizar dichas adaptaciones a la arquitectura, o estado del sistema. Qué clase de mecanismos y requerimientos han de ser satisfechos con el fin de considerar, a un sistema computacional, con la capacidad de auto-adaptarse dados unos objetivos o metas establecidas por los administradores del sistema.
-
-    Dentro del marco del presente proyecto, se tiene Smart Campus UIS, una plataforma de IoT de la Universidad Industrial de Santander, en la cual se han realizado implementaciones parciales de una arquitectura autonómica con capacidad de auto-describirse \cite{msc_henry_2022}, una de las características principales de un sistema autonómico \cite{horn_2001}. 
+    \input{sections/07. marco referencial}
     
-    Dicho esto, se busca explorar algunas de las maneras en las que se realizan adaptaciones con características autonómicas en sistemas computacionales. De esto, se buscaría probar un conjunto de estos mecanismos de modificación del estado, tomando como caso de estudio la implementación de estos en la plataforma de Smart Campus UIS.
-
-    \subsection{Objetivos}
-    \subsubsection{Objetivo General}
-    \begin{itemize}
-
-        \item Diseñar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
-
-    \end{itemize}
-
-    \subsubsection{Objetivos Específicos}
-
-    \begin{itemize}
-        \item Proponer una notación (lenguaje) para describir una arquitectura objetivo de un sistema software IoT.
-        \item Diseñar un mecanismo para determinar las diferencias existentes entre una arquitectura actual en ejecución y una arquitectura objetivo especificada.
-        \item Diseñar un conjunto de mecanismos de adaptación que permitan disminuir las diferencias entre la arquitectura actual y la arquitectura objetivo.
-        \item Evaluar la implementación realizada a partir de un conjunto de pruebas con el fin de establecer la efectividad de los mecanismos usados.
-
-    \end{itemize}
-
-    \section{Marco Referencial}
-
-    \subsection{Marco Teórico}
-
-    \subsection{Marco Referencial}
-
-    \subsubsection{Domain-Specific Languages} % Fase 2
-
-    % En esta selección es más que todo el dar el concepto de qué es un lenguaje de notación
-
-    % Explicar que es la notación en general, en términos lingüísticos y de ahí expandir a notación en software
-    % UML y eso.
-
-    Los \textit{Domain-Specific Languages} (DSL), o Lenguaje específico de dominio, son lenguajes de programación los cuales se usan con un fin específico. Estos están orientados principalmente al uso de abstracciones de un mayor nivel debido al enfoque que estos tienen para la solución de un problema en específico \cite{Kelly2008}. Ejemplos de este tipo de acercamiento, en el caso del modelado (\textit{Domain-specific modeling}), pueden observarse en los diagramas de entidad relación usados en el desarrollo de modelos de base de datos \cite{Celikovic2014ADF}. 
-
-    % El concepto de \textit{notación} está definido como la representación gráfica del habla \cite{crystal2011dictionary}. En el contexto de las ciencias de la computación, esta idea se ha extrapolado con el fin de representar diferentes conceptos específicos del software y algoritmia de manera visual \cite{RutanenKalle2018McoO}. Esto puede verse con la existencia de lenguajes de notación como lo es UML con el cual se realizan representaciones que van desde arquitecturas de software, estructuras de base de datos, entre otros \cite{Booch2005-xu}.
+    \input{sections/08. metodo}
     
-    % \subsubsection*{Gramática}
-
-    % % Esto es más que nada para contextualizar la necesidad de una forma en la notación
-
-    % La gramática, más específicamente gramáticas libres de contexto, son un conjunto de reglas descriptivas. Este conjunto de reglas, en conjunto de una notación, cumplen la función de dictar si una frase es válida para un lenguaje dado \cite[p. 101]{Sipser2012-wl}. 
-
+    \input{sections/09. resultados}
     
-
-    % \subsubsection*{Serialización de Datos}
-
-    % % qué es la serialización de datos y para que se usa en el caso de las arquitecturas.
-
-    % La serialización de datos se refiere a la traducción de una estructura de datos hacia una manera en la que pueda ser almacenada. En el contexto del proyecto, esta serialización nos permitirá describir las arquitecturas objetivo a partir de la notación y gramáticas establecidas. Así mismo, debería darnos la flexibilidad de describir cualquier tipo de meta para el sistema de software.
-
-    \subsubsection{Computación Autonómica}
+    \input{sections/10. discusion}
     
-    % Definir qué es la computación autonómica y qué es lo que propone
-
-    El concepto de computación autonómica, definido inicialmente por IBM \citeyear{horn_2001}, se refiere a un conjunto de características que presenta un sistema computacional el cual le permite actuar de manera autónoma, o auto-gobernarse, con el fin de alcanzar algún objetivo establecido por los administradores del sistema \cite{lalanda_diaconescu_mccann_2014}.
-
-
-    Los 8 elementos clave, definidos por IBM, que deberían presentar este tipo de sistemas son:
-    % \begin{multicols}{2}
-    \begin{enumerate}
-        \item Auto-conocimiento: habilidad de conocer su estado actual, las interacciones del sistema.
-        \item Auto-configuración: capacidad de reconfigurarse frente a los constantes cambios en el entorno.
-        \item Auto-optimización: búsqueda constante de optimizar el funcionamiento de sí mismo.
-        \item Auto-sanación: aptitud de restaurar el sistema en el caso de que se presenten fallas.
-        \item Auto-protección: facultad de protegerse a sí mismo de ataques externos.
-        \item Auto-conciencia: posibilidad de conocer el ambiente en el que el sistema se encuentra.
-        \item Heterogeneidad: capacidad de interactuar con otros sistemas de manera cooperativa.
-        \item Abstracción: ocultar la complejidad a los administradores del sistema con objetivos de alto nivel de abstracción.
-    \end{enumerate}
-    % \end{multicols}
-
-    En el caso de que un sistema tenga una implementación parcial de estas características, este podría considerarse autonómico. En este sentido debería tener la capacidad de lidiar con los problemas como la complejidad, heterogeneidad e incertidumbre \cite{emerging_2005} al igual que reducir la cantidad de recursos tanto técnicos como humanos requeridos para mantener los sistemas en funcionamiento.
-    
-    \subsubsection*{MAPE-K}
-
-    % Explicar como funciona el modelo de management y los pasos que se aplican dentro de lo que se tiene
-    % Más que todo es desarrollar que es el ciclo MAPE-K
-
-    IBM, en cuanto a la implementación de las características, propone una modelo de ciclo auto-adaptativo, denominado MAPE-K \cite{Krikava2013}. Este acercamiento, compuesto de cinco fases, es uno de ciclos de control más usado en implementaciones de sistemas auto-adaptativos y computación autonómica \cite{Arcaini_2015}. En la figura \ref{fig:mapek}, se presentan las fases que \textit{manejador} debe desarrollar para así administrar cada uno de los elementos del sistema computacional basado en una base de conocimiento común \cite{alessandra_2010}. 
-
-    \begin{figure}[H]
-        \centering
-        \includesvg{images/Mape-k.svg}
-        \caption{El ciclo auto-adaptativo MAPE-K.} \cite{alessandra_2010}
-        \label{fig:mapek}
-    \end{figure}
-
-    Cada una de estas fases son:
-
-    \begin{itemize}
-        \item Monitorear (M): Esta fase se compone de la recolección, filtración y reportar la información adquirida sobre el estado del elemento a manejar.
-        \item Analizar (A): La fase de análisis se encarga del interpretar el entorno en el cual se encuentra, el predecir posibles situaciones comunes y diagnosticar el estado del sistema.
-        \item Planear (P): Durante la planificación se determina las acciones a tomar con el fin de llegar a un objetivo establecido a partir de una serie de reglas o estrategias.
-        \item Ejecutar (E): Finalmente, se ejecuta lo planeado usando los mecanismos disponibles para el manejo del sistema. 
-    \end{itemize}
-
-    Es de resaltar que este modelo, aunque útil para el desarrollo de este tipo de sistemas, es bastante general en cuanto a la estructura y no usan modelos de diseño establecidos \cite{Ouareth_2018}. 
-
-    \subsubsection*{Mecanismos de Descripción}
-
-    % Esta parte está más que todo para introducir el concepto de la base de conocimiento de la aplicación.
-    % Es decir, está orientado a dar como un ejemplo de esa base de conocimiento que tiene el "manejador" sobre la 
-    % plataforma
-
-    La fase de monitoreo dentro del ciclo MAPE-K es vital para el funcionamiento del manejador autonómico pues es a partir de la información que se construirá la base de conocimiento requerida por las demás partes del ciclo. Parte de esta, está compuesta por el \textit{estado del sistema} el cual incluye la descripción del sistema en un momento dado \cite{Weiss_2011}.
-
-    Existen varias maneras de realizar implementaciones de mecanismos de auto-descripción y la utilidad de cada uno de estos varía dependiendo en el tipo de sistema de software que se esté usando. Para el marco del proyecto, nos interesan aquellos que estén orientados a los sistemas embebidos e  IoT, algunos de estos son:
-    
-    \begin{itemize}
-        \item \textbf{JSON Messaging}: Iancu y Gatea \citeyear{Iancu_2022} plantean un protocolo que emplea mensajería entre \textit{gateways} con el fin de recibir información sobre estas. En términos simples, estas funcionan como un \textit{ping} hacia el nodo que luego retorna sus datos, al igual que los dispositivos conectados a ella, al encargado de recolectar toda esta información con el fin de construir una descripción del sistema.-
-        
-        \item \textbf{IoT Service Description Model}: O IoT-LMsDM, es un servicio de descripción desarrollado por Zhen y Aiello \citeyear{Wang_2021} el cual está orientado al contexto, servicios e interfaz de un sistema IoT. De este se espera poder contar no solo con descripciones del estado del sistema en términos del ambiente, pero la funcionalidad (es decir, los \textit{endpoints} a usar) al igual que las estructuras de datos que estos consumen.
-        
-        \item \textbf{Adaptadores de Auto-descripción}: En este acercamiento a los mecanismos de auto-descripción, se tienen adaptadores los cuales emplean los datos generados por los sensores del componente gestionado con el fin de realizar la determinación de la arquitectura desplegada. De igual manera, este acercamiento permite realizar modificaciones a la descripción de manera manual en caso de que se detecten problemas \cite{msc_henry_2022}.
-
-    \end{itemize}
-
-    De esto podemos ver no solo las diferentes maneras en las que las implementaciones realizan las descripciones de los sistemas asociados, sino que también el alcance de estos en cuanto a lo que pueden describir.
-    
-    \subsubsection*{Mecanismos de Adaptación}
-    
-    % Ya aquí es como definir de manera general qué es eso de los mecanismos de adaptación, qué hacen y qué características
-    % tienen. 
-    % No sé si meter ejemplos, creo que eso sería más para un estado del arte en este caso.
-
-    La adaptación, en el contexto de la computación autonómica, es la parte más importante en cuanto a la auto-gestión de un sistema de software se refiere. Así mismo, presenta el mayor reto debido a la necesidad de modificar código de bajo nivel, tener que afrontarse a incertidumbre de los efectos que pueden tener dichas alteraciones al sistema al igual que lidiar con esto en \textit{runtime} debido a los problemas que el \textit{downtime} tendría en los negocios \cite{lalanda_diaconescu_mccann_2014}. 
-    
-    Esta adaptabilidad puede exponerse en múltiples puntos dentro de un sistema de software. Pueden realizarse adaptaciones en sistema operativo, lenguaje de programación, arquitectura e incluso datos \cite{lalanda_diaconescu_mccann_2014}. 
-
-    Manteniéndose en el marco del proyecto, son las implementaciones relacionadas con la modificación de la arquitectura los cuales nos interesan. Siendo así, nos centraremos en los mecanismos de adaptación de componentes, o de reconfiguración:
-
-    \begin{itemize}
-        \item \textbf{Binding Modification}: Este mecanismo hace referencia a la alteración de los vínculos entre los diferentes componentes de la arquitectura. Estos tienen el objetivo de modificar la interacción entre componentes, lo que es especialmente común en implementaciones con \textit{proxies}. Este tipo de mecanismo de adaptación fue usado por Kabashkin \citeyear{Kabashkin_2017} para añadir fiabilidad a la red de comunicación aérea.
-
-        \item \textbf{Interface Modification}: Las interfases funcionan como los puntos de comunicación entre los diferentes componentes de la arquitectura. Siendo así, es posible que la modificación de estos sea de interés con el fin de alterar el comportamiento de un sistema al igual que soportar la heterogeneidad del sistema. Esto puede verse en el trabajo desarrollado por Liu, Parashar y Hariri \citeyear{Liu_2004} en donde definen la utilidad de dichas adaptaciones al igual que la implementación de las mismas.
-
-        \item \textbf{Component Replacement, Addition and Subtraction}: En términos simples, este mecanismo se encarga de alterar los componentes que componen la arquitectura; de esta manera, modificando su comportamiento. Ejemplos de esto puede verse en el trabajo de Huynh \citeyear{Huynh_2019} en el cual se evalúan varios acercamientos a la reconfiguración de arquitecturas a partir del remplazo de componentes a nivel individual al igual que grupal. 
-        
-        Este acercamiento a la mutación de la arquitectura también puede verse en el despliegue de componentes como respuesta a cambios en los objetivos de negocio de las aplicaciones al igual que como respuesta a cambios inesperados dentro de la aplicación. Esto puede verse en trabajos como el de Patouni \citeyear{Patouni_2006} donde se realizan este tipo de implementaciones. 
-
-    \end{itemize}
-
-    \subsubsection{Internet of Things}
-
-    % Aquí es para contextualizar una de las aplicaciones de la computación embebida más que otra cosa
-
-    El Internet de las cosas, o IoT (Internet of Things); es una de las áreas de las ciencias de la computación en la cual  se embeben diferentes dispositivos en objetos del día a día. Esto les da la capacidad de enviar y recibir información con el fin de realizar monitoreo o facilitar el control de ciertas acciones \cite{Berte_2018}.
-
-    Esta tecnología, debido a su flexibilidad al igual que el alcance que puede tener, presenta una gran cantidad de aplicaciones que va desde electrónica de consumo hasta la industria. Encuestas realizadas en el 2020 reportan su uso en smart homes, smart cities, transporte, agricultura, medicina, etc. \cite{Dawood_2020}. Su impacto no ha sido poco.
-
-    \subsubsection*{Sistemas Embebidos}
-    
-    % Tengo que contextualizar qué es lo que es la computación embebida y cual es el principio o justificación de este
-
-    Los sistemas de cómputo embebidos hacen referencia a un sistema compuesto de microcontroladores los cuales están orientados a llevar a cabo una función o un rango de funciones específicas \cite{heath2002embedded}. Este tipo de sistemas, debido a la posibilidad de combinar hardware y software en una manera compacta, se ha visto en multiples campos de la industria como lo son el sector automotor, de maquinaria industrial o electrónica de consumo \cite{deichmann_2022}.
-
-    % Extender la aplicación de la computación autonómica en los sistemas embebidos.
-
-    \subsubsection*{Smart Campus}
-
-    % Y aquí es para explicar el concepto de un smart campus. Para qué se usa y de donde surge.
-
-    Un Smart Campus, equiparable con el concepto de Smart City, es una plataforma en la que se emplean tecnologías, sumado a una infraestructura física, con la cual se busca la recolección de información y monitoreo en tiempo real \cite{MinAllah2020}. Los datos recolectados tienen el objetivo de apoyar la toma de decisiones, mejora de servicios, entre otros \cite{Anagnostopoulos_2023}.
-
-    Estas plataformas, debido a su escala y alcance en cuanto a la cantidad de servicios que pueden ofrecer, requieren de 
-    infraestructuras tecnológicas las cuales den soporte a los objetivos del sistema. Es posible ver implementaciones orientadas a microservicios en trabajos como los de Jiménez, Cárcamo y Pedraza \citeyear{henry_2020} donde se desarrolla una plataforma de software escalable con la cual se pueda lograr interoperatividad y alta usabilidad para todos.
-
-    \pagebreak
-
-    \section{Método}
-
-    \section{Resultados}
-
-    \section{Discusión}
-
-    \section{Conclusiones}
+    \input{sections/11. conclusiones}
 
     \newpage
     \bibliography{bibliography.bib}
