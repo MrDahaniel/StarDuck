@@ -1,6 +1,8 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, oneside]{book}
 
-\input{sections/00. config}
+\setlength{\headheight}{14.49998pt}
+
+\input{sections/config}
 
 \bibliographystyle{apacite}
 
@@ -18,49 +20,54 @@
 \begin{document}
 
     %% Portada
-    \input{sections/01. portada}
+    \input{sections/0. Formalidades/portada}
     
     %% Numeración romana 
     \pagenumbering{roman} 
 
     %% Dedicatoria
-    \input{sections/02. dedicatoria}
+    \input{sections/0. Formalidades/dedicatoria}
 
     %% Agradecimientos
-    \input{sections/03. agradecimientos}
+    \input{sections/0. Formalidades/agradecimientos}
 
     %% Tablas de contenidos
     \renewcommand{\contentsname}{\normalsize Contenido}
     \tableofcontents
     \newpage
 
-    \renewcommand{\listfigurename}{\normalsize Lista de figuras}
-    \listoffigures
-    \newpage
+    % \renewcommand{\listfigurename}{\normalsize Lista de figuras}
+    % \listoffigures
     
-    \renewcommand{\listtablename}{\normalsize Lista de tablas}    
-    \listoftables
-    \newpage
+    % \renewcommand{\listtablename}{\normalsize Lista de tablas}    
+    % \listoftables
+    \mainmatter
 
     \pagenumbering{arabic} 
 
-    \input{sections/04. introduccion}
+    \input{sections/1. Generalidades/introduccion}
 
-    \section{\tit}
-    
-    \input{sections/05. planteaminto justificacion}
+    % \section{\tit}
 
-    \input{sections/06. objetivos}
+    \chapter{Generalidades del proyecto}
+    
+    \input{sections/1. Generalidades/planteaminto justificacion}
 
-    \input{sections/07. marco referencial}
+    \input{sections/1. Generalidades/objetivos}
+
+    \input{sections/1. Generalidades/marco referencial}
+
+    \chapter{Lenguajes de descripción de arquitectura}
     
-    \input{sections/08. metodo}
+    \input{sections/2. LDA/LDA}
+
+    % \input{sections/08. metodo}
     
-    \input{sections/09. resultados}
+    % \input{sections/09. resultados}
     
-    \input{sections/10. discusion}
+    % \input{sections/10. discusion}
     
-    \input{sections/11. conclusiones}
+    % \input{sections/11. conclusiones}
 
     \newpage
     \bibliography{bibliography.bib}
