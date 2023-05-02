@@ -1,4 +1,45 @@
-La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte escencial dentro de la computación autonómica. Esta hace parte, de manera directa a la base de conociemiento (K), y de manera indirecta a los objetivos del administrador del sistema \cite[p. 24w]{lalanda_diaconescu_mccann_2014}. 
+\chapter{Lenguajes De Descripción De Arquitectura}
 
-como parte de la base de conociemiento (K) dentro del modelo de , 
+\section{Necesidad De Una Notación}
 
+La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte esencial dentro de la computación autonómica. Esta hace parte, de manera directa a la base de conociemiento (K), y de manera indirecta a los objetivos del administrador del sistema \cite[p. 24]{lalanda_diaconescu_mccann_2014}. 
+
+Partiendo de esto, como parte del desarrollo del presente proyecto, era necesario el determinar una manera de realizar la declaración de dicha arquitectura con el fin de establecer este punto de comparación el cual, durante el proceso de la comparación de la arquitectura establecida con la que se encuentra en tiempo de ejecución en un momento dado, nos permitirá establecer el estado del sistema.
+
+\section{Criterios De Selección}
+
+Con el fin de establecer la notación a usar para la declaración de las arquitecturas objetivo, se establecieron uno lineamientos con los cuales se realizaría la evaluación de las diferentes notaciones ya desarrolladas anteriormente. De esta manera se podría escoger la manera a representar los modelos, o en el caso de ser necesario, establecer los criterios por el cual se podría desarrollar uno.
+
+En el cuadro \ref{tab:criterios}, se presentan los criterios usados para la selección, con su respectiva explicación y valor considerado para la selección:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|m{5cm}|m{0.55\linewidth}|c|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Criterio}} &
+        \multicolumn{1}{c|}{\textbf{Explicación}} &
+        \multicolumn{1}{c|}{\textbf{Valor}} \\ \hline
+        \centering Describir la arquitectura de un sistema IoT &
+        Este criterio es una base a establecer con el fin de descartar aquellos lenguajes de notación generales o no necesariamente usados para la descripción de arquitecturas IoT. &
+        Alto \\ \hline
+        \centering  Permitir la especificación de la ubicación del componente &
+        La especificación de la ubicación de los componentes es importante en los sistemas IoT, especialmente dentro del contexto del proyecto en el cual se está trabajando con un Smart Campus; ya que los componentes pueden estar distribuidos en diferentes ubicaciones físicas y la evaluación de su integridad puede depender de su presencia en un lugar dado. &
+        Alto \\ \hline
+        \centering Habilitar el modelado del componente a nivel de sus entradas &
+        Es importante poder describir las entradas de los componentes, específicamente los datos que manejan, así como su rol dentro del sistema. &
+        Alto \\ \hline
+        \centering Modelar el comportamiento de los componentes del sistema IoT &
+        La notación debe permitir modelar el comportamiento de los componentes, de manera que se puedan entender sus interacciones y su función en el sistema IoT. Dentro del contexto del proyecto, no es tan relevante, ya que no se está evaluando la funcionalidad del sistema, sin embargo, para futuros trabajos, podría facilitar la extensión de Smart Campus UIS. &
+        Bajo \\ \hline
+        \centering Posibilitar el establecer los estados de los componentes y sensores del sistema &
+        La notación debe poder definir los estados de los componentes. Estos estados pueden ser tanto de comportamiento o operacionales &
+        Medio \\ \hline
+        \centering Permitir de exportar el modelo descrito a gráficas u otros formatos (JSON, YAML, etc.) &
+        Es importante que la herramienta permita exportar el modelo descrito en diferentes formatos para facilitar su integración con otras herramientas y sistemas, y para permitir su visualización en diferentes formatos. &
+        Medio \\ \hline
+    \end{tabular}
+    \caption{Criterios usados para la determinación de la notación a usar}
+    \label{tab:criterios}
+\end{table}
+
+Ya con los criterios establecidos, el siguiente paso era el determinar de las alternativas a evaluar con el fin de escoger la notación a usar, o iniciar el desarrollo de una la cual nos permitirea llevar a cabo del proyecto. Esta búsqueda 
