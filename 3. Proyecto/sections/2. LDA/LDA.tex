@@ -2,7 +2,7 @@
 
 \section{Necesidad De Una Notación}
 
-La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte esencial dentro de la computación autonómica. Esta hace parte, de manera directa a la base de conociemiento (K), y de manera indirecta a los objetivos del administrador del sistema \cite[p. 24]{lalanda_diaconescu_mccann_2014}. 
+La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte esencial dentro de la computación autonómica. Esta hace parte, de manera directa a la base de conocimiento (K), y de manera indirecta a los objetivos del administrador del sistema \cite[p. 24]{lalanda_diaconescu_mccann_2014}. 
 
 Partiendo de esto, como parte del desarrollo del presente proyecto, era necesario el determinar una manera de realizar la declaración de dicha arquitectura con el fin de establecer este punto de comparación el cual, durante el proceso de la comparación de la arquitectura establecida con la que se encuentra en tiempo de ejecución en un momento dado, nos permitirá establecer el estado del sistema.
 
@@ -32,14 +32,23 @@ En el cuadro \ref{tab:criterios}, se presentan los criterios usados para la sele
         La notación debe permitir modelar el comportamiento de los componentes, de manera que se puedan entender sus interacciones y su función en el sistema IoT. Dentro del contexto del proyecto, no es tan relevante, ya que no se está evaluando la funcionalidad del sistema, sin embargo, para futuros trabajos, podría facilitar la extensión de Smart Campus UIS. &
         Bajo \\ \hline
         \centering Posibilitar el establecer los estados de los componentes y sensores del sistema &
-        La notación debe poder definir los estados de los componentes. Estos estados pueden ser tanto de comportamiento o operacionales &
+        La notación debe poder definir los estados de los componentes. Estos estados pueden ser tanto de comportamiento o operacionales. &
         Medio \\ \hline
         \centering Permitir de exportar el modelo descrito a gráficas u otros formatos (JSON, YAML, etc.) &
         Es importante que la herramienta permita exportar el modelo descrito en diferentes formatos para facilitar su integración con otras herramientas y sistemas, y para permitir su visualización en diferentes formatos. &
-        Medio \\ \hline
+        Medio \\ \hline 
     \end{tabular}
     \caption{Criterios usados para la determinación de la notación a usar}
     \label{tab:criterios}
 \end{table}
 
-Ya con los criterios establecidos, el siguiente paso era el determinar de las alternativas a evaluar con el fin de escoger la notación a usar, o iniciar el desarrollo de una la cual nos permitirea llevar a cabo del proyecto. Esta búsqueda 
+Una vez establecidos los criterios de selección, se procedió a realizar una exhaustiva búsqueda de alternativas disponibles en la literatura y en la industria para describir la arquitectura de sistemas IoT. Esta búsqueda se realizó a partir de la revisión en diferentes bases de datos, como \textit{Scopus}; al igual que algunas de las revistas especializadas en el tema, y el internet en general.
+
+Durante la búsqueda, se identificaron una gran variedad de opciones. Sin embargo, la gran mayoría de estos se filtraron, o descartaron; a partir de los criterios de selección establecidos. Esto se debe a que los LDAs usados en la tanto en la industria y academia, como AADL, tienen un enfoque a los campos de aviónica, equipos médicos y aeronáutica (lo que complicaría su implementación hacia sistemas de software IoT) \cite{aadl_web, aadl_pdf}; o SysML, que son demasiado genéricos y abarcan hardware, software e incluso personas y procesos \cite{omgsysml_2015}.
+
+% se evaluaron las alternativas disponibles para determinar la notación más adecuada que permitiera describir la arquitectura del sistema IoT de manera efectiva. En caso de que ninguna de las opciones disponibles cumpliera con los criterios establecidos, se consideraría el desarrollo de una notación personalizada que satisficiera las necesidades específicas del proyecto. 
+
+
+% Para llevar a cabo la búsqueda de herramientas que cumplan con los criterios establecidos, se realizó una revisión exhaustiva de la literatura especializada en el área de la descripción de arquitecturas de sistemas IoT. Se consultaron diversas bases de datos académicas y se utilizaron términos de búsqueda específicos para identificar las herramientas más relevantes en este campo.
+
+% Además, se consultaron fuentes adicionales, como blogs especializados, foros de discusión y comunidades en línea, con el objetivo de obtener información adicional y recomendaciones de expertos en la materia. Finalmente, se evaluaron varias alternativas que cumplieron con los criterios establecidos y se seleccionó la que mejor se ajustó a las necesidades del proyecto.
