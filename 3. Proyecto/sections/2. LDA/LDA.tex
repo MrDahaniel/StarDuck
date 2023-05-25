@@ -14,6 +14,7 @@ En el cuadro \ref{tab:criterios}, se presentan los criterios usados para la sele
 
 \begin{table}[H]
     \centering
+    \caption{Criterios usados para la determinación de la notación a usar}
     \begin{longtable}{|c|m{5cm}|m{0.5\linewidth}|c|}
         \hline
         \multicolumn{1}{|c|}{} &
@@ -39,9 +40,11 @@ En el cuadro \ref{tab:criterios}, se presentan los criterios usados para la sele
         Es importante que la herramienta permita exportar el modelo descrito en diferentes formatos para facilitar su integración con otras herramientas y sistemas, y para permitir su visualización en diferentes formatos. &
         Medio \\ \hline 
     \end{longtable}
-    \caption{Criterios usados para la determinación de la notación a usar}
+    \vspace{-4mm}
     \label{tab:criterios}
 \end{table} 
+
+\section{Búsqueda de Alternativas}
 
 Una vez establecidos los criterios de selección, se procedió a realizar una exhaustiva búsqueda de alternativas disponibles en la literatura y en la industria para describir la arquitectura de sistemas IoT. Esta búsqueda se realizó a partir de la revisión en diferentes bases de datos, como \textit{Scopus}; al igual que algunas de las revistas especializadas en el tema, y el internet en general.
 
@@ -50,11 +53,11 @@ Durante la búsqueda, se identificaron una gran variedad de opciones. Sin embarg
 Entonces, de las posibles opciones de notación, se seleccionaron cinco las cuales serían evaluadas con el fin de determinar si alguna de las opciones puede ser usada, o si debemos desarrollar nuestra propia notación. A continuación, se presentan las alternativas a evaluar:
 
 \begin{itemize}
-    \item MontiThings: Basado en MontiArc, otro ADL más general; está diseñado para el modelado y prototipado de aplicaciones de IoT. Este realiza las descripciones de sus arquitecturas en un modelo componente-conector, donde los componentes están compuestos por otros componentes; y los conectores definen la manera en la que se comunican estos componentes a nivel de los datos y la dirección de estos. \cite{MontiThings, MontiThingsRepo}
-    \item Eclipse Mita: Mita, creado por la Eclipse Foundation; es un lenguaje de programación orientado al facilitar la programación de sistemas IoT. Aunque como tal no es un ADL, está orientada a la descripción de los componentes y el comportamiento del sistema establecido, de esta manera, puede generar el código que debe correr en los dispositivos embebidos \cite{Mita}. 
-    \item SysML4IoT:  \cite{SysML4IoT2016}.
-    \item ThingML:
-    \item IoT-DDL:
+    \item \textbf{MontiThings:} Basado en MontiArc, otro LDA más general; está diseñado para el modelado y prototipado de aplicaciones de IoT. Este realiza las descripciones de sus arquitecturas en un modelo componente-conector, donde los componentes están compuestos por otros componentes; y los conectores definen la manera en la que se comunican estos componentes a nivel de los datos y la dirección de estos. \cite{MontiThings, MontiThingsRepo}
+    \item \textbf{Eclipse Mita}: Mita, creado por la Eclipse Foundation; es un lenguaje de programación orientado al facilitar la programación de sistemas IoT. Aunque como tal no es un LDA, está orientada a la descripción de los componentes y el comportamiento del sistema establecido, de esta manera, puede generar el código que debe correr en los dispositivos embebidos \cite{Mita}. 
+    \item \textbf{SysML4IoT:} Es un perfil de SysML\footnote{Los perfiles se refieren a extensiones a UML, en este caso es una extensión de SysML en sí \cite{Charles2007}.} en la cual se usan estereotipos de UML con el fin de abstraer las diferentes partes de los sistemas de IoT. Al igual que SysML, este permite el modelado más allá de dispositivos incluso llegando a personas y procesos, con la diferencia del enfoque dado al \textit{dominio de IoT} \footnote{El \textit{dominio del IoT}, hace referencia al \textit{Architecture Reference Model} establecido por IoT-A, un consorcio Europeo el cual buscaba el establecer un modelo para la interoperatividad de dispositivos IoT. \cite{IoTA2014}} \cite{SysML4IoT2016}.
+    \item \textbf{ThingML:} Similar a Mita, ThingML, es un lenguaje de modelado el cual tiene capacidades de generar el código requerido por los dispositivos embebidos. En términos del proyecto, este permite el modelado de los sistemas de IoT a partir de \textit{state machine models}\footnote{Los \textit{state machine model}, también conocidas como Autómatas Finitos; son modelos matemáticos que describen todos los posibles estados de un sistema a partir de unas entradas dadas \cite{StateMachine2023}. } los cuales permiten describir los componentes del sistema al igual que el comportamiento de estos \cite{ThingML2016}.
+    \item \textbf{IoT-DDL}: Iot-DDL es un LDA, implementado en XML, que describe objetos dentro de los ecosistemas IoT con base en sus componentes, identidad y servicios entre otros. Este tiene la capacidad de describir parte de la base de conocimiento que tienen los diferentes componentes (Principalmente relaciones y asociaciones entre componentes) \cite{Ahmed2018}.
 \end{itemize}
 
 Lo primero a notar es como de las soluciones a evaluar, 
@@ -71,4 +74,5 @@ Lo primero a notar es como de las soluciones a evaluar,
 
 % En el contexto de los Smart Campus, y más aún dentro del marco del proyecto; existen una serie de características que determinan si una arquitectura puede ser considerada válida a un nivel de aplicación. Siendo así, el determinar lo que serían los requerimientos con los cuales establecer tanto la notación a usar para la declaración de estas arquitecturas objetivo; al igual que el metamodelo que rige la semántica de la notación \cite{Jeusfeld2009}.
 
-% Ahora, dado el principal objetivo de los Smart Campus es la recolección de información, con fines de monitoreo para la toma de decisiones entre otros \cite{MinAllah2020, Anagnostopoulos_2023}; los requerimientos deben estar orientados principalmente hacia los dispositivos y los datos que estos recolectan.
+% Ahora, dado el principal objetivo de los Smart Campus es la recolección de información, con fines de monitoreo para la toma de decisiones entre otros \cite{MinAllah2020, Anagnostopoulos_2023}; los requerimientos deben estar orientados principalmente hacia los dispositivos y los datos que estos recolectan.asdasd
+
