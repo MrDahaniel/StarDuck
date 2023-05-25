@@ -41,7 +41,7 @@ En el cuadro \ref{tab:criterios}, se presentan los criterios usados para la sele
     \end{longtable}
     \caption{Criterios usados para la determinación de la notación a usar}
     \label{tab:criterios}
-\end{table}
+\end{table} 
 
 Una vez establecidos los criterios de selección, se procedió a realizar una exhaustiva búsqueda de alternativas disponibles en la literatura y en la industria para describir la arquitectura de sistemas IoT. Esta búsqueda se realizó a partir de la revisión en diferentes bases de datos, como \textit{Scopus}; al igual que algunas de las revistas especializadas en el tema, y el internet en general.
 
@@ -50,9 +50,9 @@ Durante la búsqueda, se identificaron una gran variedad de opciones. Sin embarg
 Entonces, de las posibles opciones de notación, se seleccionaron cinco las cuales serían evaluadas con el fin de determinar si alguna de las opciones puede ser usada, o si debemos desarrollar nuestra propia notación. A continuación, se presentan las alternativas a evaluar:
 
 \begin{itemize}
-    \item MontiThings: Basado en MontiArc, otro ADL más general; MontiThings está diseñado para el modelado y prototipado de aplicaciones de IoT. Este realiza las descripciones de sus arquitecturas en un modelo componente-conector. 
-    \item Eclipse Mita:
-    \item SysML4IoT:
+    \item MontiThings: Basado en MontiArc, otro ADL más general; está diseñado para el modelado y prototipado de aplicaciones de IoT. Este realiza las descripciones de sus arquitecturas en un modelo componente-conector, donde los componentes están compuestos por otros componentes; y los conectores definen la manera en la que se comunican estos componentes a nivel de los datos y la dirección de estos. \cite{MontiThings, MontiThingsRepo}
+    \item Eclipse Mita: Mita, creado por la Eclipse Foundation; es un lenguaje de programación orientado al facilitar la programación de sistemas IoT. Aunque como tal no es un ADL, está orientada a la descripción de los componentes y el comportamiento del sistema establecido, de esta manera, puede generar el código que debe correr en los dispositivos embebidos \cite{Mita}. 
+    \item SysML4IoT:  \cite{SysML4IoT2016}.
     \item ThingML:
     \item IoT-DDL:
 \end{itemize}
