@@ -1,56 +1,57 @@
-\chapter{Lenguajes De Descripción De Arquitectura}
+\chapter{Lenguajes de Descripción de Arquitecturas}
 
-\section{Necesidad De Una Notación}
+\section{La necesidad de una arquitectura de referencia}
 
-La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte esencial dentro de la computación autonómica. Esta hace parte, de manera directa a la base de conocimiento (K), y de manera indirecta a los objetivos del administrador del sistema \cite[p. 24]{lalanda_diaconescu_mccann_2014}. 
+La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte esencial dentro de la computación autonómica. Esta forma parte directamente a la base de conocimiento (K), y, de manera indirecta, a los objetivos del administrador del sistema \cite[p. 24]{lalanda_diaconescu_mccann_2014}. 
 
-Partiendo de esto, como parte del desarrollo del presente proyecto, era necesario el determinar una manera de realizar la declaración de dicha arquitectura con el fin de establecer este punto de comparación el cual, durante el proceso de la comparación de la arquitectura establecida con la que se encuentra en tiempo de ejecución en un momento dado, nos permitirá establecer el estado del sistema.
+Con el fin de fijar un objetivo para nuestro sistema autonómico, fue necesario determinar una manera de realizar la declaración de dicha arquitectura, que estableciera un punto de referencia. Esto permitiría, durante el proceso de comparación de la arquitectura establecida con la que se encuentra en tiempo de ejecución en un momento dado, identificar el estado del sistema.
 
 \section{Criterios de selección}
 
-Con el fin de establecer la notación a usar para la declaración de las arquitecturas objetivo, se establecieron uno lineamientos con los cuales se realizaría la evaluación de las diferentes notaciones ya desarrolladas anteriormente. De esta manera se podría escoger la manera a representar los modelos, o en el caso de ser necesario, establecer los criterios por el cual se podría desarrollar uno.
+Con el fin de establecer la notación a usar para la declaración de las arquitecturas objetivo, se establecieron unos lineamientos con los cuales se realizaría la evaluación de las diferentes notaciones ya desarrolladas anteriormente. De esta manera se podría escoger la manera a representar los modelos, o en el caso de ser necesario, establecer los criterios por el cual se podría desarrollar uno.
 
-En el cuadro \ref{tab:criterios}, se presentan los criterios usados para la selección, con su respectiva explicación y valor considerado para la selección:
+En la tabla \ref{tab:criterios}, se presentan los criterios usados para la selección, con su respectiva explicación y valor considerado para la selección.
 
 \begin{table}[H]
     \centering
-    \caption{Criterios usados para la determinación de la notación a usar}
-    \begin{longtable}{|c|m{5cm}|m{0.5\linewidth}|c|}
+    \vspace{-4mm}
+    \caption{Criterios usados para la determinación de la notación a utilizar} \label{tab:criterios}
+    \vspace{4mm}
+    \begin{tabular}{lm{4.7cm}m{0.51\linewidth}c}
         \hline
-        \multicolumn{1}{|c|}{} &
-        \multicolumn{1}{|c|}{\textbf{Criterio}} &
-        \multicolumn{1}{c|}{\textbf{Explicación}} &
-        \multicolumn{1}{c|}{\textbf{Valor}} \\ \hline
+        \multicolumn{1}{l}{} &
+        \multicolumn{1}{c}{\textbf{Criterio}} &
+        \multicolumn{1}{c}{\textbf{Explicación}} &
+        \multicolumn{1}{c}{\textbf{Valor}} \\ \hline
         C1 & \centering Describir la arquitectura de un sistema IoT &
         Este criterio es una base a establecer con el fin de descartar aquellos lenguajes de notación generales o no necesariamente usados para la descripción de arquitecturas IoT. &
-        Alto \\ \hline
+        Alto \\ 
         C2 & \centering  Permitir la especificación de la ubicación del componente &
         La especificación de la ubicación de los componentes es importante en los sistemas IoT, especialmente dentro del contexto del proyecto en el cual se está trabajando con un Smart Campus; ya que los componentes pueden estar distribuidos en diferentes ubicaciones físicas y la evaluación de su integridad puede depender de su presencia en un lugar dado. &
-        Alto \\ \hline
+        Alto \\ 
         C3 & \centering Habilitar el modelado del componente a nivel de sus entradas &
         Es importante poder describir las entradas de los componentes, específicamente los datos que manejan, así como su rol dentro del sistema. &
-        Alto \\ \hline
+        Alto \\ 
         C4 & \centering Modelar el comportamiento de los componentes del sistema IoT &
         La notación debe permitir modelar el comportamiento de los componentes, de manera que se puedan entender sus interacciones y su función en el sistema IoT. Dentro del contexto del proyecto, no es tan relevante, ya que no se está evaluando la funcionalidad del sistema, sin embargo, para futuros trabajos, podría facilitar la extensión de Smart Campus UIS. &
-        Bajo \\ \hline
+        Bajo \\ 
         C5 & \centering Posibilitar el establecer los estados de los componentes y sensores del sistema &
         La notación debe poder definir los estados de los componentes. Estos estados pueden ser tanto de comportamiento o operacionales. &
-        Medio \\ \hline
-        C6 & \centering Permitir de exportar el modelo descrito a gráficas u otros formatos (JSON, YAML, etc.) &
+        Medio \\ 
+        C6 & \centering Permitir de exportar el modelo descrito a gráficas u otros formatos &
         Es importante que la herramienta permita exportar el modelo descrito en diferentes formatos para facilitar su integración con otras herramientas y sistemas, y para permitir su visualización en diferentes formatos. &
-        Medio \\ \hline 
-    \end{longtable}
+        Medio \\ \hline
+    \end{tabular}
     \vspace{-4mm}
-    \label{tab:criterios}
 \end{table} 
 
 \section{Búsqueda de Alternativas}
 
-Una vez establecidos los criterios de selección, se procedió a realizar una exhaustiva búsqueda de alternativas disponibles en la literatura y en la industria para describir la arquitectura de sistemas IoT. Esta búsqueda se realizó a partir de la revisión en diferentes bases de datos, como \textit{Scopus}; al igual que algunas de las revistas especializadas en el tema, y el internet en general.
+Una vez establecidos los criterios de selección, se realizó una exhaustiva búsqueda de alternativas disponibles en la literatura y en la industria para describir arquitecturas para describir la arquitectura de sistemas IoT. Esta búsqueda se realizó a partir de la revisión en diferentes bases de datos, como \textit{Scopus}; al igual que algunas de las revistas especializadas en el tema, y el internet en general.
 
-Durante la búsqueda, se identificaron una gran variedad de opciones. Sin embargo, la gran mayoría de estos se filtraron, o descartaron; a partir de los criterios de selección establecidos. Esto se debe a que los LDAs usados en la tanto en la industria y academia, como AADL, tienen un enfoque a los campos de aviónica, equipos médicos y aeronáutica (lo que complicaría su implementación hacia sistemas de software IoT) \cite{aadl_web, aadl_pdf}; o SysML, que son demasiado genéricos y abarcan hardware, software e incluso personas y procesos \cite{omgsysml_2015}.
+Durante la búsqueda, se identificaron una gran variedad de opciones. Sin embargo, la gran mayoría de estos se filtraron, o descartaron; a partir de los criterios de selección establecidos. Esto se debe a que los LDAs usados en la tanto en la industria y academia, como AADL (Architecture Analysis and Design Language), tienen un enfoque a los campos de aviónica, equipos médicos y aeronáutica (lo que complicaría su implementación hacia sistemas de software IoT) \cite{aadl_web, aadl_pdf}; o SysML, que son demasiado genéricos y abarcan hardware, software e incluso personas y procesos \cite{omgsysml_2015}.
 
-Entonces, de las posibles opciones de notación, se seleccionaron cinco las cuales serían evaluadas con el fin de determinar si alguna de las opciones puede ser usada, o si debemos desarrollar nuestra propia notación. A continuación, se presentan las alternativas a evaluar:
+Entonces, de las posibles opciones de notación, se seleccionaron cinco las cuales fueron evaluadas con el fin de determinar si alguna de las opciones hubiera podido ser usada, o si era necesario desarrollar nuestra propia notación. A continuación, se presentan las alternativas evaluadas:
 
 \begin{itemize}
     \item \textbf{MontiThings:} Basado en MontiArc, otro LDA más general; está diseñado para el modelado y prototipado de aplicaciones de IoT. Este realiza las descripciones de sus arquitecturas en un modelo componente-conector, donde los componentes están compuestos por otros componentes; y los conectores definen la manera en la que se comunican estos componentes a nivel de los datos y la dirección de estos. \cite{MontiThings, MontiThingsRepo}
@@ -60,19 +61,64 @@ Entonces, de las posibles opciones de notación, se seleccionaron cinco las cual
     \item \textbf{IoT-DDL}: Iot-DDL es un LDA, implementado en XML, que describe objetos dentro de los ecosistemas IoT con base en sus componentes, identidad y servicios entre otros. Este tiene la capacidad de describir parte de la base de conocimiento que tienen los diferentes componentes (Principalmente relaciones y asociaciones entre componentes) \cite{Ahmed2018}.
 \end{itemize}
 
-Lo primero a notar es como de las soluciones a evaluar, 
+Una vez seleccionadas las alternativas a evaluar, se utilizó la matriz de evaluación en la tabla \ref{tab:evaluation} para determinar la solución ideal para el desarrollo del proyecto. 
 
-% se evaluaron las alternativas disponibles para determinar la notación más adecuada que permitiera describir la arquitectura del sistema IoT de manera efectiva. En caso de que ninguna de las opciones disponibles cumpliera con los criterios establecidos, se consideraría el desarrollo de una notación personalizada que satisficiera las necesidades específicas del proyecto. 
+\skipline
+\skipline
+\skipline
+\skipline
 
+\begin{table}[H]
+    \centering
+    \vspace{-4mm}
+    \caption{Evaluación de las alternativas en función de los criterios establecidos} \label{tab:evaluation}
+    \vspace{4mm}
+    \begin{tabular}{cccccc}
+    \hline
+    \multicolumn{1}{l}{} &
+      \multicolumn{1}{l}{MontiThings} &
+      \multicolumn{1}{l}{Eclipse Mita} &
+      \multicolumn{1}{l}{SysML4IoT} &
+      \multicolumn{1}{l}{ThingML} &
+      \multicolumn{1}{l}{IoT-DDL} \\ \hline
+      C1 & ✓ & ✓ & ✓ & ✓ & ✓ \\
+      C2 & ✗ & ✗ & ✗ & ✗ & ✗ \\
+      C3 & ✓ & ✓ & ✓ & ✓ & ✓ \\
+      C4 & ✓ & ✓ & ✓ & ✓ & ✗ \\
+      C5 & ✓ & ✓ & ✗ & ✓ & ✗ \\
+      C6 & ✗ & ✗ & ✗ & ✓ & ✗ \\
+    \end{tabular}
+    \vspace{-4mm}
+\end{table}
 
-% Para llevar a cabo la búsqueda de herramientas que cumplan con los criterios establecidos, se realizó una revisión exhaustiva de la literatura especializada en el área de la descripción de arquitecturas de sistemas IoT. Se consultaron diversas bases de datos académicas y se utilizaron términos de búsqueda específicos para identificar las herramientas más relevantes en este campo.
+Según los resultados de la evaluación, se puede apreciar que ninguno de estos LDA cumple con los criterios establecidos para el proyecto. Aunque estos están orientados hacia la descripción y desarrollo de sistemas IoT, no están enfocados hacia su contexto en términos de aplicación más allá de la definición de comportamiento. Esto se debe a los objetivos de cada una de estas notaciones, de una u otra manera; buscan el representar como tal el sistema IoT en términos de su funcionalidad técnica y no la aplicación en si. 
 
-% Además, se consultaron fuentes adicionales, como blogs especializados, foros de discusión y comunidades en línea, con el objetivo de obtener información adicional y recomendaciones de expertos en la materia. Finalmente, se evaluaron varias alternativas que cumplieron con los criterios establecidos y se seleccionó la que mejor se ajustó a las necesidades del proyecto.
+\section{Un nuevo modelo}
 
+Dado que no hay una alternativa que se adapte completamente a las necesidades del proyecto, tendremos que definir nuestro propio modelo el cual permita modelar nuestras arquitecturas a nivel de aplicación bajo el contexto de un Smart Campus, tomando en cuenta los criterios definidos como guía para el desarrollo.
 
-% Related to the definition of out own ADL
+Primeramente, tendremos que definir un metamodelo el cual nos permita establecer la manera en la que se verán estas arquitecturas. Para ello, y debido a la eventual implementación que se hará, podremos basarnos parcialmente en el modelo establecido por \citeA[p. 63]{msc_henry_2022} (Ver fig. \ref{fig:henrymodelo}). 
 
-% En el contexto de los Smart Campus, y más aún dentro del marco del proyecto; existen una serie de características que determinan si una arquitectura puede ser considerada válida a un nivel de aplicación. Siendo así, el determinar lo que serían los requerimientos con los cuales establecer tanto la notación a usar para la declaración de estas arquitecturas objetivo; al igual que el metamodelo que rige la semántica de la notación \cite{Jeusfeld2009}.
+\begin{figure}[H]
+    \centering
+    \caption{Versión 2 del modelo concepto planteado por}
+    \citeA[p. 63]{msc_henry_2022}
+    \label{fig:henrymodelo}
+    \vspace{2mm}
 
-% Ahora, dado el principal objetivo de los Smart Campus es la recolección de información, con fines de monitoreo para la toma de decisiones entre otros \cite{MinAllah2020, Anagnostopoulos_2023}; los requerimientos deben estar orientados principalmente hacia los dispositivos y los datos que estos recolectan.asdasd
+    \includegraphics[width=\linewidth]{images/upload_86533eb1d09180d8c5c96e9ef7d813f9.png}
+\end{figure}
+
+En este modelo, se presentan todas los componentes que componen a Smart Campus UIS en términos de su arquitectura a un nivel técnico. Ahora, si quisiéramos modelar un Smart Campus a nivel de aplicación, podríamos tomar una versión reducida de este modelo enfocándonos principalmente hacia los componentes y a la función que estos cumplen en una ubicación geográfica dada. Partiendo de esto, se plantea el modelo presente en la figura \ref{fig:metamodelo}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Versión 1 del metamodelo planteado para SCampusADL}
+    \label{fig:metamodelo}
+    \vspace{2mm}
+    \includegraphics[width=\linewidth]{images/Metamodel.pdf}
+\end{figure}
+
+ 
+
 

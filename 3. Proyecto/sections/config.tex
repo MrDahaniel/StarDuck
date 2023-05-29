@@ -4,10 +4,19 @@
 
 \usepackage{longtable}
 
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
 \usepackage{array}
   \renewcommand{\arraystretch}{1.5}
 
 \svgpath{ {./images/} }
+
+\usepackage{fontawesome}
+\usepackage{pifont}
+\usepackage{newunicodechar}
+  \newunicodechar{✓}{\ding{51}}
+  \newunicodechar{✗}{\ding{55}}
 
 \usepackage{fancyhdr}
 \fancypagestyle{plain}{
@@ -64,6 +73,7 @@
 \newcommand*{\escuela}[1]{\def\esc{#1}}
 
 \renewcommand\contentsname{Tabla de Contenidos}
+\addto\captionsspanish{\renewcommand\tablename{Tabla}}
 
 \usepackage{titlesec}
 \titleformat{\section}{\centering\normalfont\normalsize\bfseries}{\thesection}{1em}{}
