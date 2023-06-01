@@ -32,10 +32,10 @@ En la tabla \ref{tab:criterios}, se presentan los criterios usados para la selec
         C3 & \centering Habilitar el modelado del componente a nivel de sus entradas &
         Es importante poder describir las entradas de los componentes, específicamente los datos que manejan, así como su rol dentro del sistema. &
         Alto \\ 
-        C4 & \centering Modelar el comportamiento de los componentes del sistema IoT &
+        C4 & \centering Modelar el comportamiento de los componentes &
         La notación debe permitir modelar el comportamiento de los componentes, de manera que se puedan entender sus interacciones y su función en el sistema IoT. Dentro del contexto del proyecto, no es tan relevante, ya que no se está evaluando la funcionalidad del sistema, sin embargo, para futuros trabajos, podría facilitar la extensión de Smart Campus UIS. &
         Bajo \\ 
-        C5 & \centering Posibilitar el establecer los estados de los componentes y sensores del sistema &
+        C5 & \centering Posibilitar el establecer los estados de los componentes &
         La notación debe poder definir los estados de los componentes. Estos estados pueden ser tanto de comportamiento o operacionales. &
         Medio \\ 
         C6 & \centering Permitir de exportar el modelo descrito a gráficas u otros formatos &
@@ -86,18 +86,18 @@ Una vez seleccionadas las alternativas a evaluar, se utilizó la matriz de evalu
       C3 & ✓ & ✓ & ✓ & ✓ & ✓ \\
       C4 & ✓ & ✓ & ✓ & ✓ & ✗ \\
       C5 & ✓ & ✓ & ✗ & ✓ & ✗ \\
-      C6 & ✗ & ✗ & ✗ & ✓ & ✗ \\
+      C6 & ✗ & ✗ & ✗ & ✓ & ✗ \\ \hline
     \end{tabular}
     \vspace{-4mm}
 \end{table}
 
-Según los resultados de la evaluación, se puede apreciar que ninguno de estos LDA cumple con los criterios establecidos para el proyecto. Aunque estos están orientados hacia la descripción y desarrollo de sistemas IoT, no están enfocados hacia su contexto en términos de aplicación más allá de la definición de comportamiento. Esto se debe a los objetivos de cada una de estas notaciones, de una u otra manera; buscan el representar como tal el sistema IoT en términos de su funcionalidad técnica y no la aplicación en si. 
+Partiendo de los resultados de la evaluación, se puede apreciar que ninguno de estos LDA cumple con los criterios establecidos para el proyecto. Aunque estos están orientados hacia la descripción y desarrollo de sistemas IoT, no están enfocados hacia su contexto en términos de aplicación más allá de la definición de comportamiento. Esto se debe a los objetivos de cada una de estas notaciones, de una u otra manera; buscan el representar como tal el sistema IoT en términos de su funcionalidad técnica y no la aplicación en si. 
 
-\section{Un nuevo modelo}
+\section{Un nuevo modelo para Smart Campus}
 
-Dado que no hay una alternativa que se adapte completamente a las necesidades del proyecto, tendremos que definir nuestro propio modelo el cual permita modelar nuestras arquitecturas a nivel de aplicación bajo el contexto de un Smart Campus, tomando en cuenta los criterios definidos como guía para el desarrollo.
+Dado que no hay una alternativa que se adapte completamente a las necesidades del proyecto, se tuvo que definir nuestro propia notación la cual permita modelar las arquitecturas a nivel de aplicación bajo el contexto de un Smart Campus, tomando en cuenta los criterios definidos como guía para el desarrollo.
 
-Primeramente, tendremos que definir un metamodelo el cual nos permita establecer la manera en la que se verán estas arquitecturas. Para ello, y debido a la eventual implementación que se hará, podremos basarnos parcialmente en el modelo establecido por \citeA[p. 63]{msc_henry_2022} (Ver fig. \ref{fig:henrymodelo}). 
+Primeramente, fue necesario que definir un metamodelo el cual permita establecer la manera en la que se verán estas arquitecturas. Para ello, y partiendo de la implementación a realizar, nos basamos parcialmente en el modelo establecido por \citeA[p. 63]{msc_henry_2022}. 
 
 \begin{figure}[H]
     \centering
@@ -109,7 +109,17 @@ Primeramente, tendremos que definir un metamodelo el cual nos permita establecer
     \includegraphics[width=\linewidth]{images/Henrymodelo.png}
 \end{figure}
 
-En este modelo, se presentan todas los componentes que componen a Smart Campus UIS en términos de su arquitectura a un nivel técnico. Ahora, si quisiéramos modelar un Smart Campus a nivel de aplicación, podríamos tomar una versión reducida de este modelo enfocándonos principalmente hacia los componentes y a la función que estos cumplen en una ubicación geográfica dada. Partiendo de esto, se plantea el modelo presente en la figura \ref{fig:metamodelo}.
+% En este modelo, se presentan todas los componentes que componen a Smart Campus UIS en términos de su arquitectura a un nivel técnico. Ahora, para modelar un Smart Campus a nivel de aplicación, se tomó una versión reducida de este modelo enfocándose en los componentes y a la función que estos cumplen en una ubicación geográfica dada. 
+
+% El basarnos en este modelo nos asegura que se tiene la capacidad de realizar la descripción de un un sistema IoT de Smart Campus en un nivel técnico. Este contiene todos los componentes necesarios para poder modelar
+
+Basarnos en el modelo de la figura \ref{fig:henrymodelo}, nos da la capacidad de describir a un nivel técnico un sistema IoT. Ahora, aunque se podría usar para el desarrollo del proyecto, fue necesario modificarlo con el fin de acercarnos más hacia la descripción de un sistema IoT a nivel de aplicación. 
+
+Lo primero fue el establecer el contexto de los dispositivos. Esto específicamente se refiere al criterio \textit{C2} de la tabla \ref{tab:criterios}, en donde, dada la necesidad de establecer la ubicación geográfica en algunas de las aplicaciones de los Smart Campus, era necesario poder describir los lugares pertenecientes a la aplicación.
+
+Así mismo, se cubre el criterio \textit{C3} cambiando las propiedades del dispositivos de una clase, externa a los dispositivos; a un atributo, interno, el cual le permite a los componentes manejar su propia información en cuanto a los datos que estos manejan. Estas propiedades puede referirse a las entradas que tienen, en el caso de ser actuadores o procesadores de la información; o a los valores que reportan al sistema en el caso de ser sensores.
+
+Partiendo de esto, se planteó el modelo presente en la figura \ref{fig:metamodelo}.
 
 \begin{figure}[H]
     \centering
@@ -119,6 +129,8 @@ En este modelo, se presentan todas los componentes que componen a Smart Campus U
     \includegraphics[width=\linewidth]{images/Metamodel.pdf}
 \end{figure}
 
- 
+% Aquí seguiría la descripción del modelo presentado
 
+% Y creo que después debería ir la definición de los estados de los dispositivos
 
+% Y luego creo que iría la parte de la notación que es Yaml
