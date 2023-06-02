@@ -1,0 +1,27 @@
+campus: 
+    locations: # Declares context
+        campus-central:
+            name: "Campus Central"
+            locations:
+                laboratorios_pesados: 
+                    name: "Laboratorios Pesados"
+                #919b9c
+                
+
+        malaga:
+    gateways: # Declares devices
+        gate_a: '192.168.0.1'
+        gate_b: '192.168.0.2'
+        gate_c: '192.168.0.3'
+    components:
+        dol139:
+            temperature-sensor:
+                component-type: "sensor"
+                requirement-type: "mandatory"
+                inputs:
+                    temperature: "float"
+            co2-sensor:
+                component-type: "sensor"
+                requirement-type: "mandatory"
+                inputs:
+                    co2-level: "float"
