@@ -1,27 +1,114 @@
 campus: 
-    locations: # Declares context
+    # Declares context
+    locations: 
         campus-central:
             name: "Campus Central"
             locations:
-                laboratorios_pesados: 
+                laboratorios-pesados: 
                     name: "Laboratorios Pesados"
-                #919b9c
-                
+                mecanica:
+                    name: "Mecánica"
+                camilo-torres:
+                    name: "Camilo Torres"
+                    locations:
+                        ct-primero:
+                            name: "Primer Piso" 
+                        ct-segundo:
+                            name: "Segundo Piso"
 
         malaga:
-    gateways: # Declares devices
-        gate_a: '192.168.0.1'
-        gate_b: '192.168.0.2'
-        gate_c: '192.168.0.3'
+            name: "Sede Málaga"
+            locations:
+                reconver-gan:
+                    name: "Laboratorio De Reconversión Ganadera"
+                admon-malaga:
+                    name: "Administración Sede Málaga"
+
+    gateways: 
+        gate_a: 
+            ip: '192.168.0.1'
+            location: "admon-malaga"
+        gate_b: 
+            ip: '192.168.0.2'
+            location: "mecaninca"
+        gate_c: 
+            ip: '192.168.0.3'
+            location: "camilo-torres"
+
     components:
         dol139:
-            temperature-sensor:
-                component-type: "sensor"
-                requirement-type: "mandatory"
-                inputs:
-                    temperature: "float"
-            co2-sensor:
-                component-type: "sensor"
-                requirement-type: "mandatory"
-                inputs:
-                    co2-level: "float"
+            name: "DOL 139 Environmental Monitor"
+            component-type: "sensor"
+            locations: # Where context
+                malaga:
+                    quantity: 3
+                    timeout: 15
+                    required: true
+                campus-central:
+                    quantity: 3
+                    timeout: 15
+                    required: true
+                camilo-torres:
+                    quantity: 1
+                    timeout: 15
+                    required: false
+            components: # What composes it
+                temperature-sensor:
+                    name: "Temperature Sensor"
+                    component-type: "sensor"
+                    required: true
+                    outputs:
+                        temperature: "float"
+                co2-sensor:
+                    name: "CO2 Sensor"
+                    component-type: "sensor"
+                    required: true
+                    outputs:
+                        ppm: "float"
+                humidity-sensor:
+                    name: "Humidity Sensor"
+                    component-type: "sensor"
+                    required: true
+                    outputs:
+                        RH: "float"
+        pm: # General component
+            name: "Particulate Matter Monitor"
+            component-type: "sensor"
+            locations: # where context
+                mecanica:
+                    quantity: 1
+                    timeout: 60
+                    required: false
+                admon-malaga:
+                    quantity: 2
+                    timeout: 60
+                    required: true
+            components: # what composes it
+                pm25:
+                    name: "PM2.5 Sensor"
+                    component-type: "sensor"
+                    required: false
+                    outputs:
+                        ppm: "float"
+
+                pm10:
+                    name: "PM10 Sensor"
+                    component-type: "sensor"
+                    required: false
+                    outputs:
+                        ppm: "float"
+
+        barometric: # Atomic component
+            name: "Barometric Pressure Sensor"
+            locations:
+                campus-central:
+                    quantity: 1
+                    required: true
+                    timeout: 3600
+                malaga:
+                    quantity: 1
+                    required: true
+                    timeout: 3600
+            component-type: "sensor"
+            outputs:
+                atm: "float"
