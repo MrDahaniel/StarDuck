@@ -126,11 +126,23 @@ Partiendo de esto, se planteó el modelo presente en la figura \ref{fig:metamode
     \caption{Versión 1 del metamodelo planteado para SCampusADL}
     \label{fig:metamodelo}
     \vspace{2mm}
-    \includegraphics[width=\linewidth]{images/Metamodel.pdf}
+    \includegraphics[width=0.8\linewidth]{images/Metamodel.pdf}
 \end{figure}
 
-% Aquí seguiría la descripción del modelo presentado
+El enfoque principal del modelo se centra los dispositivos (\texttt{{Device}}). Estos están ubicados en diferentes puntos, o locaciones (\textit{\texttt{location}}), dentro del Campus (\textit{\texttt{Campus}}), el cual funciona como nuestro agrupador principal para las diferentes aplicaciones aprovechando la plataforma de \textit{Smart Campus UIS}.
 
-% Y creo que después debería ir la definición de los estados de los dispositivos
+Los dispositivos pueden ser de 2 tipos principales, las \textit{gateways} (\textit{\texttt{Gateway}}), que permiten establecer la relación del origen de los datos recibidos a su ubicación física; y los componentes (\textit{\texttt{Component}}), que son los sensores, y actuadores (\textit{\texttt{componentType}}) necesarios para cumplir con las necesidades de recolección y acción de la plataforma.
 
-% Y luego creo que iría la parte de la notación que es Yaml
+Los componentes pueden ser atómicos, funcionando como entidades independientes, o formar parte de componentes, así como integrarse en componentes aún más grandes. Asimismo, los componentes se describen por una serie de propiedades que hacen referencia tanto al comportamiento al igual que las condiciones las con las cuales se puede evaluar el estado del mismo. 
+
+Finalmente, los estados de los dispositivos (\textit{\texttt{DeviceStatus}}), reflejan el como estos se encuentran dentro del contexto de la aplicación. Estos pueden variar de óptimo (\textit{\texttt{optimal}}), donde todos los componentes están funcionales según las propiedades establecidas; degradado (\textit{\texttt{degraded}}), donde uno o más de los componentes opcionales está fallado; y fallo (\textit{\texttt{fault}}), que es cuando alguno de los dispositivos obligatorios no está en funcionamiento.
+
+Partiendo de esto, lo siguiente que se realizó fue la definición de la sintaxis de la notación a usar, basados en lo definido por el metamodelo. Para esto, se decidió a usar \texttt{YAML}, un lenguaje de serialización de datos orientado a la legibilidad, reconocido y usado principalmente para la creación de archivos de configuración \cite{YAML2023}. Siendo así, y partiendo de la típica estructura de estos archivos, se definió estructura presentada en la figura \ref{fig:rail-diagram}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de rail de la sintaxis definida para la notación de las arquitecturas objetivo}
+    \label{fig:rail-diagram}
+    \vspace{2mm}
+    \includegraphics[width=\linewidth]{images/Railroad.pdf}
+\end{figure}
