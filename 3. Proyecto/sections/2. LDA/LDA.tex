@@ -137,7 +137,7 @@ Los componentes pueden ser atómicos, funcionando como entidades independientes,
 
 Finalmente, los estados de los dispositivos (\textit{\texttt{DeviceStatus}}), reflejan el como estos se encuentran dentro del contexto de la aplicación. Estos pueden variar de óptimo (\textit{\texttt{optimal}}), donde todos los componentes están funcionales según las propiedades establecidas; degradado (\textit{\texttt{degraded}}), donde uno o más de los componentes opcionales está fallado; y fallo (\textit{\texttt{fault}}), que es cuando alguno de los dispositivos obligatorios no está en funcionamiento.
 
-Partiendo de esto, lo siguiente que se realizó fue la definición de la sintaxis de la notación a usar, basados en lo definido por el metamodelo. Para esto, se decidió a usar \texttt{YAML}, un lenguaje de serialización de datos orientado a la legibilidad, reconocido y usado principalmente para la creación de archivos de configuración \cite{YAML2023}. Siendo así, y partiendo de la típica estructura de estos archivos, se definió estructura presentada en la figura \ref{fig:rail-diagram}.
+Partiendo de esto, lo siguiente que se realizó fue la definición de la sintaxis de la notación a usar, basados en lo definido por el metamodelo. Para esto, se decidió a usar \texttt{YAML}, un lenguaje de serialización de datos orientado a la legibilidad, reconocido y usado principalmente para la creación de archivos de configuración \cite{YAML2023}. Siendo así, y partiendo de la típica estructura de estos archivos, se estableció la estructura presentada en la figura \ref{fig:rail-diagram}.
 
 \begin{figure}[H]
     \centering
@@ -146,3 +146,5 @@ Partiendo de esto, lo siguiente que se realizó fue la definición de la sintaxi
     \vspace{2mm}
     \includegraphics[width=\linewidth]{images/Railroad.pdf}
 \end{figure}
+
+La sintaxis busca establecer el contexto geográfico, seguido de sus puntos de acceso y, finalmente, las partes que componen a la aplicación. Un ejemplo de esto se puede apreciar en el anexo \ref{appendix:example}.

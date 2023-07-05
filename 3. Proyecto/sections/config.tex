@@ -2,6 +2,50 @@
 \usepackage{svg}
 \usepackage{multirow}
 
+% \usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+
+\newcommand\YAMLcolonstyle{\color{red}}
+\newcommand\YAMLkeystyle{\color{black}}
+\newcommand\YAMLvaluestyle{\color{blue}}
+
+\makeatletter
+
+\newcommand\language@yaml{yaml}
+
+\expandafter\expandafter\expandafter\lstdefinelanguage
+\expandafter{\language@yaml}
+{
+  % frame=single
+  keywords={true,false,null,y,n},
+  keywordstyle=\color{darkgray}\bfseries,
+  basicstyle=\YAMLkeystyle,                                 % assuming a key comes first
+  sensitive=false,
+  comment=[l]{\#},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\small\color{purple}\ttfamily,
+  basicstyle={\linespread{0.8}\small\ttfamily},
+  stringstyle=\small\YAMLvaluestyle\ttfamily,
+  moredelim=[l][\color{orange}]{\&},
+  moredelim=[l][\color{magenta}]{*},
+  moredelim=**[il][\YAMLcolonstyle{:}\YAMLvaluestyle]{:},   % switch to value style at :
+  morestring=[b]',
+  morestring=[b]",
+  literate =    {---}{{\ProcessThreeDashes}}3
+                {>}{{\textcolor{red}\textgreater}}1     
+                {|}{{\textcolor{red}\textbar}}1 
+                {\ -\ }{{\mdseries\ -\ }}3,
+  showstringspaces=false,
+  aboveskip=1mm,
+  belowskip=1mm,
+}
+
+% switch to key style at EOL
+\lst@AddToHook{EveryLine}{\ifx\lst@language\language@yaml\YAMLkeystyle\fi}
+\makeatother
+
+\newcommand\ProcessThreeDashes{\llap{\color{cyan}\mdseries-{-}-}}
+
 \usepackage[center]{caption}
 
 \usepackage{longtable}
@@ -11,8 +55,6 @@
 
 \usepackage{array}
   \renewcommand{\arraystretch}{1.5}
-
-\svgpath{ {./images/} }
 
 \usepackage{fontawesome}
 \usepackage{pifont}

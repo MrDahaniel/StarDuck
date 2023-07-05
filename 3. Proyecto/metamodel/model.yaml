@@ -7,7 +7,7 @@ campus:
                 laboratorios-pesados: 
                     name: "Laboratorios Pesados"
                 mecanica:
-                    name: "Mecánica"
+                    name: "Mecanica"
                 camilo-torres:
                     name: "Camilo Torres"
                     locations:
@@ -17,12 +17,12 @@ campus:
                             name: "Segundo Piso"
 
         malaga:
-            name: "Sede Málaga"
+            name: "Sede Malaga"
             locations:
                 reconver-gan:
-                    name: "Laboratorio De Reconversión Ganadera"
+                    name: "Laboratorio De Reconversion Ganadera"
                 admon-malaga:
-                    name: "Administración Sede Málaga"
+                    name: "Administracion Sede Malaga"
 
     gateways: 
         gate_a: 
