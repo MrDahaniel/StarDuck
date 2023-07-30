@@ -143,7 +143,15 @@ Finalmente, los estados de los componentes (\textit{\texttt{ComponentStatus}}), 
 
 Partiendo de esto, lo siguiente que se realizó fue la definición de la sintaxis de la notación a usar, basados en lo definido por el metamodelo. Para esto, se decidió a usar \texttt{YAML}, un lenguaje de serialización de datos orientado a la legibilidad, reconocido y usado principalmente para la creación de archivos de configuración \cite{YAML2023}. 
 
-La sintaxis se compone de 2 partes: \texttt{locaciones}, para establecer el contexto geográfico de la aplicación; y \texttt{components}, con el cual se definen las partes de la aplicación al igual que las propiedades y lugar en el cual deben estar para el funcionamiento de la aplicación.
+La sintaxis, como puede observarse en la figura \ref{fig:rail-base}, se compone de 2 partes: \texttt{locaciones}, para establecer el contexto geográfico de la aplicación; y \texttt{componentes}, con el cual se definen las partes de la aplicación al igual que las propiedades y lugar en el cual deben estar para el funcionamiento de la aplicación.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de rail de la sintaxis definida para la notación de SmartCampusADL}
+    \label{fig:rail-base}
+    \vspace{2mm}
+    \includegraphics[width=\linewidth]{images/Railroad Base.pdf}
+\end{figure}
 
 Para especificar las \texttt{locaciones} dentro del contexto de la aplicación, se definió la sintaxis que puede observarse en la figura \ref{fig:rail-location}. De esta manera, tras especificar la \textit{keyword} \texttt{locations}, se pueden los puntos geográficos necesarios, al igual que las locaciones que lo componen. Así mismo, es posible declarar de manera implícita la ip de la \textit{gateway} que se encuentra en el lugar con el fin de poder establecer el origen de los datos recolectados. 
 
@@ -152,17 +160,17 @@ Para especificar las \texttt{locaciones} dentro del contexto de la aplicación, 
     \caption{Diagrama de rail de la sintaxis definida para la notación del contexto geográfico de la aplicación}
     \label{fig:rail-location}
     \vspace{2mm}
-    \includegraphics[width=\linewidth]{images/Railroad Locations.pdf}
+    \includegraphics[width=\linewidth]{images/Railroad Locations Alt.pdf}
 \end{figure}
 
 Un enfoque similar se aplicó a los componentes. En la figura \ref{fig:rail-components} se presenta la sintaxis a usar para poder definir y ubicar los componentes dentro de la aplicación. De esta forma, se pueden declarar los componentes, al igual que sus propiedades; y algunas de las características que estos deben cumplir para poder ser evaluados dentro del contexto de la aplicación.
 
 \begin{figure}[H]
     \centering
-    \caption{Diagrama de rail de la sintaxis definida para la notación del contexto geográfico de la aplicación}
+    \caption{Diagrama de rail de la sintaxis definida para la notación de los componentes de la aplicación}
     \label{fig:rail-components}
     \vspace{2mm}
-    \includegraphics[width=\linewidth]{images/Railroad Components.pdf}
+    \includegraphics[width=\linewidth]{images/Railroad Components Alt.pdf}
 \end{figure}
 
 Al definir esta notación, hemos creado un marco sólido para representar las aplicaciones de Smart Campus UIS. Este enfoque bien definido nos permitirá avanzar en el desarrollo de nuestras funcionalidades de comparación de los modelos, y la implementación de los mecanismos de adaptación a usar. Un ejemplo de como se vería un archivo de notación válido para nuestras necesidades puede encontrarse en el anexo \ref{appendix:example}. 
