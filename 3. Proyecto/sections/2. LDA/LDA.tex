@@ -126,16 +126,18 @@ Partiendo de esto, se planteó el modelo presente en la figura \ref{fig:metamode
     \caption{Versión 1 del metamodelo planteado para SCampusADL}
     \label{fig:metamodelo}
     \vspace{2mm}
-    \includegraphics[width=0.8\linewidth]{images/Metamodel.pdf}
+    \includegraphics[width=0.8\linewidth]{images/Metamodel B.pdf}
 \end{figure}
 
-El enfoque principal del modelo se centra los dispositivos (\texttt{{Device}}). Estos están ubicados en diferentes puntos, o locaciones (\textit{\texttt{location}}), dentro del Campus (\textit{\texttt{Campus}}), el cual funciona como nuestro agrupador principal para las diferentes aplicaciones aprovechando la plataforma de \textit{Smart Campus UIS}.
-
-Los dispositivos pueden ser de 2 tipos principales, las \textit{gateways} (\textit{\texttt{Gateway}}), que permiten establecer la relación del origen de los datos recibidos a su ubicación física; y los componentes (\textit{\texttt{Component}}), que son los sensores, y actuadores (\textit{\texttt{componentType}}) necesarios para cumplir con las necesidades de recolección y acción de la plataforma.
+El enfoque principal del modelo se centra los componentes (\texttt{\textit{Component}}). Estos son las representaciones lógicas, o de software, de las partes de la aplicación. De manera general, pueden ser tanto servicios usados por la aplicación como agregadores de datos, pre-procesadores de datos encargados de transformar los datos recolectados, o incluso los mismos sensores o actuadores que hacen parte del sistema (\textit{\texttt{componentType}}). 
 
 Los componentes pueden ser atómicos, funcionando como entidades independientes, o formar parte de componentes, así como integrarse en componentes aún más grandes. Asimismo, los componentes se describen por una serie de propiedades que hacen referencia tanto al comportamiento al igual que las condiciones las con las cuales se puede evaluar el estado del mismo. 
 
-Finalmente, los estados de los dispositivos (\textit{\texttt{DeviceStatus}}), reflejan el como estos se encuentran dentro del contexto de la aplicación. Estos pueden variar de óptimo (\textit{\texttt{optimal}}), donde todos los componentes están funcionales según las propiedades establecidas; degradado (\textit{\texttt{degraded}}), donde uno o más de los componentes opcionales está fallado; y fallo (\textit{\texttt{fault}}), que es cuando alguno de los dispositivos obligatorios no está en funcionamiento.
+Estos elementos están presentes en diversos dispositivos (\texttt{\textit{Device}}), los cuales se encargan de la ejecución de partes de la aplicación, o puntos de comunicación entre diversos componentes (\textit{\texttt{Gateway}}). Estos pueden verse como los recursos físicos de la aplicación los cuales se encuentran ubicados en diferentes puntos, o locaciones (\textit{\texttt{location}}), dentro del Campus (\textit{\texttt{Campus}}). 
+
+Lo anterior nombrado hace parte del contexto de la aplicación. Siendo así, estos están relacionados contra la aplicación la cual sirve como un punto de acceso común entre el contexto geográfico y los componentes de software que deben ser manejados.
+
+Finalmente, los estados de los componentes (\textit{\texttt{ComponentStatus}}), reflejan el como estos se encuentran dentro del contexto de la aplicación. Estos pueden variar de óptimo (\textit{\texttt{optimal}}), donde todos los componentes están funcionales según las propiedades establecidas; degradado (\textit{\texttt{degraded}}), donde uno o más de los componentes opcionales está fallado; y fallo (\textit{\texttt{fault}}), que es cuando alguno de los dispositivos obligatorios no está en funcionamiento.
 
 \section{Sintaxis de la notación}
 
@@ -163,5 +165,5 @@ Un enfoque similar se aplicó a los componentes. En la figura \ref{fig:rail-comp
     \includegraphics[width=\linewidth]{images/Railroad Components.pdf}
 \end{figure}
 
-Al definir esta notación, hemos creado un marco sólido para representar las aplicaciones de Smart Campus UIS. Este e nfoque bien definido nos permitirá avanzar en el desarrollo de nuestras funcionalidades de comparación de los modelos, y la implementación de los mecanismos de adaptación a usar. Un ejemplo de como se vería un archivo de notación válido para nuestras necesidades puede encontrarse en el anexo \ref{appendix:example}. 
+Al definir esta notación, hemos creado un marco sólido para representar las aplicaciones de Smart Campus UIS. Este enfoque bien definido nos permitirá avanzar en el desarrollo de nuestras funcionalidades de comparación de los modelos, y la implementación de los mecanismos de adaptación a usar. Un ejemplo de como se vería un archivo de notación válido para nuestras necesidades puede encontrarse en el anexo \ref{appendix:example}. 
 
