@@ -81,12 +81,14 @@ What are we doing?
 ---
 
 ### Smart Campus UIS
+Adding some Autonomic Properties
 
 ![bg fit right](assets/Architecture%20Diagram.png)
 
-Adding some Autonomic Properties
 
-
+<!--  
+    As stated by the title, our main goal is the implementation of Autonomic Mechanisms that allow us to manipulate the architecture of Smart Campus UIS applications to comply with a given objetive by the system administrator.
+-->
 
 ---
 
