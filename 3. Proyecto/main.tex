@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside]{book}
+\documentclass[12pt, oneside]{article}
 
 \setlength{\headheight}{14.49998pt}
 
@@ -38,26 +38,40 @@
 
     \renewcommand{\listfigurename}{\normalsize Lista de figuras}
     \listoffigures
+    \newpage
+
     
-    \renewcommand{\listtablename}{\normalsize Lista de tablas}    
+    \renewcommand{\listtablename}{\normalsize Lista de tablas}
     \listoftables
-    \mainmatter
-
+    \newpage
+    
+    \input{sections/1. Generalidades/glosario}
+    \newpage
+    
     \pagenumbering{arabic} 
-
+    
+    %   Generalidades del proyecto
+    
     \input{sections/1. Generalidades/introduccion}
 
-    \chapter{Generalidades del proyecto}
-    
     \input{sections/1. Generalidades/planteaminto justificacion}
 
     \input{sections/1. Generalidades/objetivos}
 
+    \input{sections/1. Generalidades/estado del arte}
+
     \input{sections/1. Generalidades/marco referencial}
 
-    \input{sections/2. LDA/LDA}
+    \input{sections/1. Generalidades/metodologia}
 
-    \input{sections/3. Comparación/CDE.tex}
+
+    %   Capítulo 1
+    
+    \input{sections/2. LDA/LDA}
+    
+    %   Capítulo 2
+
+    \input{sections/3. Comparación/CDE}
     
     % \input{sections/09. resultados}
     
@@ -72,7 +86,8 @@
     
     \appendix
     \newpage
-    \chapter{Ejemplo de un YAML de una aplicación válida}\label{appendix:example}
+    \section{Apéndices}
+    \subsection{Ejemplo de un YAML de una aplicación válida}\label{appendix:example}
     \lstinputlisting[language=YAML]{metamodel/model.yaml}
 
     % \include{sections/9. Apendices/metamodel}

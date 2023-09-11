@@ -1,12 +1,12 @@
-\chapter{Lenguajes de Descripción de Arquitecturas}
+\section{Lenguajes de Descripción de Arquitectura}
 
-\section{La necesidad de una arquitectura de referencia}
+\subsection{La necesidad de una arquitectura de referencia}
 
 La necesidad de una arquitectura de referencia, o arquitectura objetivo; es una parte esencial dentro de la computación autonómica. Esta forma parte directamente a la base de conocimiento (K), y, de manera indirecta, a los objetivos del administrador del sistema \cite[p. 24]{lalanda_diaconescu_mccann_2014}. 
 
 Con el fin de fijar un objetivo para nuestro sistema autonómico, fue necesario determinar una manera de realizar la declaración de dicha arquitectura, que estableciera un punto de referencia. Esto permitiría, durante el proceso de comparación de la arquitectura establecida con la que se encuentra en tiempo de ejecución en un momento dado, identificar el estado del sistema.
 
-\section{Criterios de selección}
+\subsection{Criterios de selección}
 
 Con el fin de establecer la notación a usar para la declaración de las arquitecturas objetivo, se establecieron unos lineamientos con los cuales se realizaría la evaluación de las diferentes notaciones ya desarrolladas anteriormente. De esta manera se podría escoger la manera a representar los modelos, o en el caso de ser necesario, establecer los criterios por el cual se podría desarrollar uno.
 
@@ -45,7 +45,7 @@ En la tabla \ref{tab:criterios}, se presentan los criterios usados para la selec
     \vspace{-4mm}
 \end{table} 
 
-\section{Búsqueda de Alternativas}
+\subsection{Búsqueda de Alternativas}
 
 Una vez establecidos los criterios de selección, se realizó una exhaustiva búsqueda de alternativas disponibles en la literatura y en la industria para describir arquitecturas para describir la arquitectura de sistemas IoT. Esta búsqueda se realizó a partir de la revisión en diferentes bases de datos, como \textit{Scopus}; al igual que algunas de las revistas especializadas en el tema, y el internet en general.
 
@@ -93,7 +93,7 @@ Una vez seleccionadas las alternativas a evaluar, se utilizó la matriz de evalu
 
 Partiendo de los resultados de la evaluación, se puede apreciar que ninguno de estos LDA cumple con los criterios establecidos para el proyecto. Aunque estos están orientados hacia la descripción y desarrollo de sistemas IoT, no están enfocados hacia su contexto en términos de aplicación más allá de la definición de comportamiento. Esto se debe a los objetivos de cada una de estas notaciones, de una u otra manera; buscan el representar como tal el sistema IoT en términos de su funcionalidad técnica y no la aplicación en si. 
 
-\section{Un nuevo modelo para Smart Campus}
+\subsection{Un nuevo modelo para Smart Campus}
 
 Dado que no hay una alternativa que se adapte completamente a las necesidades del proyecto, se tuvo que definir nuestro propia notación la cual permita modelar las arquitecturas a nivel de aplicación bajo el contexto de un Smart Campus, tomando en cuenta los criterios definidos como guía para el desarrollo.
 
@@ -139,7 +139,7 @@ Lo anterior nombrado hace parte del contexto de la aplicación. Siendo así, est
 
 Finalmente, los estados de los componentes (\textit{\texttt{ComponentStatus}}), reflejan el como estos se encuentran dentro del contexto de la aplicación. Estos pueden variar de óptimo (\textit{\texttt{optimal}}), donde todos los componentes están funcionales según las propiedades establecidas; degradado (\textit{\texttt{degraded}}), donde uno o más de los componentes opcionales está fallado; y fallo (\textit{\texttt{fault}}), que es cuando alguno de los dispositivos obligatorios no está en funcionamiento.
 
-\section{Sintaxis de la notación}
+\subsection{Sintaxis de la notación}
 
 Partiendo de esto, lo siguiente que se realizó fue la definición de la sintaxis de la notación a usar, basados en lo definido por el metamodelo. Para esto, se decidió a usar \texttt{YAML}, un lenguaje de serialización de datos orientado a la legibilidad, reconocido y usado principalmente para la creación de archivos de configuración \cite{YAML2023}. 
 
@@ -174,4 +174,27 @@ Un enfoque similar se aplicó a los componentes. En la figura \ref{fig:rail-comp
 \end{figure}
 
 Al definir esta notación, hemos creado un marco sólido para representar las aplicaciones de Smart Campus UIS. Este enfoque bien definido nos permitirá avanzar en el desarrollo de nuestras funcionalidades de comparación de los modelos, y la implementación de los mecanismos de adaptación a usar. Un ejemplo de como se vería un archivo de notación válido para nuestras necesidades puede encontrarse en el anexo \ref{appendix:example}. 
+
+\subsection{Implementando Una Validación}
+
+Teniendo definida la notación a usar para la declaración de las arquitecturas objetivo, lo siguiente a realizar era un módulo el cual se encargara de la validación, y construcción, los modelos a usar como referencia. La implementación, se dividió en dos partes. Una librería, la cual contiene toda la definición de los objetos definidos en el metamodelo, y será utilizada para la construcción de los modelos en todo el proyecto. La otra parte es un módulo de validación, que se encargará de verificar que los modelos definidos en la notación sean válidos de acuerdo con las reglas establecidas en el metamodelo.
+
+La librería, apodada \textit{StarDuck}, incluye clases para representar los componentes, dispositivos, gateways, locaciones y el contexto de la aplicación. Cada clase tiene atributos y métodos que permiten establecer y acceder a sus propiedades de acuerdo con el metamodelo. Por ejemplo, la clase \texttt{Component} tiene atributos como \texttt{name} (nombre del componente), \texttt{component\_type} (tipo de componente), \texttt{components} (componentes internos), \texttt{properties} (propiedades del componente), y \texttt{outputs} (salidas del componente).
+
+El módulo de validación, apodado \textit{Lexical}, se encarga de verificar que los modelos definidos en la notación sigan las reglas establecidas en el metamodelo. Esto incluye verificar que se definan las locaciones y componentes de acuerdo con la estructura del metamodelo, que las propiedades de los componentes sean válidas.
+
+Para implementar la validación, se \textit{parsea} el archivo YAML y se construye una estructura de objetos de acuerdo con las clases definidas en la librería. Durante esta construcción, se aplican las reglas de validación. Si se encuentra algún error, se genera un mensaje de error indicando la ubicación del problema en el archivo de notación. En la figura \ref{fig:LexicalFlow} se puede observar un diagrama de flujo simplificado de este proceso.
+
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de flujo del proceso realizado por el módulo \textit{Lexical}}
+    \label{fig:LexicalFlow}
+    \vspace{2mm}
+    \includegraphics[width=0.8\linewidth]{images/LexicalFlow.pdf}
+\end{figure}
+
+El desarrollo de estos módulos, se realizó en Rust. Escogido debido a su capacidad para garantizar la integridad de los datos y prevenir errores comunes, lo que es esencial en un entorno donde la precisión y la confiabilidad son críticas. Además, su ecosistema de herramientas y bibliotecas facilita la implementación eficiente de los módulos de validación y construcción de modelos. \footnote{Todo el código realizado para el proyecto puede encontrase en el grupo \url{https://github.com/ChipDepot/}}
+
+Con la implementación de este módulo de validación, hemos completado la primera fase del desarrollo de nuestra notación y herramienta para describir y validar arquitecturas de aplicaciones de Smart Campus. Ahora podemos avanzar en la implementación de las funcionalidades de comparación y adaptación de modelos, que son parte fundamental de nuestro enfoque de computación autonómica para Smart Campus.
+
 

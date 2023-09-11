@@ -5,6 +5,15 @@
 % \usepackage[dvipsnames]{xcolor}
 \usepackage{listings}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
 \newcommand\YAMLcolonstyle{\color{red}}
 \newcommand\YAMLkeystyle{\color{black}}
 \newcommand\YAMLvaluestyle{\color{blue}}
@@ -50,8 +59,8 @@
 
 \usepackage{longtable}
 
-\counterwithout{figure}{chapter}
-\counterwithout{table}{chapter}
+% \counterwithout{figure}{chapter}
+% \counterwithout{table}{chapter}
 
 \usepackage{array}
   \renewcommand{\arraystretch}{1.5}
@@ -130,3 +139,6 @@
   \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
   % Add more content here, if needed.
 }
+
+
+\newcommand*{\glosario}[2][]{\noindent \textbf{{#1}}: {#2} \\}
