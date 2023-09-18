@@ -18,7 +18,7 @@ Los sistemas de cómputo embebidos hacen referencia a un sistema compuesto de mi
 
 \subsubsection{Location-based Services}
 
-Location-Based Services, o servicios basados en ubicación, hace referencia a aquellos servicios los cuales integran la ubicación geográfica de un dispositivo como una parte fundamental la cual da un valor agregado al usuario \cite{Schiller2004}. Este tipo de servicios han sido principalmente usados en aplicaciones relacionas con entornos inteligentes, modelado espacial, personalización, conciencia de contexto, comunicación cartográfica, redes sociales, análisis de datos masivos, entre otros \cite{Gartner2015,alliedmarketresearch2023}.
+Location-Based Services, o servicios basados en ubicación, hace referencia a aquellos servicios los cuales integran la ubicación geográfica de un dispositivo como una parte fundamental la cual da un valor agregado al usuario \cite{Schiller2004}. Este tipo de servicios han sido principalmente usados en aplicaciones relacionas con entornos inteligentes, modelado espacial, personalización, conciencia de contexto, comunicación cartográfica, redes sociales, análisis de datos masivos, entre otros \cite{Gartner2015,alliedmarketresearch2023}. 
 
 \subsubsection{Smart Campus}
 
@@ -35,14 +35,16 @@ infraestructuras tecnológicas las cuales den soporte a los objetivos del sistem
 
 De manera general, notación se refiere a una serie de caracteres, símbolos, figuras o expresiones usadas con el fin de expresar un sistema, método o proceso \cite{MerriamWebsterNotation}. Más específicamente en el contexto de las ciencias de la computación, las notaciones han sido usadas para la representación de estructuras y arquitecturas en el software, como lo son lenguajes de modelado tales como UML \cite{WhatIsUML}; lenguajes de programación, como C/C++, Ruby \cite{Bansal2013}; algoritmia de manera visual \cite{RutanenKalle2018McoO}; entre otros.
 
+
 \subsubsection{Gramática}
 
 % Esto es más que nada para contextualizar la necesidad de una forma en la notación
 
-La gramática, más específicamente gramáticas libres de contexto, son un conjunto de reglas descriptivas. Este conjunto de reglas, en conjunto de una notación, cumplen la función de dictar si una frase es válida para un lenguaje dado \cite[p. 101]{Sipser2012-wl}. 
+La gramática, en el caso de los lenguajes, es un conjunto de reglas la cual es usada para describir tanto la sintaxis como la semántica de una lenguaje de programación \cite{Sebesta2012}. Siendo así, estas cumplen la función de describir una frase considerada válida dentro del contexto de un lenguaje dado \cite[p. 101]{Sipser2012-wl}. Existen varios tipos de gramática tales como gramáticas de atributos, gramáticas libres de contexto, etc. \cite{Sebesta2012}.
 
 \subsubsection{Sintaxis}
 
+La sintaxis se refiere a la forma en la cual elementos, pertenecientes a un lenguaje, se estructuran de forma ordenada con el fin de formar estructuras más grandes \cite{MerriamWebsterSyntax}. En el contexto de las ciencias de la computación, esta definición se puede expresar como un conjunto de reglas con las cuales regimos la forma en que escribimos en diferentes lenguajes de programación, marcado, entre otros \cite[p. 51]{Friedman2008}.
 
 \subsubsection{Domain-Specific Languages} % Fase 2
 
@@ -54,5 +56,9 @@ La serialización de datos se refiere a la traducción de una estructura de dato
 
 \subsubsection{Métodos de Serialización de Datos}
 
-Dentro del ámbito de la programación, se encuentran diversas opciones en cuanto a formatos y técnicas empleadas para la serialización de datos. Cada uno de estos enfoques presenta sus particularidades, lo que resulta en ventajas y desventajas específicas las cuales deben ser consideradas según las necesidades del proyecto  
+Dentro del ámbito de la programación, se encuentran diversas opciones en cuanto a formatos y técnicas empleadas para la serialización de datos. Cada uno de estos enfoques presenta sus particularidades, lo que resulta en ventajas y desventajas específicas las cuales deben ser consideradas según las necesidades del proyecto. Las dos opciones principales, en cuanto a la serialización de datos, son:
 
+\begin{itemize}
+    \item \textbf{Serialización en Formato de Texto}: Esta forma de serialización emplea un formato legible por humanos, generalmente utilizando caracteres y símbolos. Este enfoque es especialmente útil cuando se necesita que los datos sean legibles, y editables, directamente por humanos, lo que los hace adecuados para la configuración de aplicaciones y la comunicación entre sistemas heterogéneos; o cuando se requiere tener compatibilidad entre diferentes sistemas y lenguajes de programación \cite{Grochowski2019}.
+    \item \textbf{Serialización Binaria}: Esta implica la representación de datos en un formato binario. Este enfoque es altamente eficiente en cuanto a espacio y velocidad, pero no es legible por humanos. Los formatos de serialización binaria, están diseñados para minimizar el tamaño de los datos serializados y optimizar el rendimiento en aplicaciones donde la velocidad y la eficiencia son críticas, sacrificando la estandarización e interoperatividad con otras implementaciones de este tipo de serialización \cite{Grochowski2019}.
+\end{itemize}
