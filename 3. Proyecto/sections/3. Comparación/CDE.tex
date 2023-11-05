@@ -15,7 +15,25 @@ Partiendo de esto, lo primero era el identificar los puntos de acceso por los cu
     \label{fig:ArquitecturaSmartCampus}
 \end{figure}
 
-Ahora, cada una de las maneras de acceder a los datos es viable, y podría permitir la implementación correspondiente para determinar el estado del sistema. Sin embargo, de entre las tres opciones, se escogió el procesamiento de los mensajes de los adaptadores de descripción, enviados por AMQP. Esta decisión se debe a algunas de las ventajas que posee el protocolo sobre la consulta a base de datos. Entre estas destacan la menor latencia en la recuperación y la direccionalidad de datos, comparado con las consultas. 
 
-La primera se refiere a la menor cantidad de saltos de servicios antes de que los datos sean guardados en la base de datos, lo que aumenta el tiempo en el que estos estarán disponibles, sumado a el tiempo ejecución de la consulta. Así mismo, la última refiriéndose a que el protocolo AMQP, gracias a su modelo pub/sub, permite el poder procesar los datos a medida que estos van llegando, y no en intervalos discretos de tiempo, lo cual podría afectar la toma de decisiones.
+Ahora, cada una de las maneras de acceder a los datos es viable, y podría permitir la implementación correspondiente para determinar el estado del sistema. Sin embargo, de entre las tres opciones, se escogió el procesamiento de los mensajes enviados por los dispositivos, enviados por MQTT. Esta decisión se debe a algunas de las ventajas que posee el protocolo sobre la consulta a base de datos. Entre estas destacan la menor latencia en la recuperación y la direccionalidad de datos, comparado con las consultas. 
+
+La primera se refiere a la menor cantidad de saltos de servicios antes de que los datos sean guardados en la base de datos, lo que aumenta el tiempo en el que estos estarán disponibles, sumado a el tiempo ejecución de la consulta. Así mismo, la última refiriéndose a que el protocolo MQTT, gracias a su modelo pub/sub, permite el poder procesar los datos a medida que estos van llegando, y no en intervalos discretos de tiempo, lo cual podría afectar la toma de decisiones.
+
+Partiendo de lo anterior, se reconoció la necesidad de tener un servicio dedicado a la tarea de procesar los mensajes que están siendo enviados por, y a, cada uno de los dispositivos registrados en Smart Campus UIS. 
+
+\subsection{Implementado un Event-Handler}
+
+En el contexto de Smart Campus UIS, podemos ver cada uno de los mensajes que se envían los adaptadores de auto-descripción como un evento. Es decir, cada uno de los mensajes que es enviado por los dispositivos pertenecientes a una aplicación de Smart Campus UIS, es algo que debe ser procesado con un algún fin. Este procesamiento, recuerda al patrón de diseño \texttt{Observer} en el cual se busca el realizar una acción cada vez que el estado, de lo que se está observando, cambia.
+
+Siendo así, se estableció el realizar la implementación de un observador el cual se hará responsable de la captura de los mensajes enviados por los dispositivos y establecer el estado del sistema. De esto, como se puede ver en la figura \ref{fig:proceso_looker} se propuso un proceso que debía realizar el observador a implementar.
+
+\begin{figure}
+    \caption{Primera propuesta del proceso a realizar \linebreak por el observador a implementar} 
+    \centering
+    \includegraphics[width=0.6\linewidth]{images/LookerProcess.pdf}
+    \label{fig:proceso_looker}
+\end{figure}
+
+En este primer prototipo, quedan algunos huecos que resolver. El primero de ellos era que este proceso no le permitía a nuestro observador, de aquí en adelante referido como \textit{Looker}, acceder al contexto geográfico el cual le permitiría verdaderamente modelar el estado del sistema. De la misma manera, queda pendiente el definir el como los demás servicios podrán acceder a los datos que están siendo procesados.
 
