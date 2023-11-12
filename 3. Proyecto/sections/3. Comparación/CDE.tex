@@ -52,33 +52,13 @@ Esta primera parte se solucionó realizando una petición de la descripción del
     \includegraphics[width=\linewidth]{images/StarDuckBasic.pdf}
 \end{figure}
 
+Respecto al segundo punto, la implementación de este depende del como se desee realizar el manejo de los cambios en la arquitectura de Smart Campus UIS. Si se desea responder de manera inmediata a cambios en la arquitectura, se tendría que usar un bus de datos, como MQTT o AMQP; pero tendría la consecuencia de un aumento en el uso de los recursos debido a que se tendrían que procesar todos los cambios cada vez que se determine el estado de la aplicación. 
 
-a
+En el caso contrario, podría implementarse un endpoint HTTP el cual sea consultado en intervalos de tiempo discreto por el servicio encargado de comparar los estados objetivo y de referencia, 
 
-a
 
-a
+hasta el momento se planteó dejarlo sin implementar. Esto debido a, hasta el momento, no se ha determinado si una implementación en tiempo real, o en intervalos de tiempo 
 
-a
 
-a
+ya sea en tiempo real o a través de intervalos discretos. Esta decisión será crucial para el diseño y la implementación del proceso de evaluación, influyendo en la precisión y la agilidad de las adaptaciones a realizar en la arquitectura del sistema.
 
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a

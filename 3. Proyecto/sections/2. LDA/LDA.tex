@@ -16,13 +16,14 @@ Siendo así, y dados los objetivos que buscan cumplir los ecosistemas inteligent
 
 Con el fin de establecer la notación a usar para la declaración de las arquitecturas objetivo, se establecieron unos lineamientos con los cuales se realizaría la evaluación de las diferentes notaciones ya desarrolladas anteriormente. De esta manera se podría escoger la manera a representar los modelos, o en el caso de ser necesario, establecer los criterios por el cual se podría desarrollar uno.
 
-En la tabla \ref{tab:criterios}, se presentan los criterios usados para la selección, con su respectiva explicación y valor considerado para la selección.
+% En la tabla \ref{tab:criterios}, se presentan los criterios usados para la selección, con su respectiva explicación y valor considerado para la selección.
 
 \begin{table}[H]
+    % \small
     \centering
     \vspace{-4mm}
     \caption{Criterios usados para la determinación de la notación a utilizar} \label{tab:criterios}
-    \vspace{4mm}
+    % \vspace{4mm}
     \begin{tabular}{lm{4.7cm}m{0.51\linewidth}c}
         \hline
         \multicolumn{1}{l}{} &
@@ -76,9 +77,9 @@ Una vez seleccionadas las alternativas a evaluar, se utilizó la matriz de evalu
 
 \begin{table}[H]
     \centering
-    \vspace{-4mm}
+    % \vspace{-4mm}
     \caption{Evaluación de las alternativas en función de los criterios establecidos} \label{tab:evaluation}
-    \vspace{4mm}
+    % \vspace{4mm}
     \begin{tabular}{cccccc}
     \hline
     \multicolumn{1}{l}{} &
@@ -94,7 +95,7 @@ Una vez seleccionadas las alternativas a evaluar, se utilizó la matriz de evalu
       C5 & ✓ & ✓ & ✗ & ✓ & ✗ \\
       C6 & ✗ & ✗ & ✗ & ✓ & ✗ \\ \hline
     \end{tabular}
-    \vspace{-4mm}
+    % \vspace{-4mm}
 \end{table}
 
 Partiendo de los resultados de la evaluación, se puede apreciar que ninguno de estos LDA cumple con los criterios establecidos para el proyecto. Aunque estos están orientados hacia la descripción y desarrollo de sistemas IoT, no están enfocados hacia su contexto en términos de aplicación más allá de la definición de comportamiento. Esto se debe a los objetivos de cada una de estas notaciones, de una u otra manera; buscan el representar como tal el sistema IoT en términos de su funcionalidad técnica y no la aplicación en si. 
@@ -132,7 +133,7 @@ Partiendo de esto, se planteó el modelo presente en la figura \ref{fig:metamode
     \caption{Versión 1 del metamodelo planteado para SCampusADL}
     \label{fig:metamodelo}
     \vspace{2mm}
-    \includegraphics[width=0.8\linewidth]{images/Metamodel B.pdf}
+    \includegraphics[width=\linewidth]{images/Metamodel B.pdf}
 \end{figure}
 
 El enfoque principal del modelo se centra los componentes (\texttt{\textit{Component}}). Estos son las representaciones lógicas, o de software, de las partes de la aplicación. De manera general, pueden ser tanto servicios usados por la aplicación como agregadores de datos, pre-procesadores de datos encargados de transformar los datos recolectados, o incluso los mismos sensores o actuadores que hacen parte del sistema (\textit{\texttt{componentType}}). 
@@ -166,7 +167,7 @@ Para especificar las \texttt{locaciones} dentro del contexto de la aplicación, 
     \caption{Diagrama de rail de la sintaxis definida para la notación del contexto geográfico de la aplicación}
     \label{fig:rail-location}
     \vspace{2mm}
-    \includegraphics[width=0.8\linewidth]{images/Railroad Locations Alt.pdf}
+    \includegraphics[width=0.9\linewidth]{images/Railroad Locations Alt.pdf}
 \end{figure}
 
 Un enfoque similar se aplicó a los componentes. En la figura \ref{fig:rail-components} se presenta la sintaxis a usar para poder definir y ubicar los componentes dentro de la aplicación. De esta forma, se pueden declarar los componentes, al igual que sus propiedades; y algunas de las características que estos deben cumplir para poder ser evaluados dentro del contexto de la aplicación.
@@ -176,7 +177,7 @@ Un enfoque similar se aplicó a los componentes. En la figura \ref{fig:rail-comp
     \caption{Diagrama de rail de la sintaxis definida para la notación de los componentes de la aplicación}
     \label{fig:rail-components}
     \vspace{2mm}
-    \includegraphics[width=0.8\linewidth]{images/Railroad Components Alt.pdf}
+    \includegraphics[width=0.9\linewidth]{images/Railroad Components Alt.pdf}
 \end{figure}
 
 Al definir esta notación, hemos creado un marco sólido para representar las aplicaciones de Smart Campus UIS. Este enfoque bien definido nos permitirá avanzar en el desarrollo de nuestras funcionalidades de comparación de los modelos, y la implementación de los mecanismos de adaptación a usar. Un ejemplo de como se vería un archivo de notación válido para nuestras necesidades puede encontrarse en el anexo \ref{appendix:example}. 
@@ -196,10 +197,10 @@ Para implementar la validación, se \textit{parsea} el archivo YAML y se constru
     \caption{Diagrama de flujo del proceso realizado por el módulo \textit{Lexical}}
     \label{fig:LexicalFlow}
     \vspace{2mm}
-    \includegraphics[width=0.8\linewidth]{images/LexicalFlow.pdf}
+    \includegraphics[width=\linewidth]{images/LexicalFlow.pdf}
 \end{figure}
 
-El desarrollo de estos módulos, se realizó en Rust. Escogido debido a su capacidad para garantizar la integridad de los datos y prevenir errores comunes, lo que es esencial en un entorno donde la precisión y la confiabilidad son críticas. Además, su ecosistema de herramientas y bibliotecas facilita la implementación eficiente de los módulos de validación y construcción de modelos. \footnote{Todo el código realizado para el proyecto puede encontrase en el grupo de github \url{https://github.com/ChipDepot/}}
+El desarrollo de estos módulos, se realizó en Rust. Escogido debido a su capacidad para garantizar la integridad de los datos y prevenir errores comunes, lo que es esencial en un entorno donde la precisión y la confiabilidad son críticas. Además, su ecosistema de herramientas y bibliotecas facilita la implementación eficiente de los módulos de validación y construcción de modelos. \footnote{Todo el código realizado para el proyecto puede encontrase en el grupo de GitHub: \url{https://github.com/ChipDepot/}}
 
 Con la implementación de este módulo de validación, hemos completado la primera fase del desarrollo de nuestra notación y herramienta para describir y validar arquitecturas de aplicaciones de Smart Campus. Ahora podemos avanzar en la implementación de las funcionalidades de comparación y adaptación de modelos, que son parte fundamental de nuestro enfoque de computación autonómica.
 
