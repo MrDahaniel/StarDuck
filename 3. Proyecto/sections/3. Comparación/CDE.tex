@@ -88,13 +88,13 @@ El proceso de comparación consta de evaluar cada componente del sistema en func
 
 Lo siguiente a realizar fue definir el proceso de comparación entre los dos estados del sistema. Se optó por abordar esta comparación locación por locación, permitiendo así una evaluación detallada de cada área y extrayendo una estructura que resaltara los puntos problemáticos de la aplicación y las diferencias presentes en cada uno de los lugares. 
 
-Siendo así, primeramente se definió el flujo en el cual se realizará el recorrido de las locaciones. Se parte desde las locaciones raíces, o de primer nivel, y pasando por cada una de las locaciones hijas revisando el estado de cada una de estas. En la figura \ref{BranProcess} se presenta el diagrama de flujo de la forma en la que se realizará el recorrido de las locaciones.
+Siendo así, primeramente se definió el flujo en el cual se realizará el recorrido de las locaciones. Se parte desde las locaciones raíces, o de primer nivel, y pasando por cada una de las locaciones hijas revisando el estado de cada una de estas. En la figura \ref{fig:BranProcess} se presenta el diagrama de flujo de la forma en la que se realizará el recorrido de las locaciones.
 
 \begin{figure}[hb]
     \centering
     \caption{Diagrama de flujo del recorrido de las locaciones}
-    \label{BranProcess}
-    \includegraphics[width=0.9\linewidth]{images/BranProcess.pdf}
+    \label{fig:BranProcess}
+    \includegraphics[width=0.8\linewidth]{images/BranProcess.pdf}
 \end{figure}
 
 En cada una de las locaciones que se visita, se compara el estado de cada uno de los componentes definidos en la arquitectura de referencia. Esta comparación se basa en revisar tres cosas. Primero, si el componente está presente en la locación; segundo, como fue definido en la sección anterior, si se han estado mandando mensajes dentro del tiempo establecido; y, finalmente, si se está recibiendo el tipo de dato esperado.
@@ -105,4 +105,8 @@ Estos puntos de comparación nos permiten establecer si el componente está pres
     \centering
     \caption{Diagrama de flujo del proceso de comparación de los componentes}
     \label{fig:BranCompare}
+    \includegraphics[width=\linewidth]{images/BranCompare.pdf}
 \end{figure}
+
+A partir de la información recolectada durante la comparación entre los dos estados, como se puede ver en la figura \ref{fig:BranProcess}, se genera un reporte el cual contiene las locaciones y los dispositivos que presenten problemas. A partir de este, se establecerán las medidas a tomar con el fin de adaptar el sistema hacia un estado óptimo.
+
