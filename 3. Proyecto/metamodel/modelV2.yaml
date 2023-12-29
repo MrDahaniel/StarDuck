@@ -1,0 +1,21 @@
+application:
+    name: Chip
+    description: "Test App"
+
+locations:
+    campus-central:
+        name: "Campus Central"
+        locations:
+            laboratorios-pesados: 
+                name: "Laboratorios Pesados"
+                ip: '192.168.0.2'
+                data-requirements:
+                    temperature:    
+                        output: number
+                        required: true
+                        count: 3
+                        timeout: 3600
+                    co2:
+                        output: number
+                        required: true
+                        count: 2
