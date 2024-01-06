@@ -13,9 +13,9 @@ locations:
                     temperature:    
                         output: number
                         required: true
-                        count: 3
-                        timeout: 3600
+                        count: 1
+                        timeout: 30
                     co2:
                         output: number
                         required: true
-                        count: 2
+                        count: 1
