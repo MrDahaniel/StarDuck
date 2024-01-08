@@ -243,9 +243,14 @@ Con esto hemos creado un marco sólido para representar las aplicaciones de Smar
 
 \subsection{Implementando Una Validación}
 
-Teniendo definida la notación a usar para la declaración de las arquitecturas objetivo, lo siguiente a realizar era un módulo el cual se encargara de la validación, y construcción, los modelos a usar como referencia. La implementación, se dividió en dos partes. Una librería, la cual contiene toda la definición de los objetos definidos en el metamodelo, y será utilizada para la construcción de los modelos en todo el proyecto. La otra parte es un módulo de validación, que se encargará de verificar que los modelos definidos en la notación sean válidos de acuerdo con las reglas establecidas en el metamodelo.
+Teniendo definida la notación a usar para la declaración de las arquitecturas objetivo, lo siguiente a realizar era un módulo el cual se encargara de la validación, y construcción, los modelos a usar como referencia. 
 
-La librería, apodada \textit{StarDuck}, incluye clases para representar los componentes, dispositivos, gateways, locaciones y el contexto de la aplicación. Cada clase tiene atributos y métodos que permiten establecer y acceder a sus propiedades de acuerdo con el metamodelo. Por ejemplo, la clase \texttt{Component} tiene atributos como \texttt{name} (nombre del componente), \texttt{component\_type} (tipo de componente), \texttt{components} (componentes internos), \texttt{properties} (propiedades del componente), y \texttt{outputs} (salidas del componente).
+La implementación, se dividió en dos partes. Una librería, la cual contiene toda la definición de los objetos definidos en el metamodelo, y será utilizada para la construcción de los modelos en todo el proyecto. La otra parte es un módulo de validación, que se encargará de verificar que los modelos definidos en la notación sean válidos de acuerdo con las reglas establecidas en el metamodelo.
+
+La librería, apodada \textit{StarDuck}, incluye las estructuras para representar las aplicaciones con sus respectivas locaciones y requerimientos de datos. 
+
+
+Cada clase tiene atributos y métodos que permiten establecer y acceder a sus propiedades de acuerdo con el metamodelo. Por ejemplo, la clase \texttt{Component} tiene atributos como \texttt{name} (nombre del componente), \texttt{component\_type} (tipo de componente), \texttt{components} (componentes internos), \texttt{properties} (propiedades del componente), y \texttt{outputs} (salidas del componente).
 
 El módulo de validación, apodado \textit{Lexical}, se encarga de verificar que los modelos definidos en la notación sigan las reglas establecidas en el metamodelo. Esto incluye verificar que se definan las locaciones y componentes de acuerdo con la estructura del metamodelo, que las propiedades de los componentes sean válidas.
 
