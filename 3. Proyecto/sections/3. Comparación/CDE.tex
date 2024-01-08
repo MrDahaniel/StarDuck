@@ -8,7 +8,7 @@ Esto requiere conocer el estado actual del sistema, al igual que el conocer el e
 
 Partiendo de esto, lo primero era el identificar los puntos de acceso por los cuales podríamos acceder a los datos, en el caso de Smart Campus UIS, como se observa en la figura \ref{fig:ArquitecturaSmartCampus}, hay dos maneras en las que podemos acceder a los datos. La primera, es haciendo consultas a la base de datos en la cual se guardan los registros; la segunda, implica recibir los mensajes que viajan por el bus de datos, sea el de los adaptadores de descripción o el de los dispositivos con el servicio de mensajería , y procesar cada uno de los mensajes.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \caption{Arquitectura del prototipo de Smart Campus definido por }\citeA{msc_henry_2022}
     \includegraphics[width=\linewidth]{images/ArquitecturaSmartCampus.png}
@@ -90,7 +90,7 @@ Lo siguiente a realizar fue definir el proceso de comparación entre los dos est
 
 Siendo así, primeramente se definió el flujo en el cual se realizará el recorrido de las locaciones. Se parte desde las locaciones raíces, o de primer nivel, y pasando por cada una de las locaciones hijas revisando el estado de cada una de estas. En la figura \ref{fig:BranProcess} se presenta el diagrama de flujo de la forma en la que se realizará el recorrido de las locaciones.
 
-\begin{figure}[hb]
+\begin{figure}[H]
     \centering
     \caption{Diagrama de flujo del recorrido de las locaciones}
     \label{fig:BranProcess}
@@ -101,7 +101,7 @@ En cada una de las locaciones que se visita, se compara el estado de cada uno de
 
 Estos puntos de comparación nos permiten establecer si el componente está presente y activo en la locación; al igual que el tipo de| dato registrados sean coherentes con las necesidades de la aplicación. El diagrama de flujo del proceso defino se puede observar en la figura \ref{fig:BranCompare}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
     \caption{Diagrama de flujo del proceso de comparación de los componentes}
     \label{fig:BranCompare}
