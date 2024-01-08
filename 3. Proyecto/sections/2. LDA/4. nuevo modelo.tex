@@ -69,3 +69,5 @@ Cada uno de estos requerimientos de datos, contiene la cantidad de dispositivos,
 Los requerimientos de datos, llevan un registro de los componentes (\textit{\texttt{Component}}) que han reportado datos en la locación. Esto nos permite evaluar cada uno de estos, y en la misma medida, determinar el estado (\textit{\texttt{Status}}) de cada una de las locaciones registradas en la aplicación.
 
 Ahora, las aplicaciones, en cierta medida, con el fin de llevar el registro de los datos enviados, consumen el mensaje JSON visto en la figura \ref{fig:jsonSCU}. Este ha sido deserializado y mapeado en \textit{\texttt{SCMessage}}. De esta manera, se podrá trabajar de manera sencilla en el procesamiento y actualización del estado de las aplicaciones.
+
+De este modelo, se realizó la implementación de una librería, apodada \textit{StarDuck} \footnote{El código fuente de la librería puede encontrarse en \url{https://github.com/ChipDepot/StarDuck}, y su respectivo paquete en crates.io, en \url{https://crates.io/crates/starduck}.}. Esta librería contiene todas las estructuras de datos, al igual que 
