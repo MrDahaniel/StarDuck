@@ -1,4 +1,4 @@
-\subsection{Implementando Una Validación}
+\subsection{Implementando Una Validación} \label{sec:validation}
 
 % Teniendo definida la notación a usar para la declaración de las arquitecturas objetivo, lo siguiente a realizar era un módulo el cual se encargara de la validación, y construcción, los modelos a usar como referencia. 
 
@@ -26,7 +26,7 @@ Seguido de esto, para la deserialización de las locaciones, se tendrán que rec
 \end{figure}
 
 
-Este proceso de realiza para cada una de las locaciones registradas, lo que nos da como resultado el contexto geográfico en el que trabajaría la aplicación. Ahora, en cuanto al proceso de la validación de los requerimientos de datos, como se ve en la figura \ref{fig:LexicalDataReq}, es bastante directo en cuanto se toman las propiedades, definidas en el metamodelo; con la particularidad de crear un array vacío para los componentes. Esto se debe a que, en el momento de declarar la arquitectura, no conocemos ninguno de los datos necesarios para crearlos. Siendo así, estos se crearan durante la ejecución, a partir de los mensajes recibidos.
+Este proceso de realiza para cada una de las locaciones registradas, lo que nos da como resultado el contexto geográfico en el que trabajaría la aplicación. Ahora, en cuanto al proceso de la validación de los requerimientos de datos, como se ve en la figura \ref{fig:LexicalDataReq}, es bastante directo en cuanto se toman las propiedades, definidas en el metamodelo; con la particularidad de crear un array vacío para los componentes. Esto se debe a que, en el momento de declarar la arquitectura, no conocemos ninguno de los datos necesarios para crearlos. Siendo así, estos se crearan durante la ejecución, a partir de los mensajes de los dispositivos.
 
 \begin{figure}[ht]
     \centering

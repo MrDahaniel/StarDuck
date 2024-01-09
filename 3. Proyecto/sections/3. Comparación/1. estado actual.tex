@@ -4,7 +4,9 @@ Con la notación de las arquitecturas objetivo establecidas, al igual que el des
 
 Esto requiere conocer el estado actual del sistema, al igual que el conocer el estado objetivo. Siendo así, y ya teniendo la posibilidad de declarar las necesidades de la aplicación, lo siguiente es establecer una manera de determinar el estado del sistema. Dado el enfoque hacia los datos recolectados, es necesario el precisar la manera en la que conoceríamos en qué estado se encuentra el sistema.
 
-Partiendo de esto, lo primero era el identificar los puntos de acceso por los cuales podríamos acceder a los datos, en el caso de Smart Campus UIS, como se observa en la figura \ref{fig:ArquitecturaSmartCampus}, hay dos maneras en las que podemos acceder a los datos. La primera, es haciendo consultas a la base de datos en la cual se guardan los registros; la segunda, implica recibir los mensajes que viajan por el bus de datos, sea el de los adaptadores de descripción o el de los dispositivos con el servicio de mensajería , y procesar cada uno de los mensajes.
+Lo primero era el identificar los puntos de acceso por los cuales podríamos acceder a los datos. En el caso de Smart Campus UIS, y teniendo en cuenta que el modelo que se definió depende de los mensajes enviados por los dispositivos, como se observa en la figura \ref{fig:ArquitecturaSmartCampus}, nos deja con dos opciones para procesar estos mensajes. 
+
+La primera, es consultar los mensajes enviados usando uno de los endpoints del servicio \texttt{data\_microservice}, lo que nos daría acceso a todos los mensajes registrados. Y, la segunda, usando el mismo bus de datos, empleado por los servicios de la plataforma, lo que nos daría acceso a los mensajes a medida que estos son enviados.
 
 \begin{figure}[ht]
     \centering
@@ -13,9 +15,14 @@ Partiendo de esto, lo primero era el identificar los puntos de acceso por los cu
     \label{fig:ArquitecturaSmartCampus}
 \end{figure}
 
+Ahora, cada una de las maneras de acceder a los datos es viable, y podría permitir la implementación correspondiente para determinar el estado del sistema. Sin embargo, de entre las dos opciones, se escogió el procesamiento de los mensajes enviados por los dispositivos, enviados por MQTT. 
 
-Ahora, cada una de las maneras de acceder a los datos es viable, y podría permitir la implementación correspondiente para determinar el estado del sistema. Sin embargo, de entre las tres opciones, se escogió el procesamiento de los mensajes enviados por los dispositivos, enviados por MQTT. Esta decisión se debe a algunas de las ventajas que posee el protocolo sobre la consulta a base de datos. Entre estas destacan la menor latencia en la recuperación y la direccionalidad de datos, comparado con las consultas. 
+Esto se debe a varios factores, principalmente, debido a cómo se consultan los mensajes desde el endpoint. Para realizar esta consulta, es necesario conocer el \textit{UUID} del dispositivo a consultar lo que, como se evidenció durante la validación de los requerimientos de datos en la sección \ref{sec:validation}, no es posible.
 
-La primera se refiere a la menor cantidad de saltos de servicios antes de que los datos sean guardados en la base de datos, lo que aumenta el tiempo en el que estos estarán disponibles, sumado a el tiempo ejecución de la consulta. Así mismo, la última refiriéndose a que el protocolo MQTT, gracias a su modelo pub/sub, permite el poder procesar los datos a medida que estos van llegando, y no en intervalos discretos de tiempo, lo cual podría afectar la toma de decisiones.
+Aunque sería posible el realizar una modificación al servicio para poder ver todos los mensajes de los dispositivos, esto también podría presentar problemas por la manera en la que estos se listan. Ya que los mensajes se muestran todos en simultaneo, y no poseen una manera diferenciar 2 mensajes, más allá de su contenido (que no es necesariamente único); tendríamos que guardar todos los mensajes ya procesados y descartarlos cada vez que se consulte el endpoint, lo que generaría un \textit{overhead} el uso de los recursos tanto de memoria como de procesamiento.
 
-Partiendo de lo anterior, se reconoció la necesidad de tener un servicio dedicado a la tarea de procesar los mensajes que están siendo enviados por, y a, cada uno de los dispositivos registrados en Smart Campus UIS. 
+Siendo así, nos queda como opción el broker MQTT para la consulta de los mensajes. Esto nos permite tanto el procesamiento en tiempo real de los mensajes enviados por los dispositivos, sin la necesidad de conocerlos; al igual que un aprovechamiento de los recursos ya que, una vez procesados, podemos librar el espacio usado. Esto le da una característica al proyecto en forma de una especie de \textit{plug-in}, puesto que, al no requerir modificaciones sobre la plataforma, esta puede funcionar sin ninguna afectación en su estado actual.
+
+Partiendo de lo anterior, se realizó el diseño e implementación de un servicio encargado de procesar los mensajes que están siendo enviados por, y a, cada uno de los dispositivos registrados en Smart Campus UIS. 
+
+
