@@ -22,7 +22,7 @@ Así mismo, se cubre el criterio \textit{C3} cambiando las propiedades del dispo
 
 Ahora, algo importante a tener en cuenta, es la manera en la que se están reportando los datos desde los sensores hacia Smart Campus UIS. Esto se debe a la necesidad de tener en cuenta los datos a los cuales tenemos realmente acceso desde cada uno de los dispositivos.
 
-Cada uno de los dispositivos de Smart Campus, reporta un `JSON` el cual contiene la siguiente información.
+Cada uno de los dispositivos de Smart Campus, reporta un `JSON` similar al presente en la figura \ref{fig:jsonSCU}. Este mensaje contiene información que nos permite identificar al dispositivo, gracias al \textit{UUID}; al igual que el momento y los datos que este reporta.
 
 \begin{figure}[H]
     \centering
@@ -49,20 +49,19 @@ Cada uno de los dispositivos de Smart Campus, reporta un `JSON` el cual contiene
     \end{tabular}
 \end{figure}
 
-Es importante destacar que contamos con suficiente información para identificar los dispositivos, así como los datos que estos reportan. Sin embargo, falta información crucial para el mapeo físico de los dispositivos. Por lo tanto, será necesario proporcionar manualmente estos datos durante la etapa de adaptación para llevar a cabo los ajustes necesarios en la arquitectura.
+Es importante destacar que, aunque contamos con suficiente información para identificar los dispositivos, en estos mensajes no está presenta información crucial para el mapeo físico de los dispositivos. Por lo tanto, será necesario proporcionar manualmente estos datos durante la etapa de adaptación para llevar a cabo los ajustes necesarios en la arquitectura.
 
-\begin{figure}[H]
-    \centering
+Partiendo de esto, se desarrolló el UML presente en la figura \ref{fig:metamodelo}. La base de este es la aplicación (\textit{\texttt{Application}}). Este contiene, a partir de una ubicación raíz, todas las demás locaciones (\textit{\texttt{location}}) pertinentes para el correcto funcionamiento de esta.
+
+\begin{figure}[ht]
+    \centering1
     \caption{Versión 1 del metamodelo planteado para SCampusADL}
     \label{fig:metamodelo}
     \vspace{2mm}
     \includegraphics[width=\linewidth]{images/Metamodel B.pdf}
 \end{figure}
 
-
-La base del modelo, presente en la figura \ref{fig:metamodelo}, es la aplicación (\textit{\texttt{Application}}). Esta contiene, a partir de una ubicación raíz, todas las demás locaciones (\textit{\texttt{location}}) pertinentes para el correcto funcionamiento de esta.
-
-Las locaciones, tienen una serie de requerimientos de datos (\texttt{\textit{DataRequirements}}), las cuales son las representaciones lógicas, o de software, de las necesidades de la aplicación.
+Las locaciones, tienen una serie de requerimientos de datos (\texttt{\textit{DataRequirements}}), las cuales son las representaciones lógicas, o de software, de las necesidades de la aplicación. Estos pueden ser de 2 tipos: requeridos, que son aquellos con los cuales de no tenerlos, la aplicación no podría funcionar correctamente; y los opcionales, los cuales, aunque buenos de tener, no impiden el funcionamiento.
 
 Cada uno de estos requerimientos de datos, contiene la cantidad de dispositivos, y a su vez datos, requeridos por la locación, al igual que el tipo de datos esperado (\textit{\texttt{IoTOutput}}), y el que el tiempo máximo permitido entre reportes de datos. 
 
@@ -70,4 +69,4 @@ Los requerimientos de datos, llevan un registro de los componentes (\textit{\tex
 
 Ahora, las aplicaciones, en cierta medida, con el fin de llevar el registro de los datos enviados, consumen el mensaje JSON visto en la figura \ref{fig:jsonSCU}. Este ha sido deserializado y mapeado en \textit{\texttt{SCMessage}}. De esta manera, se podrá trabajar de manera sencilla en el procesamiento y actualización del estado de las aplicaciones.
 
-De este modelo, se realizó la implementación de una librería, apodada \textit{StarDuck} \footnote{El código fuente de la librería puede encontrarse en \url{https://github.com/ChipDepot/StarDuck}, y su respectivo paquete en crates.io, en \url{https://crates.io/crates/starduck}.}. Esta librería contiene todas las estructuras de datos, al igual que 
+De este modelo, se realizó la implementación de una librería, apodada \textit{StarDuck} \footnote{El código fuente de la librería puede encontrarse en \url{https://github.com/ChipDepot/StarDuck}, y su respectivo paquete en crates.io, en \url{https://crates.io/crates/starduck}.}. Esta librería contiene todas las estructuras de datos definidas en el modelo, las cuales serán usadas por el resto de los servicios y aplicativos necesarios para la declaración, evaluación y adaptación de las arquitecturas de software en el proyecto. 
