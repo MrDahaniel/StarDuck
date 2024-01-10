@@ -4,7 +4,7 @@ Lo primero para la implementación del observador, era determinar como este tend
 
 Partiendo de la división de responsabilidades, se estableció el implementar un agregador, que contenga el estado definido por el usuario; desde el cual otros servicios puedan acceder a estos datos. 
 
-Esto tiene dos ramificaciones adicionales. La primera, es que abre a la posibilidad de declarar más de una aplicación en simultaneo, tomando nuestro agregador como un \textit{hub} que permita guardar y consultar los estados de las aplicaciones que se registren, teniendo una instancia de observador por cada una de ellas.
+Esto tiene dos ramificaciones adicionales. La primera, es que abre a la posibilidad de declarar más de una aplicación en simultaneo, usando el agregador como un \textit{hub} que permita guardar y consultar los estados de las aplicaciones que se registren, teniendo una instancia de observador por cada una de ellas.
 
 La segunda, posibilita el usar este agregador para almacenar los estados actuales reportados por el observador. Esto se debe a que, las condiciones para evaluar el estado de las aplicaciones, se encuentran en las propiedades definidas por el usuario durante la declaración del estado de referencia. Siendo así, es posible ver el estado objetivo a partir de las propiedades; y el estado actual basado en la evaluación de los componentes registrados en los requerimientos de datos.
 
@@ -12,7 +12,7 @@ De lo anterior, podemos planear un diagrama, visto en la figura \ref{fig:StarDuc
 
 \begin{figure}[ht]
     \centering
-    \caption{Arquitectura de StarDuck con nuestro agregador}
+    \caption{Arquitectura actual del proyecto con el agregador}
     \label{fig:StarDuckMini}
     \includegraphics[width=0.9\linewidth]{images/StarDuckMini.pdf}
 \end{figure}

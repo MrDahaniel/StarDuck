@@ -4,7 +4,7 @@
 
 Partiendo de la notación definida para la declaración de las arquitecturas de referencia, se realizó la implementación de un cliente que nos permitiera realizar la validación de los archivos de configuración.
 
-Este cliente, apodado \textit{Lexical}, tiene como objetivo el tomar dichos archivos, y deserializarlos en las diferentes estructuras de datos definidas en nuestro modelo, validando que estas cumplan con la sintaxis definida y que contengan los valores esperados. El grueso de este proceso se puede ver en la figura \ref*{fig:LexicalFlow}.
+Este cliente, apodado \textit{Lexical}, tiene como objetivo el tomar dichos archivos, y deserializarlos en las diferentes estructuras de datos definidas en el modelo, validando que estas cumplan con la sintaxis definida y que contengan los valores esperados. El grueso de este proceso se puede ver en la figura \ref*{fig:LexicalFlow}.
 
 \begin{figure}[ht]
     \centering
@@ -37,6 +37,6 @@ Este proceso de realiza para cada una de las locaciones registradas, lo que nos 
 
 El desarrollo de este módulos, se realizó en Rust. Escogido debido a su capacidad para garantizar la integridad de los datos y prevenir errores comunes, lo que es esencial en un entorno donde la precisión y la confiabilidad son críticas. Además, su ecosistema de herramientas y bibliotecas facilita la implementación eficiente de los módulos de validación y construcción de modelos.\footnote{El código fuente de Lexical puede encontrase en el repositorio de GitHub: \url{https://github.com/ChipDepot/Lexical}}
 
-Con la implementación de este módulo de validación, hemos completado la primera fase del desarrollo de nuestra notación y herramienta para describir y validar arquitecturas de aplicaciones de Smart Campus. Ahora podemos avanzar en la implementación de las funcionalidades de comparación y adaptación de modelos, que son parte fundamental de nuestro enfoque de computación autonómica. 
+Con la implementación de este módulo de validación, hemos completado la primera fase del desarrollo de una notación propia para describir y una herramienta para validar arquitecturas de aplicaciones de Smart Campus. Ahora podemos avanzar en la implementación de las funcionalidades de comparación y adaptación de modelos, que son parte fundamental del enfoque a computación autonómica. 
 
 

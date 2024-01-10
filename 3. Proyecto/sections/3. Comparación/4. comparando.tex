@@ -5,7 +5,7 @@ Ahora que se conoce el estado actual del sistema, al igual que estado de referen
 
 En la figura \ref{fig:StarDuckBasic}, uno de los servicios intermedios estaba encargado de manejar la base de conocimiento. Este contiene las versiones actualizadas de la arquitectura de referencia, enviada a este desde el cliente de Lexical usado por el usuario; y el estado actual, que Looker está constantemente actualizando, y puede ser consultado por este servicio cada que se requiera. Siendo así, este servicio será el encargado de realizar las comparaciones entre los dos estados.
 
-Ya teniendo definido dónde se realizarán las comparaciones, lo siguiente es definir el como se realizarán estas. Para nuestras necesidades, esto no es tan directo como hacer una comparación usando un igual (\texttt{A == B}) ya que el realizar esto, no nos daría realmente información sobre, qué, internamente, presenta problemas.
+Ya teniendo definido dónde se realizarán las comparaciones, lo siguiente es definir el como se realizarán estas. Para necesidades, esto no es tan directo como hacer una comparación usando un igual (\texttt{A == B}) ya que el realizar esto, no nos daría realmente información sobre, qué, internamente, presenta problemas.
 
 Para poder extraer esta información, siendo esta el estado de los componentes específicos que necesitan atendidos, se estableció el uso de métricas definidas con anterioridad. En este caso, las métricas elegidas son el tiempo entre mensajes de los dispositivos y la cantidad de estos en una locación.
 
