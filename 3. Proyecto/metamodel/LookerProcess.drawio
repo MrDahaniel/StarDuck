@@ -1,59 +1,52 @@
-<mxfile host="Electron" modified="2023-11-05T04:01:20.454Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="O5Vbq1UNsteh0tpBLlDX" version="22.0.3" type="device">
+<mxfile host="Electron" modified="2024-01-09T23:08:56.133Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="nDJ_nd_qaGVl1zdJy_dl" version="21.6.5" type="device">
   <diagram name="Page-1" id="BeeQXuH5mpLVNXQqc5U8">
-    <mxGraphModel dx="956" dy="605" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1037" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#A8201A;fontColor=#143642;fillColor=#FAE5C7;strokeWidth=2;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-2" target="ymoABOGNwpDBGQlHH6ja-3">
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-17" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-2" target="tAaDNLIEK-Dx4jZg-7GC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="95" y="475" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-18" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-4" target="tAaDNLIEK-Dx4jZg-7GC-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-4" value="Create instace of&amp;nbsp;&lt;br&gt;MQTT Client" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="180" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-19" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-9" target="tAaDNLIEK-Dx4jZg-7GC-25">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="260" y="70" />
-            </Array>
+            <mxPoint x="380" y="552" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-2" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="150" y="30" width="80" height="80" as="geometry" />
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-9" value="Subscribe to topic&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;device-messages&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="180" y="552" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-26" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=classic;fillColor=#FAE5C7;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-3" target="ymoABOGNwpDBGQlHH6ja-4">
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-21" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-11" target="tAaDNLIEK-Dx4jZg-7GC-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-3" value="Create instace of&amp;nbsp;&lt;br&gt;MQTT Client" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="200" y="120" width="120" height="60" as="geometry" />
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-11" value="Extract Contents" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="325" y="470" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-25" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=classic;fillColor=#FAE5C7;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-12" target="ymoABOGNwpDBGQlHH6ja-4">
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-22" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-13" target="tAaDNLIEK-Dx4jZg-7GC-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-29" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=classic;fillColor=#FAE5C7;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-12" target="ymoABOGNwpDBGQlHH6ja-16">
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-13" value="Update observed&lt;br&gt;system status" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="470" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe_NsLfLY9iD38-KMKIU-3" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;fontFamily=Helvetica;fontSize=12;fontColor=#666666;startArrow=none;startFill=0;endArrow=openThin;endFill=0;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-15" target="tAaDNLIEK-Dx4jZg-7GC-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-12" value="New &lt;br&gt;message?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;strokeColor=#0F8B8D;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
-          <mxGeometry x="60" y="200" width="120" height="60" as="geometry" />
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-15" value="Make the updated status available&lt;br&gt;to the other services" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="470" y="552" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-27" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=classic;fillColor=#FAE5C7;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-4" target="ymoABOGNwpDBGQlHH6ja-12">
+        <mxCell id="Xe_NsLfLY9iD38-KMKIU-6" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;fontFamily=Helvetica;fontSize=12;fontColor=#666666;startArrow=none;startFill=0;endArrow=openThin;endFill=0;" edge="1" parent="1" source="tAaDNLIEK-Dx4jZg-7GC-25" target="tAaDNLIEK-Dx4jZg-7GC-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-4" value="Subscribe to topic&lt;br&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;b&gt;device-messages&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;fontColor=#143642;fillColor=#FAE5C7;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="60" y="120" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-28" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=classic;fillColor=#FAE5C7;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-16" target="ymoABOGNwpDBGQlHH6ja-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-16" value="Extract Contents" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
-          <mxGeometry x="200" y="200" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-30" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=classic;fillColor=#FAE5C7;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-20" target="ymoABOGNwpDBGQlHH6ja-22">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-20" value="Update observed&lt;br&gt;system status" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
-          <mxGeometry x="200" y="280" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-31" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#A8201A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;endArrow=none;fillColor=#FAE5C7;endFill=0;" edge="1" parent="1" source="ymoABOGNwpDBGQlHH6ja-22">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="40" y="230" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ymoABOGNwpDBGQlHH6ja-22" value="Make the updated status available&lt;br&gt;to the other services" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0F8B8D;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#143642;fillColor=#FAE5C7;" vertex="1" parent="1">
-          <mxGeometry x="60" y="280" width="120" height="60" as="geometry" />
+        <mxCell id="tAaDNLIEK-Dx4jZg-7GC-25" value="&lt;font style=&quot;&quot; face=&quot;Helvetica&quot;&gt;Wait for message&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="325" y="552" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

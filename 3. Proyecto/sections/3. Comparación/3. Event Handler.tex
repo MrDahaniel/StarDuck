@@ -1,27 +1,32 @@
 
 \subsection{Implementado un Event-Handler}
 
-En el contexto de Smart Campus UIS, podemos ver cada uno de los mensajes que se envían los adaptadores de auto-descripción como un evento. Es decir, cada uno de los mensajes que es enviado por los dispositivos pertenecientes a una aplicación de Smart Campus UIS, es algo que debe ser procesado con un algún fin. Este procesamiento, recuerda al patrón de diseño \texttt{Observer} en el cual se busca el realizar una acción cada vez que el estado, de lo que se está observando, cambia.
+En el contexto de Smart Campus UIS, cada uno de los mensajes enviados por los dispositivos es manejado como un evento. Es decir, cada mensaje recibido debe ser registrado y procesado por los microservicios de administración para lograr un objetivo final. Este procesamiento, recuerda al patrón de diseño \textit{Observer} en el cual se busca el realizar una acción cada vez que el estado, de lo que se está observando, cambia \cite{Shvets2019}.
 
 Siendo así, se estableció el realizar la implementación de un observador el cual se hará responsable de la captura de los mensajes enviados por los dispositivos y establecer el estado del sistema. De esto, como se puede ver en la figura \ref{fig:proceso_looker} se propuso un proceso que debía realizar el observador a implementar.
 
 \begin{figure}[ht]
     \caption{Primera propuesta del proceso a realizar \linebreak por el observador a implementar} 
     \centering
-    \includegraphics[width=0.6\linewidth]{images/LookerProcess.pdf}
+    \includegraphics[width=\linewidth]{images/LookerProcess.pdf}
     \label{fig:proceso_looker}
-\end{figure}
+\end{figure} 
 
-Este primer acercamiento, es bastante directo en cuanto a la implementación a realizar. Esta se basa en la inicialización de un cliente de MQTT, subscrito al tópico usado por los dispositivos conectados a Smart Campus \cite{SmartCampusGithub}, y procesar cada uno de los mensajes a medida que estos van llegando.
+Este primer acercamiento, es bastante directo en cuanto a la implementación a realizar. Esta se basa en la inicialización de un cliente de MQTT, subscrito al tópico usado por los dispositivos conectados a Smart Campus, \texttt{device-messages}, \cite{SmartCampusGithub}, y procesar cada uno de los mensajes a medida que estos van llegando. 
 
 En este primer prototipo de nuestro observador, existen algunas limitaciones a resolver. El primero de estas que no le da acceso al observador, de aquí en adelante referido como \textit{Looker}, acceder al contexto geográfico, requerido para evaluar el estado de cada una de las locaciones de la aplicación. 
 
-Esto se solucionó realizando una petición de la descripción del campus, requerido para la declaración del estado objetivo, a un endpoint que tenga estos datos. Para su implementación fue necesario realizar una modificación a Lexical para que este, tras validar la arquitectura objetivo, envíe el resultado serializado a un servicio encargado de almacenar las arquitecturas objetivo. 
+Esto se solucionó realizando una petición de la descripción del campus, requerido para la declaración del estado objetivo, a un endpoint que tenga estos datos. Para su implementación fue necesario realizar una modificación a \textit{Lexical} para que este, tras validar la arquitectura objetivo, envíe el resultado serializado a un servicio encargado de almacenar las arquitecturas objetivo. 
 
+Así mismo, quedaba por definir el cómo el resto de los tendrían acceso al estado actualizado de la aplicación. Esto se implementó de dos maneras. La primera es con un endpoint HTTP en el cual se puede 
+
+% 
 De la misma manera, quedaba pendiente el definir el como los demás servicios podrán acceder a los datos que están siendo procesados. Es decir, si vamos a usar un bus de datos para publicar el estado del sistema al resto de nuestros servicios, o permitir el acceso con peticiones HTTP a través de un endpoint.
 
+% 
 La implementación de esto depende del como se desee realizar el manejo de los cambios en la arquitectura de Smart Campus UIS. Si se desea responder de manera inmediata a cambios en la arquitectura, se tendría que usar un bus de datos, como MQTT o AMQP; pero tendría la consecuencia de un aumento en el uso de los recursos debido a que se tendrían que procesar todos los cambios cada vez que se determine el estado de la aplicación. 
 
+% 
 En el caso contrario, podría implementarse un endpoint HTTP el cual sea consultado en intervalos de tiempo por el servicio encargado de comparar los estados objetivo y de referencia. Esto permitiría tener un mayor control de cada cuanto se realizan las comparaciones, y más importante, cada cuanto se realizan acciones sobre la arquitectura actual con el fin de modificarla hacia el estado de referencia.
 
 Siendo así, y debido a querer manejar más el control desde el servicio encargado de los cambios en la arquitectura, que se escogió la opción de emplear un endpoint. De esta manera, se podrá regular cada cuanto se realizan acciones sobre Smart Campus UIS, lo que debería resultar en un comportamiento más predecible.
