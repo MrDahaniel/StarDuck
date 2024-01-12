@@ -34,11 +34,7 @@ IBM, en cuanto a la implementación de las características, propone una modelo 
 
 \begin{figure}[H]
     \centering
-    \caption{El ciclo auto-adaptativo MAPE-K.} 
-    \vspace{-2mm}
-    \cite{alessandra_2010}
-    \vspace{4mm}
-    
+    \caption{El ciclo auto-adaptativo MAPE-K \protect\cite{alessandra_2010}} 
     \includegraphics[width=0.8\linewidth]{images/mape-k.pdf}
     \label{fig:mapek}
 \end{figure}
@@ -62,7 +58,7 @@ Es de resaltar que este modelo, aunque útil para el desarrollo de este tipo de 
 
 La fase de monitoreo dentro del ciclo MAPE-K es vital para el funcionamiento del manejador autonómico pues es a partir de la información que se construirá la base de conocimiento requerida por las demás partes del ciclo. Parte de esta, está compuesta por el \textit{estado del sistema} el cual incluye la descripción del sistema en un momento dado \cite{Weiss_2011}.
 
-Existen varias maneras de realizar implementaciones de mecanismos de auto-descripción y la utilidad de cada uno de estos varía dependiendo en el tipo de sistema de software que se esté usando. Para el marco del proyecto, nos interesan aquellos que estén orientados a los sistemas embebidos e  IoT, algunos de estos son:
+Existen varias maneras de realizar implementaciones de mecanismos de auto-descripción y la utilidad de cada uno de estos varía dependiendo en el tipo de sistema de software que se esté usando. Para el marco del proyecto, son relevantes aquellas que estén orientados a los sistemas embebidos e  IoT, algunos de estos son:
 
 \begin{itemize}
     \item \textbf{JSON Messaging}: \citeauthor{Iancu_2022} \citeyear{Iancu_2022} plantean un protocolo que emplea mensajería entre \textit{gateways} con el fin de recibir información sobre estas. En términos simples, estas funcionan como un \textit{ping} hacia el nodo que luego retorna sus datos, al igual que los dispositivos conectados a ella, al encargado de recolectar toda esta información con el fin de construir una descripción del sistema.-
@@ -85,7 +81,7 @@ La adaptación, en el contexto de la computación autonómica, es la parte más 
 
 Esta adaptabilidad puede exponerse en múltiples puntos dentro de un sistema de software. Pueden realizarse adaptaciones en sistema operativo, lenguaje de programación, arquitectura e incluso datos \cite{lalanda_diaconescu_mccann_2014}. 
 
-Manteniéndose en el marco del proyecto, son las implementaciones relacionadas con la modificación de la arquitectura los cuales nos interesan. Siendo así, nos centraremos en los mecanismos de adaptación de componentes, o de reconfiguración:
+Manteniéndose en el marco del proyecto, son relevantes aquellas soluciones relacionadas con la modificación de la arquitectura. Siendo así, se centraron en los mecanismos de adaptación de componentes, o de reconfiguración:
 
 \begin{itemize}
     \item \textbf{Binding Modification}: Este mecanismo hace referencia a la alteración de los vínculos entre los diferentes componentes de la arquitectura. Estos tienen el objetivo de modificar la interacción entre componentes, lo que es especialmente común en implementaciones con \textit{proxies}. Este tipo de mecanismo de adaptación fue usado por \citeauthor{Kabashkin_2017} \citeyear{Kabashkin_2017} para añadir fiabilidad a la red de comunicación aérea.

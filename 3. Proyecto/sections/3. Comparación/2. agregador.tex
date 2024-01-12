@@ -21,7 +21,7 @@ La implementación de este agregador, apodado \textit{Bran}\footnote{El código 
 
 Ambas de estas funcionalidades se implementaron usando el framework \texttt{Axum}\footnote{Axum es un framework modular para aplicativos web Open Source desarrollado en Rust. Más información sobre este puede encontrarse en su repositorio \url{https://github.com/tokio-rs/axum}}. Usando como base la librería \textit{StarDuck}, se definió un único endpoint que toma, \texttt{apps/:app\_name}, que acepta peticiones de tipo \texttt{GET}, para consultar el estado de la aplicación; \texttt{POST} y \texttt{PUT}, para el registro inicial de la aplicación, y posterior actualización de esta. 
 
-Ya con el servicio implementado, se agregó a \textit{Lexical}, un cliente HTTP con el cual, tras validar la arquitectura objetivo proveída por el usuario, y como se ve en la figura \ref{fig:StarDuckMini}, este realice una petición de tipo POST a la una instancia de \textit{Bran} indicada con el fin de registrarla. Una versión actualizada del proceso realizado \textit{Lexical} puede verse en la figura \ref{fig:UpdatedLexicalFlow}.
+Ya con el servicio implementado se agregó, a \textit{Lexical}, un cliente HTTP con el cual, tras validar la arquitectura objetivo proveída por el usuario, y como se ve en la figura \ref{fig:StarDuckMini}, este realice una petición de tipo POST a la una instancia de \textit{Bran} indicada con el fin de registrarla. Una versión actualizada del proceso realizado \textit{Lexical} puede verse en la figura \ref{fig:UpdatedLexicalFlow}.
 
 \begin{figure}[ht]
     \centering
