@@ -41,14 +41,14 @@ Los requerimientos de datos, como se puede ver en la figura \ref{fig:rail-data-r
     \caption{Diagrama de rail de la sintaxis definida para la notación de los componentes de la aplicación}
     \label{fig:rail-data-req}
     \vspace{-2mm}
-    \includegraphics[width=\linewidth]{images/Railroad Data Requirements.pdf}
+    \includegraphics[width=0.9\linewidth]{images/Railroad Data Requirements.pdf}
 \end{figure}
 
 A continuación, se procedería a definir las propiedades de dicho requerimiento de datos. Para esta primera versión de la notación, se han establecido las 4 cuatro propiedades vistas en el modelo (ver figura \ref{fig:metamodelo}), dos son obligatorias para la declaración. La primera es \texttt{output}, que hace referencia al tipo de dato esperado \footnote{Este output, en el modelo es el \textit{enum} \texttt{IoTOutput}, que representa los tipos de datos.}, y la segunda es \texttt{required}, que especifica si el requerimiento es obligatorio u opcional. Las otras dos propiedades opcionales: \texttt{count}, que representa la cantidad de fuentes de datos necesarias en la ubicación, y \texttt{timeout}, que indica el tiempo máximo entre los informes de datos. En ambos casos, de no declararlas, se tomaría como valor por defecto 0.
 
 El resultante de esta notación serían archivos de declaración de arquitecturas, en formato YAML, similares a la que se puede observar en la figura \ref{fig:YAML-ADL}.
 
-\begin{figure}[H]
+\begin{figure}[ht]
     \centering
     \caption{YAML de una posible aplicación de monitorio}
     \label{fig:YAML-ADL}
