@@ -1,8 +1,8 @@
 \subsection{De Acciones, a Instrucciones}
 
-Ahora, tenemos las acciones a realizar para poder adaptar la arquitectura de la aplicación hacia el estado de referencia; sin embargo, estas acciones no contienen la información necesaria para ejecutar ninguno de los procesos necesarios.
+Ahora, se tienen las acciones a realizar para poder adaptar la arquitectura de la aplicación hacia el estado de referencia; sin embargo, estas acciones no contienen la información necesaria para ejecutar ninguno de los procesos necesarios.
 
-Partiendo de esto, se determinó la necesidad de una colección estructuras de datos, que contuvieran las instrucciones a realizar, para cada una de las acciones definidas. Así mismo, esta colección, debería especificarse de manera individual para cada locación de la aplicación con el fin de tener una mejor granularidad y control sobre la manera en la que se realizan las modificaciones en la arquitectura.
+Partiendo de esto, se determinó la necesidad de una colección estructuras de datos, que contuvieran las instrucciones a seguir, para cada una de las acciones definidas. Esta, debe especificar la locación de la aplicación en la cual se ejecutan, con el fin de tener una mejor granularidad y control sobre la manera en la que se realizan las modificaciones en la arquitectura.
 
 En consecuencia, como se observa en la figura \ref{fig:Directives}, se definió una estructura de datos llamada \texttt{Directive}. Esta contiene tres campos adicionales para las estructuras \texttt{AdditionOrder}, \texttt{RestartOrder}, y \texttt{ReconfigureOrder}; que corresponden con las acciones \textit{Addition}, \textit{Restart} y \textit{Reconfigure}, respectivamente.
 
@@ -12,4 +12,22 @@ En consecuencia, como se observa en la figura \ref{fig:Directives}, se definió 
     \label{fig:Directives}
     \includegraphics[width=0.8\linewidth]{images/Directives.pdf}
 \end{figure}
+
+Cada una estas directivas, y ordenes, se agregan a un registro en \textit{Bran}, usando el nombre de la aplicación y la locación a la pertenecen, para su indexación. Cada una se registran usando un endpoint dedicado a la recepción de las órdenes.
+
+La orden de adición contiene el nombre de la imagen del servicio a desplegar, la red a la cual debe conectarse para poder interactuar con los demás servicios, y los argumentos que se deben pasar sea como variables de ambiente o argumentos de línea de comando. 
+
+Las órdenes de reinicio y reconfiguración poseen el \textit{UUID} del dispositivo el cual buscan afectar. Siendo así, al ser necesario tener una manera por la cual identificar qué servicio es qué componente, se implementó el enum \texttt{QueryType}. Este, contiene la información de como debe buscarse el contenedor en la red. Para esta primera implementación, su única variante es una búsqueda \textit{HTTP} hacia un endpoint y un puerto.
+
+Finalmente, la orden de reconfiguración tiene como parte extra la red en la que se buscara el servicio a reiniciar y el tipo de reconfiguración (\texttt{ReconfigureType}) a realizar. Este funciona de manera similar a QueryType, en tanto indica la manera en la que se aplicará la reconfiguración. En este caso, para la variante \textit{HTTP} implementada, indica el endpoint y el puerto a usar, junto con el método y payload que deben ir en la petición para hacer la reconfiguración efectiva.
+
+El proceso correspondiente, visto en la figura \ref{fig:BranExecution}, fue implementado en \textit{Bran}. Este se ejecuta una vez se tienen las acciones definidas en durante el proceso de identificación de problemas (Ver figura \ref{fig:BranProcess}).
+
+\begin{figure}[ht]
+    \centering
+    \caption{UML de la estructura de directivas y ordenes}
+    \label{fig:BranExecution}
+    \includegraphics[width=0.8\linewidth]{images/Directives.pdf}
+\end{figure}
+
 
