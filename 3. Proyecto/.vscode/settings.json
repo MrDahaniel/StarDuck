@@ -15,6 +15,7 @@
         "editables",
         "metamodelo",
         "MQTT",
+        "reimplementación",
         "serializado"
     ]
 }
