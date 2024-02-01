@@ -187,6 +187,8 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col">
 
+This should be an image
+
 </div>
 
 <div>
@@ -254,25 +256,6 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-<div class="twocols center-grid">
-
-<div class="col center">
-
-# Ambientación conceptual y tecnológica
-
-</div>
-
-<div class="col">
-
--   [Criterios de selección](#criterios-de-selección)
--   [Búsqueda de alternativas](#búsqueda-de-alternativas)
-
-</div>
-
-</div>
-
----
-
 # Criterios de selección
 
 <div class="twocols center-grid">
@@ -310,6 +293,8 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col">
 
+-   [Criterios de selección](#criterios-de-selección)
+-   [Búsqueda de alternativas](#búsqueda-de-alternativas)
 -   [Un nuevo modelo](#un-nuevo-modelo)
 -   [Sintaxis de la notación](#sintaxis-de-la-notación)
 -   [Validando aplicaciones](#validando-aplicaciones)
@@ -577,43 +562,6 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="twocols center-grid">
 
-# Resultados
-
--   [Resultados Escenario A](#resultados-escenario-a)
--   [Resultados Escenario B](#resultados-escenario-b)
-
----
-
-# Resultados Escenario A
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
-
-</div>
-</div>
-
----
-
-# Resultados Escenario B
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
-
-</div>
-</div>
-
----
-
-<div class="twocols center-grid">
-
 # Conclusiones
 
 ---
@@ -655,4 +603,4 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-# Fin
+# Preguntas
