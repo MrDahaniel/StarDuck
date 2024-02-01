@@ -70,30 +70,30 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-<div id="agenda" class="twocols center-grid">
+<div class="twocols center-grid">
 
 # Agenda
 
 -   [Contexto](#contexto)
--   [Problemática](#problematica)
+-   [Problemática](#problemática)
 -   [Objetivos](#objetivos)
 -   [Metodología](#metodología)
 -   [Desarrollo](#desarrollo)
 -   [Resultados](#resultados)
 -   [Conclusiones](#conclusiones)
--   [Trabajo Futuro](#trabajofuturo)
+-   [Trabajo Futuro](#trabajo-futuro)
 
 </div>
 
 ---
 
-<div id="contexto" class="twocols center-grid">
+<div class="twocols center-grid">
 
 # Contexto
 
--   [Computación Autonómica](#compauto)
--   [Sistemas IoT](#sisiot)
--   [Smart Campus UIS](#scuis)
+-   [Computación Autonómica](#computación-autonómica)
+-   [Sistemas IoT](#sistemas-iot)
+-   [Smart Campus UIS](#smart-campus-uis)
 
 </div>
 
@@ -101,7 +101,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Computación Autonómica
 
-<div id="compauto" class="twocols center-grid">
+<div class="twocols center-grid">
 
 <div class="col">
 
@@ -113,7 +113,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Sistemas IoT
 
-<div id="sisiot" class="twocols center-grid">
+<div class="twocols center-grid">
 
 <div class="col">
 
@@ -125,7 +125,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Smart Campus UIS
 
-<div id="scuis" class="twocols center-grid">
+<div class="twocols center-grid">
 
 <div class="col">
 
@@ -135,18 +135,36 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-<div id="problematica" class="twocols center-grid">
+<div class="twocols center-grid">
+
+<div class="col center">
 
 # Problemática
 
--   Crecimiento
--   Costo
+</div>
+
+<div class="col">
+
+-   [Crecimiento](#crecimiento)
+-   [Costo](#costo)
+
+</div>
+
+<div>
 
 ---
 
 # Crecimiento
 
-<div class="twocols">
+<div class="twocols center-grid">
+
+<div class="col">
+
+</div>
+
+<div class="col">
+
+</div>
 
 <div>
 
@@ -154,7 +172,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Costo
 
-<div class="twocols">
+<div class="twocols center-grid">
 
 <div>
 
@@ -164,10 +182,12 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Objetivos
 
--   Objetivo General
--   Objetivos Específicos
+-   [Objetivo General](#general)
+-   [Objetivos Específicos](#especificos)
 
 ---
+
+<divdiv>
 
 # Objetivo General
 
@@ -199,7 +219,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Metodología
 
--   Prototipado Iterativo
+-   [Prototipado Iterativo](#prototipado-iterativo)
 
 ---
 
@@ -211,11 +231,11 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Desarrollo
 
--   Ambientación Conceptual Y tecnológica
--   Definición de la notación de la arquitectura
--   Mecanismos de descripción
--   Mecanismos de adaptación
--   Validación de resultados
+-   [Ambientación Conceptual Y tecnológica](#ambientación-conceptual-y-tecnológica)
+-   [Definición de la notación de la arquitectura](#definición-de-la-notación-de-la-arquitectura)
+-   [Mecanismos de descripción](#mecanismos-de-descripción)
+-   [Mecanismos de adaptación](#mecanismos-de-adaptación)
+-   [Validación de resultados](#validación-de-resultados)
 
 ---
 
@@ -229,11 +249,39 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col">
 
--   Criterios de selección
--   Búsqueda de alternativas
+-   [Criterios de selección](#criterios-de-selección)
+-   [Búsqueda de alternativas](#búsqueda-de-alternativas)
 
 </div>
 
+</div>
+
+---
+
+# Criterios de selección
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Búsqueda de alternativas
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
 </div>
 
 ---
@@ -247,9 +295,51 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col">
 
--   Un nuevo modelo
--   Sintaxis de la notación
--   Validando aplicaciones
+-   [Un nuevo modelo](#un-nuevo-modelo)
+-   [Sintaxis de la notación](#sintaxis-de-la-notación)
+-   [Validando aplicaciones](#validando-aplicaciones)
+
+</div>
+</div>
+
+---
+
+# Un nuevo modelo
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Sintaxis de la notación
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Validando aplicaciones
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
 
 </div>
 </div>
@@ -265,13 +355,69 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 </div>
 <div class="col">
 
--   Monitorear
--   Centralizando datos
--   Analizar
--   Evaluando el estado
+-   [Monitorear](#monitorear)
+-   [Centralizando datos](#centralizando-datos)
+-   [Analizar](#analizar)
+-   [Evaluando el estado](#evaluando-el-estado)
 
 </div>
 
+</div>
+
+---
+
+# Monitorear
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Centralizando datos
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Analizar
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Evaluando el estado
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
 </div>
 
 ---
@@ -286,13 +432,69 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col">
 
--   Identificando problemas
--   Definiendo acciones
--   Planear
--   Actuar
+-   [Identificando problemas](#identificando-problemas)
+-   [Definiendo acciones](#definiendo-acciones)
+-   [Planear](#planear)
+-   [Actuar](#actuar)
 
 </div>
 
+</div>
+
+---
+
+# Identificando problemas
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Definiendo acciones
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Planear
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Actuar
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
 </div>
 
 ---
@@ -307,9 +509,51 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col">
 
--   Condiciones y banco de pruebas
--   Escenario A
--   Escenario B
+-   [Condiciones y banco de pruebas](#condiciones-y-banco-de-pruebas)
+-   [Escenario A](#escenario-a)
+-   [Escenario B](#escenario-b)
+
+</div>
+</div>
+
+---
+
+# Condiciones y banco de pruebas
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Escenario A
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Escenario B
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
 
 </div>
 </div>
@@ -320,8 +564,36 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Resultados
 
--   Escenario A
--   Escenario B
+-   [Resultados Escenario A](#resultados-escenario-a)
+-   [Resultados Escenario B](#resultados-escenario-b)
+
+---
+
+# Resultados Escenario A
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
+---
+
+# Resultados Escenario B
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
 
 ---
 
@@ -331,20 +603,40 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-<div id="trabajofuturo" class="twocols center-grid">
+<div class="twocols center-grid">
 
 # Trabajo Futuro
 
--   Interfaces gráficas
--   Estadísticas
+-   [Interfaces gráficas](#interfaces-gráficas)
+-   [Estadísticas](#estadísticas)
 
 ---
 
 # Interfaces gráficas
 
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
+
 ---
 
 # Estadísticas
+
+<div class="twocols center-grid">
+<div class="col center">
+
+</div>
+
+<div class="col">
+
+</div>
+</div>
 
 ---
 
