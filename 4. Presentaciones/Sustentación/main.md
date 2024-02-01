@@ -13,7 +13,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
     }
     div.names .col { text-align: center; }    
 
-    footer  { width: 95%  }
+    footer  { width: 95%  } 
     div.foot {
         display: flex;
         align-items: center
@@ -74,8 +74,8 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Agenda
 
--   [Contexto](#contexto)
--   [Problemática](#problemática)
+-   [Contexto y problemática](#contexto-y-problemática)
+-   [Visión General](#visión-general)
 -   [Objetivos](#objetivos)
 -   [Metodología](#metodología)
 -   [Desarrollo](#desarrollo)
@@ -89,13 +89,55 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="twocols center-grid">
 
-# Contexto
+# Contexto y problemática
 
+-   [Computación a gran escala](#computación-a-gran-escala)
+-   [Crecimiento](#crecimiento)
+-   [Costo](#costo)
 -   [Computación Autonómica](#computación-autonómica)
--   [Sistemas IoT](#sistemas-iot)
--   [Smart Campus UIS](#smart-campus-uis)
+<!-- -   [Smart Campus UIS](#smart-campus-uis) -->
 
 </div>
+
+---
+
+# Computación a Gran Escala
+
+<div class="twocols center-grid">
+
+<div class="col">
+
+</div>
+
+<div class="col">
+
+</div>
+
+<div>
+
+---
+
+# Crecimiento
+
+<div class="twocols center-grid">
+
+<div class="col">
+
+</div>
+
+<div class="col">
+
+</div>
+
+<div>
+
+---
+
+# Costo
+
+<div class="twocols center-grid">
+
+<div>
 
 ---
 
@@ -139,40 +181,13 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 <div class="col center">
 
-# Problemática
-
-</div>
-
-<div class="col">
-
--   [Crecimiento](#crecimiento)
--   [Costo](#costo)
-
-</div>
-
-<div>
-
----
-
-# Crecimiento
-
-<div class="twocols center-grid">
-
-<div class="col">
+# Visión General
 
 </div>
 
 <div class="col">
 
 </div>
-
-<div>
-
----
-
-# Costo
-
-<div class="twocols center-grid">
 
 <div>
 
@@ -182,8 +197,8 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Objetivos
 
--   [Objetivo General](#general)
--   [Objetivos Específicos](#especificos)
+-   [Objetivo General](#objetivo-general)
+-   [Objetivos Específicos](#objetivos-específicos)
 
 ---
 
