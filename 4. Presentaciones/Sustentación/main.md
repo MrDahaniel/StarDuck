@@ -70,30 +70,30 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-<div class="twocols center-grid">
+<div id="agenda" class="twocols center-grid">
 
 # Agenda
 
--   Contexto
--   Problemática
--   Objetivos
--   Metodología
--   Desarrollo
--   Resultados
--   Conclusiones
--   Trabajo Futuro
+-   [Contexto](#contexto)
+-   [Problemática](#problematica)
+-   [Objetivos](#objetivos)
+-   [Metodología](#metodología)
+-   [Desarrollo](#desarrollo)
+-   [Resultados](#resultados)
+-   [Conclusiones](#conclusiones)
+-   [Trabajo Futuro](#trabajofuturo)
 
 </div>
 
 ---
 
-<div class="twocols center-grid">
+<div id="contexto" class="twocols center-grid">
 
 # Contexto
 
--   Computación Autonómica
--   Sistemas IoT
--   Smart Campus UIS
+-   [Computación Autonómica](#compauto)
+-   [Sistemas IoT](#sisiot)
+-   [Smart Campus UIS](#scuis)
 
 </div>
 
@@ -101,7 +101,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Computación Autonómica
 
-<div class="twocols center-grid">
+<div id="compauto" class="twocols center-grid">
 
 <div class="col">
 
@@ -113,13 +113,29 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 # Sistemas IoT
 
+<div id="sisiot" class="twocols center-grid">
+
+<div class="col">
+
+</div>
+
+</div>
+
 ---
 
 # Smart Campus UIS
 
+<div id="scuis" class="twocols center-grid">
+
+<div class="col">
+
+</div>
+
+</div>
+
 ---
 
-<div class="twocols center-grid">
+<div id="problematica" class="twocols center-grid">
 
 # Problemática
 
@@ -315,7 +331,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
-<div class="twocols center-grid">
+<div id="trabajofuturo" class="twocols center-grid">
 
 # Trabajo Futuro
 
