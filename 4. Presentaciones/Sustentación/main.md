@@ -93,7 +93,9 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 -   [Computación a gran escala](#computación-a-gran-escala)
 -   [Crecimiento y costo](#crecimiento-y-costo)
 -   [Computación Autonómica](#computación-autonómica)
--   [Visión General](#visión-general)
+-   [Sistemas IoT](#sistemas-iot)
+-   [Smart Campus UIS](#smart-campus-uis)
+-   [Visión General](#vision-general)
 
 </div>
 
@@ -282,13 +284,13 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
-# Objetivo General
+<!-- _header: <h1 id="objetivo-general"> Objetivo General </h1> -->
 
 -   Diseñar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
 
 ---
 
-# Objetivos Específicos
+<!-- _header: <h1 id="objetivos-específicos"> Objetivos Específicos </h1> -->
 
 <div class="twocols">
 
@@ -320,7 +322,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 <div class="col center">
 
-![width:950](assets/Metodología.png)
+![width:1000](assets/Metodología.png)
 
 </div>
 
@@ -355,7 +357,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
-# Criterios de selección
+<!-- _header: <h1 id="criterios-de-selección"> Criterios de selección </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -369,7 +371,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
-# Búsqueda de alternativas
+<!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -401,7 +403,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
-# Un nuevo modelo
+<!-- _header: <h1 id="un-nuevo-modelo"> Un nuevo modelo </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -415,7 +417,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
-# Sintaxis de la notación
+<!-- _header: <h1 id="sintaxis-de-la-notación"> Sintaxis de la notación </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -429,7 +431,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
-# Validando aplicaciones
+<!-- _header: <h1 id="validando-aplicaciones"> Validando aplicaciones </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">

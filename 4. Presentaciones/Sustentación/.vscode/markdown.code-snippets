@@ -9,6 +9,6 @@
     },
     "Header": {
         "prefix": "header",
-        "body": ["<!-- _header: <h1> $0 </h1> -->"]
+        "body": ["<!-- _header: <h1 id=\"$0\"> $1 </h1> -->"]
     }
 }
