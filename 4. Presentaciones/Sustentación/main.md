@@ -14,7 +14,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
     div.names .col { text-align: center; }    
 
     footer  { width: 95%  } 
-    div.foot {
+    div.foot { 
         display: flex;
         align-items: center
     }
@@ -58,7 +58,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 <!-- _footer: '
     <div class="foot">
         <div class="shart">
-            <img src="assets/UISLogo.png" width="30%" />
+            <img src="assets/UISLogo Alt.png" width="30%" />
         </div>
         <div class="hugo">
             Escuela de Ingeniería de Sistemas e Informática <br>
@@ -75,7 +75,6 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 # Agenda
 
 -   [Contexto y problemática](#contexto-y-problemática)
--   [Visión General](#visión-general)
 -   [Objetivos](#objetivos)
 -   [Metodología](#metodología)
 -   [Desarrollo](#desarrollo)
@@ -92,106 +91,185 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 # Contexto y problemática
 
 -   [Computación a gran escala](#computación-a-gran-escala)
--   [Crecimiento](#crecimiento)
--   [Costo](#costo)
+-   [Crecimiento y costo](#crecimiento-y-costo)
 -   [Computación Autonómica](#computación-autonómica)
-<!-- -   [Smart Campus UIS](#smart-campus-uis) -->
+-   [Visión General](#visión-general)
 
 </div>
 
 ---
 
-# Computación a Gran Escala
+<!-- _header: <h1 id="computación-a-gran-escala"> Computación a Gran Escala </h1> -->
 
 <div class="twocols center-grid">
+<div class="col center">
 
-<div class="col">
-
-</div>
-
-<div class="col">
+Orientada al manejo de grandes cantidades de datos y problemas de alta complejidad.
 
 </div>
+<div class="col">
 
+-   Surge por el interés en tomas de decisiones apoyadas por computadoras, machine-learning, simulaciones, etc.
+-   Tiene un gran costo monetario debido al hardware e infraestructura requerida.
+-   Incluye computación distribuida, cloud computing, etc.
+
+</div>
 <div>
 
+<!--
+La computación a gran escala es, en esencia, sistemas computacionales con el objetivo de procesar muchos datos y solucionar problemas complejos.
+
+Estos, por su gran capacidad de recursos de cómputo, han sido llamados super-computadoras y tienen a tener un gran costo. Y dadas las limitaciones de algunas compañías en adquirir este tipo de soluciones, han surgido diferentes acercamientos a esta gran escala. Entre ellos, está la computación distribuida y cloud computing.
+
+Esto sin embargo, presenta 2 problemas. El crecimiento y el costo.
+
+-->
+
 ---
 
-# Crecimiento
+<!-- _header: <h1 id="crecimiento-y-costo"> Crecimiento y costo </h1> -->
+
+<div class="col center">
+
+Los sistemas de gran escala, crecen. Esto es costoso y complicado de manejar.
+
+![width:800](assets/GoogleNetwork.png)
+
+</div>
+
+<!--
+El mantener sistemas distribuidos por todo el mundo, no es algo particularmente barato. Ni en términos de dinero, ni en términos de personal.
+
+Aquí tenemos como ejemplo la infraestructura de red de Google, esta está compuesta por casi 8000 nodos encargados del manejo de todo el tráfico de datos usados por los usuarios.
+
+Manejar este tipo de infraestructuras, no es una tarea particularmente sencilla. Hay varias maneras de solucionar esto, y una de ellas es la computación autonómica.
+
+-->
+
+---
+
+<!-- _header: <h1 id="computación-autonómica"> Computación Autonómica </h1> -->
 
 <div class="twocols center-grid">
-
 <div class="col">
 
+-   Auto-conocimiento
+-   Auto-configuración
+-   Auto-optimización
+-   Auto-sanación
+-   Auto-protección
+-   Auto-conciencia
+
+</div>
+<div class="col center">
+
+![width:750](assets/Mape-k%20Alt.png)
+Ciclo de control MAPE-K
+
+</div>
 </div>
 
-<div class="col">
+<!--
+Inicialmente planteada por IBM a inicios de los 2000, la computación autonómica busca el dotar a los sistemas de computación con propiedades de autogestión las cuales pueda modificar su estado en búsqueda de manejarse a sí mismo.
 
-</div>
+Las principales propiedades que un sistema autonómico debe tener son:
 
-<div>
+- Auto-conocimiento: habilidad de conocer su estado actual, las interacciones del sistema.
+- Auto-configuración: capacidad de re-configurarse frente a los constantes cambios en el entorno.
+- Auto-optimización: búsqueda constante de optimizar el funcionamiento de sí mismo.
+- Auto-sanación: aptitud de restaurar el sistema en el caso de que se presenten fallas.
+- Auto-protección: facultad de protegerse a sí mismo de ataques externos.
+- Auto-conciencia: posibilidad de conocer el ambiente en el que el sistema se encuentra.
+
+El objetivo de estas propiedades autonómicas es reducir la complejidad de manejar este tipo de sistemas, ayudando así a los administradores de sistemas.
+
+Ahora, uno de los campos en donde se pueden aplicar estos conceptos, es en los sistemas IoT.
+
+-->
 
 ---
 
-# Costo
+<!-- _header: <h1 id="sistemas-iot"> Sistemas IoT </h1> -->
 
 <div class="twocols center-grid">
-
-<div>
-
----
-
-# Computación Autonómica
-
-<div class="twocols center-grid">
-
 <div class="col">
 
-</div>
+![width:450](assets/IoTLogo.png)
 
 </div>
+<div class="col center">
+
+"La Internet de las cosas (IoT) describe la red de objetos físicos ("cosas") que llevan incorporados sensores, software y otras tecnologías con el fin de conectarse e intercambiar datos con otros dispositivos y sistemas a través de Internet"
+(Oracle, s.f.)
+
+</div>
+</div>
+
+<!--
+Los sistemas IoT, son descritos por Oracle como redes de objetos físicos con sensores y actuadores. Estos son usados para diversas tareas las cuales van desde el control de dispositivos como luces hasta monitoreo ambiental.
+
+Para efectos de esta presentación, nos interesa principalmente esto último. Dentro de las aplicaciones que se tienen dentro del monitoreo, es el desarrollo de los llamados Smart Campus.
+-->
 
 ---
 
-# Sistemas IoT
-
-<div class="twocols center-grid">
-
-<div class="col">
-
-</div>
-
-</div>
-
----
-
-# Smart Campus UIS
-
-<div class="twocols center-grid">
-
-<div class="col">
-
-</div>
-
-</div>
-
----
+<!-- _header: <h1 id="smart-campus-uis"> Smart Campus UIS </h1> -->
 
 <div class="twocols center-grid">
 
 <div class="col center">
 
-# Visión General
+Los Smart Campus son versiones en miniatura de las Smart Cities.
+
+Smart Campus UIS es una implementación realizada aquí de este concepto.
 
 </div>
 
 <div class="col">
 
-This should be an image
+![width:500](assets/SmartCampus.png)
 
 </div>
 
-<div>
+</div>
+
+<!--
+Los smart-palabra, son sistemas IoT con el fin de realizar el control y monitoreo de un area geográfica dada. Estas son conocidas dependiendo del tamaño de área en las que estén presentes.
+
+Aquí en la UIS, se está llevando acabo el desarrollo de una plataforma de este estilo la cual permita realizar despliegues de diferentes sistemas IoT con la realización de diferentes aplicaciones. Entre ellas, como se había nombrado antes, el monitoreo ambiental.
+
+Esto implica el uso de una gran cantidad de dispositivos, distribuidos geográficamente, encargados de la recolección de los diferentes tipos de datos. Esto, a su vez, implica que, para que las aplicaciones registradas en la plataforma funcionen de manera adecuada, se requiere del manejo de todos los dispositivos, que a la larga, van a ser muchos.
+
+Ahora, partiendo de esto, se planteó el dotar a Smart Campus UIS, con propiedades autonómicas. Veamos una visión general del proyecto.
+-->
+
+---
+
+<!-- _header: <h1 id="vision-general"> Visión General </h1> -->
+
+<div class="center">
+
+![width:950](assets/VisionGeneral.png)
+
+</div>
+
+<!--
+
+La visión general del proyecto es la siguiente:
+
+Se quería que los usuarios/administradores del sistema, tuvieran la capacidad de definir un estado de referencia para una aplicación. Esta, así mismo, sería tomada como parte de la base de conocimiento, y usada para evaluar el estado de la aplicación observada.
+
+A partir de esta evaluación, se tendrían que formular las acciones a tomar con el fin de acercar el estado observado hacia el estado objetivo. Estas acciones, finalmente, serían ejecutadas sobre Smart Campus UIS, dando como resultado cambios en el estado observado.
+
+Como podemos ver, tenemos algo bastante similar al planteamiento realizado inicialmente por IBM. Para dotar a Smart Campus UIS de estas propiedades autonómicas, será necesario tener:
+
+0. Una manera para que los usuarios puedan declarar los estados de referencia
+1. Una manera de monitorear la actividad de los sensores que están recolectando información
+2. Una manera de evaluar el estado de la aplicación respecto a su estado de referencia definido
+3. Una manera de planear las acciones a realizar respecto a la evaluación realizada
+4. Una manera de ejecutar las acciones planeadas sobre la plataforma
+
+-->
 
 ---
 
@@ -203,8 +281,6 @@ This should be an image
 -   [Objetivos Específicos](#objetivos-específicos)
 
 ---
-
-<divdiv>
 
 # Objetivo General
 
@@ -240,7 +316,13 @@ This should be an image
 
 ---
 
-# Prototipado Iterativo
+<!-- _header: <h1 id="prototipado-iterativo"> Prototipado Iterativo </h1> -->
+
+<div class="col center">
+
+![width:950](assets/Metodología.png)
+
+</div>
 
 ---
 
@@ -253,6 +335,23 @@ This should be an image
 -   [Mecanismos de descripción](#mecanismos-de-descripción)
 -   [Mecanismos de adaptación](#mecanismos-de-adaptación)
 -   [Validación de resultados](#validación-de-resultados)
+
+---
+
+<div class="twocols center-grid">
+<div class="col">
+
+# Ambientación Conceptual Y tecnológica
+
+</div>
+<div class="col">
+
+-   [Criterios de selección](#criterios-de-selección)
+-   [Búsqueda de alternativas](#búsqueda-de-alternativas)
+
+</div>
+
+</div>
 
 ---
 
@@ -293,8 +392,6 @@ This should be an image
 
 <div class="col">
 
--   [Criterios de selección](#criterios-de-selección)
--   [Búsqueda de alternativas](#búsqueda-de-alternativas)
 -   [Un nuevo modelo](#un-nuevo-modelo)
 -   [Sintaxis de la notación](#sintaxis-de-la-notación)
 -   [Validando aplicaciones](#validando-aplicaciones)
