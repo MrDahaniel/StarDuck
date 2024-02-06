@@ -355,33 +355,57 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 </div>
 
+<!--
+
+Con esta ambientación conceptual, se buscaba el realizar identificar una notación que se pudiera usar para poder realizar el modelado de las aplicaciones que se estarían desarrollando sobre Smart Campus UIS.
+
+A partir de esto, se definieron unos criterios por los cuales se evaluaran cada unas de las alternativas identificadas durante las consultas a literatura.
+
+-->
+
 ---
 
 <!-- _header: <h1 id="criterios-de-selección"> Criterios de selección </h1> -->
 
-<div class="twocols center-grid">
-<div class="col center">
+Requisitos
 
-</div>
+1. Describir la arquitectura de un sistema IoT
+2. Permitir ubicar los componentes en una ubicación geográfica
+3. Habilitar el modelado de los componentes a nivel de sus entradas
+4. Poder el establecer el estado de los componentes
 
-<div class="col">
+Nice to have
 
-</div>
-</div>
+5. Modelar el comportamiento de sus componentes
+6. Permitir el exportar el modelo de manera gráfica
+
+<!--
+
+
+
+-->
 
 ---
 
 <!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1> -->
 
-<div class="twocols center-grid">
 <div class="col center">
 
+|     | MontiThings | Eclipse Mita | SysML4IoT | ThingML | IoT-DDL |
+| --- | ----------- | ------------ | --------- | ------- | ------- |
+| C1  | ✓           | ✓            | ✓         | ✓       | ✓       |
+| C2  | ✗           | ✗            | ✗         | ✗       | ✗       |
+| C3  | ✓           | ✓            | ✓         | ✓       | ✓       |
+| C4  | ✓           | ✓            | ✓         | ✓       | ✗       |
+| C5  | ✓           | ✓            | ✗         | ✓       | ✗       |
+| C6  | ✗           | ✗            | ✗         | ✓       | ✗       |
+
 </div>
 
-<div class="col">
+<!-- <div class="col">
 
 </div>
-</div>
+</div> --> -->
 
 ---
 
