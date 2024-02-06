@@ -235,7 +235,8 @@ Para efectos de esta presentación, nos interesa principalmente esto último. De
 
 <div class="col center">
 
-Los Smart Campus son versiones en miniatura de las Smart Cities.
+Los Smart Campus son versiones
+en miniatura de las Smart Cities.
 
 Smart Campus UIS es una implementación realizada aquí de este concepto.
 
@@ -243,7 +244,7 @@ Smart Campus UIS es una implementación realizada aquí de este concepto.
 
 <div class="col">
 
-![width:500](assets/SmartCampus.png)
+![](assets/SmartCampus.png)
 
 </div>
 
@@ -490,9 +491,13 @@ no se adecuaban a las necesidades del proyecto.
 <div class="twocols center-grid">
 <div class="col center">
 
+![](assets/Railroad%20Complete.png)
+
 </div>
 
 <div class="col">
+
+![width:480](assets/ModelYaml.png)
 
 </div>
 </div>
