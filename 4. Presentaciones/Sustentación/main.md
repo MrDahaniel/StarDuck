@@ -33,7 +33,21 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
     div.center { text-align: center; }
 
-
+	table.tableizer-table {
+		border: 1px solid #D58D8D; 
+        color: #FFF;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #D58D8D;
+		background-color: #242434; 
+	}
+	.tableizer-table th {
+		background-color: #D58D8D; 
+		color: #FFF;
+		font-weight: bold;
+	}
 </style>
 
 <h1><center>  Mecanismos de adaptación autonómica de arquitectura software para la plataforma <br> Smart Campus UIS </center></h1>
@@ -389,25 +403,49 @@ Nice to have
 
 <!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1> -->
 
+<!-- <div class="twocols center-grid"> -->
+
 <div class="col center">
 
-|     | MontiThings | Eclipse Mita | SysML4IoT | ThingML | IoT-DDL |
-| --- | ----------- | ------------ | --------- | ------- | ------- |
-| C1  | ✓           | ✓            | ✓         | ✓       | ✓       |
-| C2  | ✗           | ✗            | ✗         | ✗       | ✗       |
-| C3  | ✓           | ✓            | ✓         | ✓       | ✓       |
-| C4  | ✓           | ✓            | ✓         | ✓       | ✗       |
-| C5  | ✓           | ✓            | ✗         | ✓       | ✗       |
-| C6  | ✗           | ✗            | ✗         | ✓       | ✗       |
+Se buscaron diferentes LDAs diseñados para IoT, pero
+no se adecuaban a las necesidades del proyecto.
 
 </div>
 
-<!-- <div class="col">
+<div class="col center">
+
+<table style="margin: 0px auto;" class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th></th><th>MontiThings</th><th>Eclipse Mita</th><th>SysML4IoT</th><th>ThingML</th><th>IoT-DDL</th></tr></thead><tbody>
+ <tr><td>C1</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+ <tr><td>C2</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr>
+ <tr><td>C3</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+ <tr><td>C4</td><td>✓</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td></tr>
+ <tr><td>C5</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✗</td></tr>
+ <tr><td>C6</td><td>✗</td><td>✗</td><td>✗</td><td>✓</td><td>✗</td></tr>
+</tbody></table>
 
 </div>
-</div> --> -->
+</div>
 
 ---
+
+<!-- <!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1>
+
+<div class="center">
+
+<table style="margin: 0px auto; ;" class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th></th><th>MontiThings</th><th>Eclipse Mita</th><th>SysML4IoT</th><th>ThingML</th><th>IoT-DDL</th></tr></thead><tbody>
+ <tr><td>C1</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+ <tr><td>C2</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr>
+ <tr><td>C3</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+ <tr><td>C4</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✗</td></tr>
+ <tr><td>C5</td><td>✓</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td></tr>
+ <tr><td>C6</td><td>✗</td><td>✗</td><td>✗</td><td>✓</td><td>✗</td></tr>
+</tbody></table>
+</div>
+</div>
+
+--- -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -429,14 +467,20 @@ Nice to have
 
 <!-- _header: <h1 id="un-nuevo-modelo"> Un nuevo modelo </h1> -->
 
-<div class="twocols center-grid">
 <div class="col center">
 
-</div>
-
-<div class="col">
+![width:1200](assets/HenryModelo%20Alt.png)
 
 </div>
+
+---
+
+<!-- _header: <h1> Un nuevo modelo </h1> -->
+
+<div class="col center">
+
+![width:800](assets/Metamodel%20B%20Alt.png)
+
 </div>
 
 ---
