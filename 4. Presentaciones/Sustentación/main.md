@@ -582,21 +582,35 @@ Lexical
 
 ---
 
-# Planear
+<!-- _header: <h1 id="planear"> Planear </h1> -->
 
-<div class="twocols center-grid">
+---
+
+<!-- _header: <h1> Planear </h1> -->
+
 <div class="col center">
+
+![width:800](assets/BranProcessExecuter%20Alt.png)
+
+---
+
+<!-- _header: <h1> Planear </h1> -->
+
+<!-- <div class="twocols center-grid"> -->
+<div class="col center">
+
+![width:750](assets/BranProcessPlanner%20Alt.png)
 
 </div>
 
 <div class="col">
 
 </div>
-</div>
+<!-- </div> -->
 
 ---
 
-# Actuar
+<!-- _header: <h1 id="actuar"> Actuar </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
