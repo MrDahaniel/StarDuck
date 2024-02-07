@@ -84,6 +84,7 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 # Agenda
@@ -93,13 +94,13 @@ footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br
 -   [Metodología](#metodología)
 -   [Desarrollo](#desarrollo)
 -   [Resultados](#resultados)
--   [Conclusiones](#conclusiones)
--   [Trabajo Futuro](#trabajo-futuro)
+-   [Conclusiones y trabajo futuro](#conclusiones-y-trabajo-futuro)
 
 </div>
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 # Contexto y problemática
@@ -290,6 +291,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 # Objetivos
@@ -325,6 +327,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 # Metodología
@@ -343,18 +346,20 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 # Desarrollo
 
 -   [Ambientación Conceptual Y tecnológica](#ambientación-conceptual-y-tecnológica)
 -   [Definición de la notación de la arquitectura](#definición-de-la-notación-de-la-arquitectura)
--   [Mecanismos de descripción](#mecanismos-de-descripción)
+-   [Mecanismos de comparación](#mecanismos-de-comparación)
 -   [Mecanismos de adaptación](#mecanismos-de-adaptación)
 -   [Validación de resultados](#validación-de-resultados)
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 <div class="col">
 
@@ -430,24 +435,7 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
-<!-- <!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1>
-
-<div class="center">
-
-<table style="margin: 0px auto; ;" class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th></th><th>MontiThings</th><th>Eclipse Mita</th><th>SysML4IoT</th><th>ThingML</th><th>IoT-DDL</th></tr></thead><tbody>
- <tr><td>C1</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
- <tr><td>C2</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr>
- <tr><td>C3</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
- <tr><td>C4</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✗</td></tr>
- <tr><td>C5</td><td>✓</td><td>✓</td><td>✗</td><td>✓</td><td>✗</td></tr>
- <tr><td>C6</td><td>✗</td><td>✗</td><td>✗</td><td>✓</td><td>✗</td></tr>
-</tbody></table>
-</div>
-</div>
-
---- -->
-
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 <div class="col center">
 
@@ -459,7 +447,7 @@ no se adecuaban a las necesidades del proyecto.
 
 -   [Un nuevo modelo](#un-nuevo-modelo)
 -   [Sintaxis de la notación](#sintaxis-de-la-notación)
--   [Validando aplicaciones](#validando-aplicaciones)
+-   [Validando declaraciones](#validando-declaraciones)
 
 </div>
 </div>
@@ -504,33 +492,41 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
-<!-- _header: <h1 id="validando-aplicaciones"> Validando aplicaciones </h1> -->
+<!-- _header: <h1 id="validando-declaraciones"> Validando declaraciones </h1> -->
 
-<div class="twocols center-grid">
 <div class="col center">
 
-</div>
-
-<div class="col">
+Todas las declaraciones de aplicaciones se validan usando este proceso
 
 </div>
+
+![](assets/LexicalFullFlow.png)
+
+---
+
+<!-- _header: <h1> Validando declaraciones </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/LexicalTerm.png)
+Lexical
+
 </div>
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 <div class="col center">
 
-# Mecanismos de descripción
+# Mecanismos de Comparación
 
 </div>
 <div class="col">
 
 -   [Monitorear](#monitorear)
--   [Centralizando datos](#centralizando-datos)
 -   [Analizar](#analizar)
--   [Evaluando el estado](#evaluando-el-estado)
 
 </div>
 
@@ -538,62 +534,35 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
-# Monitorear
+<!-- _header: <h1 id="monitorear"> Monitorear </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
 
-</div>
-
-<div class="col">
+![width:400](assets/LookerProcess.png)
 
 </div>
-</div>
 
----
-
-# Centralizando datos
-
-<div class="twocols center-grid">
 <div class="col center">
 
-</div>
-
-<div class="col">
+![](assets/LookerUpdateProcess.png)
 
 </div>
 </div>
 
 ---
 
-# Analizar
+<!-- _header: <h1 id="analizar"> Analizar </h1> -->
 
-<div class="twocols center-grid">
 <div class="col center">
 
-</div>
+![width:750](assets/LookerClockProcess.png)
 
-<div class="col">
-
-</div>
 </div>
 
 ---
 
-# Evaluando el estado
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
-
-</div>
-</div>
-
----
-
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 <div class="col center">
@@ -604,41 +573,11 @@ no se adecuaban a las necesidades del proyecto.
 
 <div class="col">
 
--   [Identificando problemas](#identificando-problemas)
--   [Definiendo acciones](#definiendo-acciones)
 -   [Planear](#planear)
 -   [Actuar](#actuar)
 
 </div>
 
-</div>
-
----
-
-# Identificando problemas
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
-
-</div>
-</div>
-
----
-
-# Definiendo acciones
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
-
-</div>
 </div>
 
 ---
@@ -671,6 +610,7 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
 <div class="col center">
@@ -690,7 +630,7 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
-# Condiciones y banco de pruebas
+<!-- _header: <h1 id="condiciones-y-banco-de-pruebas"> Condiciones y banco de pruebas </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -704,7 +644,7 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
-# Escenario A
+<!-- _header: <h1 id="escenario-a"> Escenario A </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -718,7 +658,7 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
-# Escenario B
+<!-- _header: <h1 id="escenario-b"> Escenario B </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -732,47 +672,33 @@ no se adecuaban a las necesidades del proyecto.
 
 ---
 
+<!-- _paginate: skip -->
 <div class="twocols center-grid">
 
-# Conclusiones
-
----
-
-<div class="twocols center-grid">
-
-# Trabajo Futuro
-
--   [Interfaces gráficas](#interfaces-gráficas)
--   [Estadísticas](#estadísticas)
-
----
-
-# Interfaces gráficas
-
-<div class="twocols center-grid">
 <div class="col center">
+
+# Conclusiones y trabajo futuro
 
 </div>
 
 <div class="col">
 
-</div>
-</div>
-
----
-
-# Estadísticas
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
+-   [Conclusiones](#conclusiones)
+-   [Trabajo futuro](#trabajo-futuro)
 
 </div>
 </div>
 
 ---
+
+<!-- _header: <h1 id="conclusiones"> Conclusiones </h1> -->
+
+---
+
+<!-- _header: <h1 id="trabajo-futuro"> Trabajo Futuro </h1> -->
+
+---
+
+<!-- _paginate: skip -->
 
 # Preguntas
