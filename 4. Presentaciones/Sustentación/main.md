@@ -2,7 +2,7 @@
 marp: true
 theme: rose-pine-moon
 paginate: true
-footer: <div class="foot"> Escuela de Ingeniería de Sistemas e Informática <br> Universidad Industrial de Santander, Bucaramanga, Colombia </div>
+footer: <div class="foot"> <div class="shart"> <img src="assets/UISLogo Alt.png" width="20%" /> </div>
 ---
 
 <style>
@@ -443,7 +443,7 @@ no se adecuaban a las necesidades del proyecto.
 
 </div>
 
-<div class="col">
+<div class="col"> 
 
 -   [Un nuevo modelo](#un-nuevo-modelo)
 -   [Sintaxis de la notación](#sintaxis-de-la-notación)
@@ -689,16 +689,15 @@ Lexical
 
 <div class="col">
 
--   [Condiciones y banco de pruebas](#condiciones-y-banco-de-pruebas)
+<!-- -   [Condiciones y banco de pruebas](#condiciones-y-banco-de-pruebas) -->
 -   [Escenario A](#escenario-a)
 -   [Escenario B](#escenario-b)
 
 </div>
 </div>
 
----
-
-<!-- _header: <h1 id="condiciones-y-banco-de-pruebas"> Condiciones y banco de pruebas </h1> -->
+<!-- ---
+<!-- _header: <h1 id="condiciones-y-banco-de-pruebas"> Condiciones y banco de pruebas </h1> 
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -708,35 +707,72 @@ Lexical
 <div class="col">
 
 </div>
-</div>
+</div> -->
+
 
 ---
 
 <!-- _header: <h1 id="escenario-a"> Escenario A </h1> -->
 
-<div class="twocols center-grid">
 <div class="col center">
 
-</div>
-
-<div class="col">
+![width:750](assets/ScenarioA.png)
 
 </div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+Pasos a seguir
+
+1. Desplegar los servicios de Smart Campus UIS
+1. Desplegar los servicios Bran y DoThing.
+1. Usando Lexical, establecer el estado de referencia de la aplicación.
+1. Declarar en los endpoints de Bran, las directivas definidas.
+1. Desplegar el servicio Looker para la aplicación.
+1. Esperar a la nivelación del estado de la aplicación.
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+Paste the terminal out of those things
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:680](assets/ScenarioADeclaration.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+
 </div>
 
 ---
 
 <!-- _header: <h1 id="escenario-b"> Escenario B </h1> -->
 
-<div class="twocols center-grid">
-<div class="col center">
 
-</div>
 
-<div class="col">
-
-</div>
-</div>
 
 ---
 
