@@ -496,6 +496,16 @@ no se adecuaban a las necesidades del proyecto.
 
 <div class="col center">
 
+![width:900](assets/VisionGeneralDeclarar.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Validando declaraciones </h1> -->
+
+<div class="col center">
+
 Todas las declaraciones de aplicaciones se validan usando este proceso
 
 </div>
@@ -535,6 +545,16 @@ Lexical
 ---
 
 <!-- _header: <h1 id="monitorear"> Monitorear </h1> -->
+
+<div class="col center">
+
+![width:900](assets/VisionGeneralMonitorear.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Monitorear </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -584,13 +604,41 @@ Lexical
 
 <!-- _header: <h1 id="planear"> Planear </h1> -->
 
+<div class="col center">
+
+![width:900](assets/VisionGeneralPlanear.png)
+
+</div>
+
 ---
 
 <!-- _header: <h1> Planear </h1> -->
 
 <div class="col center">
 
-![width:800](assets/BranProcessExecuter%20Alt.png)
+![width:900](assets/Directives.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Planear </h1> -->
+
+<div class="col center">
+
+![width:850](assets/BranProcessExecuter%20Alt.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Planear </h1> -->
+
+<div class="col center">
+
+![width:850](assets/BranProcessExecuter%20Alt.png)
+
+</div>
 
 ---
 
@@ -612,14 +660,20 @@ Lexical
 
 <!-- _header: <h1 id="actuar"> Actuar </h1> -->
 
-<div class="twocols center-grid">
 <div class="col center">
 
-</div>
-
-<div class="col">
+![width:900](assets/VisionGeneralEjecutar.png)
 
 </div>
+
+---
+
+<!-- _header: <h1> Actuar </h1> -->
+
+<div class="col center">
+
+![](assets/DoThingProcessPlanner.png)
+
 </div>
 
 ---
