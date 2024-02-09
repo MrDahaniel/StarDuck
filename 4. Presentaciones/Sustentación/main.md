@@ -668,6 +668,40 @@ Proceso para la definición de las acciones a tomar
 <div class="col center">
 
 ![](assets/DoThingProcessPlanner.png)
+Proceso de ejecución de las acciones
+
+</div>
+
+---
+
+<!-- _header: <h1> Actuar </h1> -->
+
+<div class="col center">
+
+![](assets/DoThingProcessPlanner2.png)
+Proceso de ejecución de order de adición realizado por DoThing
+
+</div>
+
+---
+
+<!-- _header: <h1> Actuar </h1> -->
+
+<div class="col center">
+
+![](assets/DoThingProcessPlanner3.png)
+Proceso de ejecución de order de reinicio realizado por DoThing
+
+</div>
+
+---
+
+<!-- _header: <h1> Actuar </h1> -->
+
+<div class="col center">
+
+![](assets/DoThingProcessPlanner4.png)
+Proceso de ejecución de order de reconfiguración realizado por DoThing
 
 </div>
 
