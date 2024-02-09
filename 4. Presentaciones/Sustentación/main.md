@@ -187,6 +187,7 @@ Ciclo de control MAPE-K
 </div>
 
 <!--
+
 Inicialmente planteada por IBM a inicios de los 2000, la computación autonómica busca el dotar a los sistemas de computación con propiedades de autogestión las cuales pueda modificar su estado en búsqueda de manejarse a sí mismo.
 
 Las principales propiedades que un sistema autonómico debe tener son:
@@ -203,8 +204,6 @@ El objetivo de estas propiedades autonómicas es reducir la complejidad de manej
 Ahora, uno de los campos en donde se pueden aplicar estos conceptos, es en los sistemas IoT.
 
 -->
-
-## <!--
 
 <!-- _header: <h1 id="sistemas-iot"> Sistemas IoT </h1>
 
@@ -1124,9 +1123,9 @@ Pasos a seguir
 
 <!-- _header: <h1 id="conclusiones"> Conclusiones </h1> -->
 
-1. Cumplimiento de los objetivos específicos y general establecido.
-
-2. Existen falencias
+-   Se logra el desarrollo de una notación que permite describir los estados objetivo de las aplicaciones
+-   El proceso de análisis implementado, posibilita la evaluación del estado observado respecto a lo declarado.
+-   Los mecanismos diseñados, efectivamente permiten disminuir las diferencias entre los estados objetivo y el observado de las aplicaciones.
 
 <!--
 
@@ -1146,12 +1145,12 @@ Diseñar un conjunto de mecanismos autonómicos para permitir la adaptación de 
 
 <!-- _header: <h1 id="trabajo-futuro"> Trabajo Futuro </h1> -->
 
-1. Más pruebas, más escenarios
-2. Mejorar la toma de decisiones
-
-3. Crecimiento pro-activo de la base de conocimiento
-
-4. Reducir la barrera de entrada al usuario
+1. Realizar pruebas, más escenarios
+2. Mejorar la toma de decisiones del planeador
+3. Diseñar más directivas para la modificación del estado
+4. Crecer de manera pro-activa de la base de conocimiento
+5. Limpieza de recursos no usados
+6. Reducir la barrera de entrada al usuario
 
 ---
 
