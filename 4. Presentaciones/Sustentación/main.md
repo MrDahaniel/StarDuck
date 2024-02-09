@@ -204,9 +204,9 @@ Ahora, uno de los campos en donde se pueden aplicar estos conceptos, es en los s
 
 -->
 
----
+## <!--
 
-<!-- _header: <h1 id="sistemas-iot"> Sistemas IoT </h1> -->
+<!-- _header: <h1 id="sistemas-iot"> Sistemas IoT </h1>
 
 <div class="twocols center-grid">
 <div class="col">
@@ -220,7 +220,7 @@ Ahora, uno de los campos en donde se pueden aplicar estos conceptos, es en los s
 (Oracle, s.f.)
 
 </div>
-</div>
+</div> -->
 
 <!--
 Los sistemas IoT, son descritos por Oracle como redes de objetos físicos con sensores y actuadores. Estos son usados para diversas tareas las cuales van desde el control de dispositivos como luces hasta monitoreo ambiental.
@@ -243,9 +243,11 @@ Smart Campus UIS es una implementación realizada aquí de este concepto.
 
 </div>
 
-<div class="col">
+<div class="col center">
 
-![](assets/SmartCampus.png)
+![width:250](assets/IoTLogo.png)
+
+![width:450](assets/SmartCampus.png)
 
 </div>
 
@@ -309,17 +311,12 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 
 <!-- _header: <h1 id="objetivos-específicos"> Objetivos Específicos </h1> -->
 
-<div class="twocols">
+<!-- <div class="twocols"> -->
 
 <div class="col">
 
 1.  Proponer una notación (lenguaje) para describir una arquitectura objetivo de un sistema software IoT.
 2.  Diseñar un mecanismo para determinar las diferencias existentes entre una arquitectura actual en ejecución y una arquitectura objetivo especificada.
-
-</div>
-
-<div class="col">
-
 3.  Diseñar un conjunto de mecanismos de adaptación que permitan disminuir las diferencias entre la arquitectura actual y la arquitectura objetivo.
 4.  Evaluar la implementación realizada a partir de un conjunto de pruebas con el fin de establecer la efectividad de los mecanismos usados.
 
@@ -394,7 +391,7 @@ Requisitos
 3. Habilitar el modelado de los componentes a nivel de sus entradas
 4. Poder el establecer el estado de los componentes
 
-Nice to have
+Opcional
 
 5. Modelar el comportamiento de sus componentes
 6. Permitir el exportar el modelo de manera gráfica
@@ -459,6 +456,7 @@ no se adecuaban a las necesidades del proyecto.
 <div class="col center">
 
 ![width:1200](assets/HenryModelo%20Alt.png)
+UML del metamodelo planteado por Mag. H. Jimenez
 
 </div>
 
@@ -469,6 +467,7 @@ no se adecuaban a las necesidades del proyecto.
 <div class="col center">
 
 ![width:800](assets/Metamodel%20B%20Alt.png)
+UML del metamodelo planteado para el proyecto
 
 </div>
 
@@ -496,7 +495,8 @@ no se adecuaban a las necesidades del proyecto.
 
 <div class="col center">
 
-![width:900](assets/VisionGeneralDeclarar.png)
+![](assets/LexicalFullFlow.png)
+Flujo del proceso realizado por el validador, Lexical
 
 </div>
 
@@ -506,11 +506,9 @@ no se adecuaban a las necesidades del proyecto.
 
 <div class="col center">
 
-Todas las declaraciones de aplicaciones se validan usando este proceso
+![width:900](assets/VisionGeneralDeclarar.png)
 
 </div>
-
-![](assets/LexicalFullFlow.png)
 
 <!-- ---
 
@@ -560,12 +558,14 @@ Lexical
 <div class="col center">
 
 ![width:400](assets/LookerProcess.png)
+Proceso general de monitoreo
 
 </div>
 
 <div class="col center">
 
 ![](assets/LookerUpdateProcess.png)
+Recorrido para la actualización a partir de mensajes
 
 </div>
 </div>
@@ -576,7 +576,9 @@ Lexical
 
 <div class="col center">
 
-![width:750](assets/LookerClockProcess.png)
+![width:720](assets/LookerClockProcess.png)
+Proceso de análisis para la determinación del
+estado de la aplicación
 
 </div>
 
@@ -617,6 +619,7 @@ Lexical
 <div class="col center">
 
 ![width:900](assets/Directives.png)
+UML de las directivas definidas
 
 </div>
 
@@ -627,6 +630,7 @@ Lexical
 <div class="col center">
 
 ![width:850](assets/BranProcessExecuter%20Alt.png)
+Proceso superficial para establecer acciones a tomar
 
 </div>
 
@@ -638,6 +642,7 @@ Lexical
 <div class="col center">
 
 ![width:750](assets/BranProcessPlanner%20Alt.png)
+Proceso para la definición de las acciones a tomar
 
 </div>
 
