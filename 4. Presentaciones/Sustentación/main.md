@@ -689,16 +689,16 @@ Lexical
 
 <div class="col">
 
-<!-- -   [Condiciones y banco de pruebas](#condiciones-y-banco-de-pruebas) -->
-
+-   [Condiciones](#condiciones)
 -   [Escenario A](#escenario-a)
 -   [Escenario B](#escenario-b)
 
 </div>
 </div>
 
-<!-- ---
-<!-- _header: <h1 id="condiciones-y-banco-de-pruebas"> Condiciones y banco de pruebas </h1>
+---
+
+<!-- _header: <h1 id="condiciones"> Condiciones y banco de pruebas </h1> -->
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -708,15 +708,15 @@ Lexical
 <div class="col">
 
 </div>
-</div> -->
+</div>
 
 ---
 
 <!-- _header: <h1 id="escenario-a"> Escenario A </h1> -->
 
-<div class="col center">
+<div style="transform: translateY(50px)" class="col center">
 
-![width:750](assets/ScenarioA.png)
+![width:900](assets/ScenarioA.png)
 
 </div>
 
@@ -727,11 +727,11 @@ Lexical
 Pasos a seguir
 
 1. Desplegar los servicios de Smart Campus UIS
-1. Desplegar los servicios Bran y DoThing.
-1. Usando Lexical, establecer el estado de referencia de la aplicación.
-1. Declarar en los endpoints de Bran, las directivas definidas.
-1. Desplegar el servicio Looker para la aplicación.
-1. Esperar a la nivelación del estado de la aplicación.
+2. Desplegar los servicios Bran y DoThing.
+3. Usando Lexical, establecer el estado de referencia de la aplicación.
+4. Declarar en los endpoints de Bran, las directivas definidas.
+5. Desplegar el servicio Looker para la aplicación.
+6. Esperar a la nivelación del estado de la aplicación.
 
 ---
 
@@ -871,7 +871,226 @@ Paste the terminal out of those things
 
 ---
 
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame13.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame14.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame15.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame16.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame17.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame18.png)
+
+</div>
+
+---
+
 <!-- _header: <h1 id="escenario-b"> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioB.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+-   Desplegar los servicios de Smart Campus UIS
+-   Desplegar los servicios Bran y DoThing.
+-   Usando Lexical, establecer el estado de referencia de la aplicación Patio y House.
+-   Declarar en los endpoints de Bran, las directivas definidas.
+-   Desplegar los servicios de simulación de datos Mocker respecto a las expectativas, tal que el estado sea coherente.
+-   Desplegar los servicios Looker para cada una de las aplicaciones.
+-   Matar los servicios desplegados y eliminar uno de los contenedores creados.
+-   Esperar a ejecución de las órdenes Restart y Addition.
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame1.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame2.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame3.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame4.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame6.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame7.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame8.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame9.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame6.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame7.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame8.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame10.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame11.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario B </h1> -->
+
+<div class="col center">
+
+![width:1200](assets/ScenarioBFrame1.png)
+
+</div>
 
 ---
 
