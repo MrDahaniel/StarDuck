@@ -369,7 +369,7 @@ Como podemos ver, tenemos algo bastante similar al planteamiento realizado inici
 <div class="col">
 
 -   [Criterios de selección](#criterios-de-selección)
--   [Búsqueda de alternativas](#búsqueda-de-alternativas)
+<!-- -   [Búsqueda de alternativas](#búsqueda-de-alternativas) -->
 
 </div>
 
@@ -405,11 +405,11 @@ Nice to have
 
 -->
 
----
+<!-- ---
 
-<!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1> -->
+<!-- _header: <h1 id="búsqueda-de-alternativas"> Búsqueda de alternativas </h1>
 
-<!-- <div class="twocols center-grid"> -->
+<!-- <div class="twocols center-grid">
 
 <div class="col center">
 
@@ -431,7 +431,7 @@ no se adecuaban a las necesidades del proyecto.
 </tbody></table>
 
 </div>
-</div>
+</div> -->
 
 ---
 
@@ -512,16 +512,16 @@ Todas las declaraciones de aplicaciones se validan usando este proceso
 
 ![](assets/LexicalFullFlow.png)
 
----
+<!-- ---
 
-<!-- _header: <h1> Validando declaraciones </h1> -->
+<!-- _header: <h1> Validando declaraciones </h1>
 
 <div class="col center">
 
 ![width:1000](assets/LexicalTerm.png)
 Lexical
 
-</div>
+</div> -->
 
 ---
 
@@ -634,16 +634,6 @@ Lexical
 
 <!-- _header: <h1> Planear </h1> -->
 
-<div class="col center">
-
-![width:850](assets/BranProcessExecuter%20Alt.png)
-
-</div>
-
----
-
-<!-- _header: <h1> Planear </h1> -->
-
 <!-- <div class="twocols center-grid"> -->
 <div class="col center">
 
@@ -698,20 +688,6 @@ Lexical
 
 ---
 
-<!-- _header: <h1 id="condiciones"> Condiciones y banco de pruebas </h1> -->
-
-<div class="twocols center-grid">
-<div class="col center">
-
-</div>
-
-<div class="col">
-
-</div>
-</div>
-
----
-
 <!-- _header: <h1 id="escenario-a"> Escenario A </h1> -->
 
 <div style="transform: translateY(50px)" class="col center">
@@ -732,12 +708,6 @@ Pasos a seguir
 4. Declarar en los endpoints de Bran, las directivas definidas.
 5. Desplegar el servicio Looker para la aplicación.
 6. Esperar a la nivelación del estado de la aplicación.
-
----
-
-<!-- _header: <h1> Escenario A </h1> -->
-
-Paste the terminal out of those things
 
 ---
 
@@ -1115,9 +1085,34 @@ Paste the terminal out of those things
 
 <!-- _header: <h1 id="conclusiones"> Conclusiones </h1> -->
 
+1. Cumplimiento de los objetivos específicos y general establecido.
+
+2. Existen falencias
+
+<!--
+
+ 1. Existe una notación por la cual se pueden declarar los estados de referencia
+ 2. Se tiene una manera de monitorear y establecer el estado actual del sistema IoT.
+ 3. Se diseñaron, e implementaron, unos mecanismos de adaptación los cuales permiten afectar el estado de la arquitectura hacia el estado de referencia definido
+
+Diseñar un conjunto de mecanismos autonómicos para permitir la adaptación de la Arquitectura Software IoT respecto a un modelo objetivo en la plataforma Smart Campus UIS
+
+1.  Proponer una notación (lenguaje) para describir una arquitectura objetivo de un sistema software IoT.
+2.  Diseñar un mecanismo para determinar las diferencias existentes entre una arquitectura actual en ejecución y una arquitectura objetivo especificada.
+3.  Diseñar un conjunto de mecanismos de adaptación que permitan disminuir las diferencias entre la arquitectura actual y la arquitectura objetivo.
+4.  Evaluar la implementación realizada a partir de un conjunto de pruebas con el fin de establecer la efectividad de los mecanismos usados.
+-->
+
 ---
 
 <!-- _header: <h1 id="trabajo-futuro"> Trabajo Futuro </h1> -->
+
+1. Más pruebas, más escenarios
+2. Mejorar la toma de decisiones
+
+3. Crecimiento pro-activo de la base de conocimiento
+
+4. Reducir la barrera de entrada al usuario
 
 ---
 
