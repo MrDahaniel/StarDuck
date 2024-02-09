@@ -443,7 +443,7 @@ no se adecuaban a las necesidades del proyecto.
 
 </div>
 
-<div class="col"> 
+<div class="col">
 
 -   [Un nuevo modelo](#un-nuevo-modelo)
 -   [Sintaxis de la notación](#sintaxis-de-la-notación)
@@ -690,6 +690,7 @@ Lexical
 <div class="col">
 
 <!-- -   [Condiciones y banco de pruebas](#condiciones-y-banco-de-pruebas) -->
+
 -   [Escenario A](#escenario-a)
 -   [Escenario B](#escenario-b)
 
@@ -697,7 +698,7 @@ Lexical
 </div>
 
 <!-- ---
-<!-- _header: <h1 id="condiciones-y-banco-de-pruebas"> Condiciones y banco de pruebas </h1> 
+<!-- _header: <h1 id="condiciones-y-banco-de-pruebas"> Condiciones y banco de pruebas </h1>
 
 <div class="twocols center-grid">
 <div class="col center">
@@ -708,7 +709,6 @@ Lexical
 
 </div>
 </div> -->
-
 
 ---
 
@@ -755,6 +755,7 @@ Paste the terminal out of those things
 
 <div class="col center">
 
+![width:1000](assets/ScenarioAFrame1.png)
 
 </div>
 
@@ -764,15 +765,113 @@ Paste the terminal out of those things
 
 <div class="col center">
 
+![width:1000](assets/ScenarioAFrame2.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame3.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame4.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame5.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame6.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame7.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame8.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame9.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame10.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame11.png)
+
+</div>
+
+---
+
+<!-- _header: <h1> Escenario A </h1> -->
+
+<div class="col center">
+
+![width:1000](assets/ScenarioAFrame12.png)
 
 </div>
 
 ---
 
 <!-- _header: <h1 id="escenario-b"> Escenario B </h1> -->
-
-
-
 
 ---
 
