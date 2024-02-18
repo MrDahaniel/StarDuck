@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-01-11T16:35:51.755Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.16 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="4imbq4mSL4RWfKIPrqeQ" version="22.1.16" type="device">
+<mxfile host="Electron" modified="2024-02-18T20:00:34.981Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.21 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="iAfWLDDjvQzC_56hJrz5" version="22.1.21" type="device">
   <diagram name="Page-1" id="BeeQXuH5mpLVNXQqc5U8">
-    <mxGraphModel dx="574" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="478" dy="302" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -58,18 +58,6 @@
         <mxCell id="I0c3L2jA-JhZfiCe1uU5-18" value="Is the &lt;br&gt;&quot;deviceUUID&quot;&amp;nbsp;&lt;br&gt;registered in the &lt;br&gt;componets?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;fillColor=#FFFFFF;spacingTop=-6;" parent="1" vertex="1">
           <mxGeometry x="482.37" y="370" width="137.13" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="I0c3L2jA-JhZfiCe1uU5-50" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="I0c3L2jA-JhZfiCe1uU5-19" target="I0c3L2jA-JhZfiCe1uU5-18" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="630" y="200" />
-              <mxPoint x="630" y="347" />
-              <mxPoint x="551" y="347" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="I0c3L2jA-JhZfiCe1uU5-19" value="Create new data requriement with null count and null timeout" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;spacingTop=-4;" parent="1" vertex="1">
-          <mxGeometry x="485.5500000000001" y="170" width="130" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="I0c3L2jA-JhZfiCe1uU5-30" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" parent="1" source="I0c3L2jA-JhZfiCe1uU5-23" target="I0c3L2jA-JhZfiCe1uU5-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -90,11 +78,17 @@
         <mxCell id="I0c3L2jA-JhZfiCe1uU5-26" value="Update last_reading of the device&lt;br&gt;to message&#39;s &quot;timeStamp&quot;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;" parent="1" vertex="1">
           <mxGeometry x="280" y="450" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="I0c3L2jA-JhZfiCe1uU5-29" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" parent="1" source="I0c3L2jA-JhZfiCe1uU5-28" target="I0c3L2jA-JhZfiCe1uU5-19" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="I0c3L2jA-JhZfiCe1uU5-60" value="" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" parent="1" source="I0c3L2jA-JhZfiCe1uU5-28" target="I0c3L2jA-JhZfiCe1uU5-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-13" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#666666;endArrow=openThin;endFill=0;fillColor=#FAE5C7;" edge="1" parent="1" source="I0c3L2jA-JhZfiCe1uU5-28" target="I0c3L2jA-JhZfiCe1uU5-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="551" y="352" />
+              <mxPoint x="405" y="352" />
+              <mxPoint x="405" y="405" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="I0c3L2jA-JhZfiCe1uU5-28" value="Is the key &lt;br&gt;present in the data requirements?" style="rhombus;whiteSpace=wrap;html=1;rounded=0;strokeColor=#666666;strokeWidth=3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=#666666;fillColor=#FFFFFF;spacingTop=-3;" parent="1" vertex="1">
           <mxGeometry x="485.5550000000001" y="260" width="130.75" height="80" as="geometry" />
@@ -112,6 +106,30 @@
         </mxCell>
         <mxCell id="I0c3L2jA-JhZfiCe1uU5-56" value="Create new component&lt;br&gt;from the message &quot;deviceUUID&quot; and append it to data requirement components" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fontColor=#666666;fillColor=#FFFFFF;strokeWidth=3;spacingTop=-4;" parent="1" vertex="1">
           <mxGeometry x="465.28" y="470" width="170.55" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-2" value="&lt;font color=&quot;#666666&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="304.62" y="170" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-3" value="&lt;font color=&quot;#666666&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-4" value="&lt;font color=&quot;#666666&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="270" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-5" value="&lt;font color=&quot;#666666&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-6" value="&lt;font color=&quot;#666666&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="370" y="330" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-8" value="&lt;font color=&quot;#666666&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="440" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-9" value="&lt;font color=&quot;#666666&quot;&gt;Yes&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="346" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sp3hOzPZP7fwlIX_qvxb-14" value="&lt;font color=&quot;#666666&quot;&gt;No&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="513" y="330" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
