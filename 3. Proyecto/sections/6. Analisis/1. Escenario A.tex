@@ -6,7 +6,7 @@ Siguiendo los pasos definidos en la sección \ref{sec:EscenarioExperimentalA}, s
 
 \begin{figure}[ht]
     \centering
-    \caption{Aplicación y directivas registradas en Bran}
+    \caption{\\Aplicación y directivas registradas en Bran}
     \label{fig:BranStart}
     \includegraphics[width=0.9\linewidth]{images/BranStart.png}
     \vspace{-4mm}
@@ -16,7 +16,7 @@ Una vez se inició el servicio \textit{Looker}, como se ve en la figura \ref{fig
 
 \begin{figure}[ht]
     \centering
-    \caption{Looker evalúa el estado de la aplicación}
+    \caption{\\Looker evalúa el estado de la aplicación}
     \label{fig:LookerStart}
     \includegraphics[width=0.9\linewidth]{images/LookerStart.png}
     \vspace{-4mm}
@@ -26,7 +26,7 @@ El estado observado, se reportó a \textit{Bran}, el cual, realizó el recorrido
 
 \begin{figure}[ht]
     \centering
-    \caption{Bran identifica los problemas y establece las acciones}
+    \caption{\\Bran identifica los problemas y establece las acciones}
     \label{fig:BranPlan}
     \includegraphics[width=0.9\linewidth]{images/BranPlanning.png}
     \vspace{-4mm}
@@ -36,7 +36,7 @@ A partir de las acciones, se crearon las órdenes para ejecución usando las dir
 
 \begin{figure}[ht]
     \centering
-    \caption{DoThing ejecuta las acciones establecidas por Bran }
+    \caption{\\DoThing ejecuta las acciones establecidas por Bran }
     \label{fig:DoThingDoing}
     \includegraphics[width=0.9\linewidth]{images/DoThingDoing.png}
     \vspace{-4mm}
@@ -44,9 +44,9 @@ A partir de las acciones, se crearon las órdenes para ejecución usando las dir
 
 \begin{figure}[ht]
     \centering
-    \caption{Contenedores creados por DoThing en respuesta a las órdenes recibidas}
+    \caption{\\Contenedores creados por DoThing en respuesta a las órdenes recibidas}
     \label{fig:ContainerState}
-    \includegraphics[width=1\linewidth]{images/ContainerLaunching.png}
+    \includegraphics[width=0.9\linewidth]{images/ContainerLaunching.png}
     \vspace{-4mm}
 \end{figure}
 
@@ -56,9 +56,9 @@ Los valores por defecto de los servicios usados para estas pruebas es un interva
 
 Como consecuencia, el estado de la aplicación regresó a estado \textit{Fault}, y \textit{Bran}, al detectar los problemas, emitió las acciones tipo \textit{Restart} con el fin de traer los contenedores a un estado válido. Esto se puede ver en la figura \ref{fig:BranPlan2}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
     \centering
-    \caption{Bran identifica otros problemas en la aplicación}
+    \caption{\\Bran identifica otros problemas en la aplicación}
     \label{fig:BranPlan2}
     \includegraphics[width=0.9\linewidth]{images/BranRestarting.png}
     \vspace{-4mm}
@@ -68,7 +68,7 @@ Este intento de reiniciar los servicios, como era de esperarse, no fue realmente
 
 \begin{figure}[ht]
     \centering
-    \caption{Bran establece acciones de reconfiguración para adaptar la aplicación}
+    \caption{\\Bran establece acciones de reconfiguración para adaptar la aplicación}
     \label{fig:BranPlan3}
     \includegraphics[width=0.9\linewidth]{images/BranReconfiguring.png}
     \vspace{-4mm}

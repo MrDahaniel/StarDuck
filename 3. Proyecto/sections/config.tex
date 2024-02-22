@@ -109,7 +109,7 @@
 \fancypagestyle{plain}{
     \lhead{}
     \fancyhead[R]{\thepage}
-    \fancyhead[L]{}
+    \fancyhead[L]{MECANISMOS DE ADAPTACIÓN}
     \renewcommand{\headrulewidth}{0pt}
     \fancyfoot{}
 }
@@ -118,8 +118,8 @@
     
 \pagestyle{plain}
 \newlength\FHoffset
-\setlength\FHoffset{1cm}
-\addtolength\headwidth{2\FHoffset}
+% \setlength\FHoffset{1cm}
+% \addtolength\headwidth{2\FHoffset}
 
 \fancyheadoffset{\FHoffset}
 % \fancyhead[R]{\thepage}
@@ -145,6 +145,53 @@
     bottom = 1in,
     top = 1in
 }
+
+\usepackage[page]{appendix}
+
+\setcounter{tocdepth}{3}
+\renewcommand{\appendixtocname}{Lista de apéndices}
+\renewcommand{\appendixpagename}{}
+
+\makeatletter
+\let\oldappendix\appendices
+
+\captionsetup{justification=raggedright, singlelinecheck=false, labelfont={it,bf}}
+
+\g@addto@macro\tableofcontents{%
+  % Store the current toc file for later usage
+  \let\tf@toc@orig\tf@toc
+}
+\renewcommand{\appendices}{%
+  \clearpage
+  \renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+  % From now, everything goes to the app - file and not to the toc
+  \let\tf@toc\tf@app
+  \addtocontents{app}{\protect\setcounter{tocdepth}{2}}
+  \immediate\write\@auxout{%
+    \string\let\string\tf@toc\string\tf@app
+  }
+  \oldappendix
+}%
+
+\g@addto@macro\endappendices{%
+  % Switch back to the old toc file handle
+  \let\tf@toc\tf@toc@orig
+  \immediate\write\@auxout{%
+    \string\let\string\tf@toc\string\tf@toc@orig
+  }%
+}  
+
+\newcommand{\listofappendices}{%
+  \begingroup
+  \renewcommand{\contentsname}{\appendixtocname}
+  \let\@oldstarttoc\@starttoc
+  \def\@starttoc##1{\@oldstarttoc{app}}
+  \tableofcontents% Reusing the code for \tableofcontents with different \contentsname and different file handle app
+  \endgroup
+}
+
+\makeatother
+
 
 \newcommand{\skipline}{\par\null\par}
 

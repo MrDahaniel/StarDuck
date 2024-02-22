@@ -1,6 +1,7 @@
 \documentclass[12pt, oneside]{article}
 
-\setlength{\headheight}{14.49998pt}
+\setlength{\headheight}{15.71667pt}
+
 
 \input{sections/config}
 
@@ -23,15 +24,9 @@
     
     \input{sections/1. Generalidades/generalidades.tex}
     
-    %   Capítulo 1
-    
     \input{sections/2. LDA/0. LDA.tex}
     
-    %   Capítulo 2
-
     \input{sections/3. Comparación/0. CDE.tex}
-
-    %   Capítulo 3
 
     \input{sections/4. Adaptación/0. ADP.tex}
 
@@ -40,21 +35,19 @@
     \input{sections/6. Analisis/0. analisis.tex}
 
     \input{sections/7. Conclusiones/0. conclusiones.tex}
-    % \input{sections/8. Discussion/future.tex}
-    
-    % \input{sections/11. conclusiones}
-
     
     \newpage
-    \pagenumbering{Alph}
+    % \pagenumbering{Alph}
     \bibliography{bibliography.bib}
     
     % \appendix
+    \begin{appendices}
+        % \appendix
+        % \newpage
+        \section*{Apéndices}
+        \input{sections/9. Apendices/apendix.tex}
     
-    \appendix
-    \newpage
-    \section{Apéndices}
-    \input{sections/9. Apendices/apendix.tex}
+    \end{appendices}
 
 
     % \include{sections/9. Apendices/metamodel}
